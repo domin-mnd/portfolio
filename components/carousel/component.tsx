@@ -9,14 +9,21 @@ import { NextRouter, useRouter } from "next/router";
  * adds event listeners to the scrollable cards
  * along with router events to change the hash when the slide changes
  * @param {ReactElement[]} props.slides Array of slides to display
- * @todo Ignore embla dragging on scrolling cards
  * @returns {ReactElement} 100vh embla carousel
  */
 export const VerticalCarousel: FunctionComponent<{
   slides: ReactElement[];
 }> = ({ slides }): ReactElement => {
+  // Embla API to control the carousel
+  // setting it to null because it's not defined on the server side
+  // using setEmblaApi causes a re-render loop,
+  // so you can't disable the carousel as stated in
+  // https://github.com/davidjerleke/embla-carousel/issues/99
   const [emblaApi, setEmblaApi] = useState<Embla | null>(null);
+
+  // Only allow dragging on mobile
   const mobile: boolean = useMediaQuery("(max-width: 768px)");
+
   const router: NextRouter = useRouter();
 
   // Run this code only on the client side
@@ -25,18 +32,24 @@ export const VerticalCarousel: FunctionComponent<{
     // This is needed because the carousel will not scroll when the user is scrolling a card
     document
       .querySelectorAll(".mantine-Carousel-slide, canvas")
-      ?.forEach((element: Element) =>
-        element.addEventListener("wheel", scroll, {
-          passive: false,
-        })
-      );
+      ?.forEach((element: Element) => {
+        element.addEventListener("wheel", scroll);
+      });
+    
+    // Disable dragging carousel when the user is scrolling the card
+    document
+      .querySelectorAll(".mantine-ScrollArea-root")
+      ?.forEach((element: Element) => {
+        element.addEventListener("touchstart", () => modScroll(false))
+        element.addEventListener("touchend", () => modScroll(mobile))
+      });
 
     // Scroll to the correct slide when the hash changes
     // happens when the user clicks on a tab in the header
     router.events.on("hashChangeComplete", (url: string) => {
       // Does not include slash
-      const hash = url.match(/#([a-z0-9]+)/gi) ?? "";
-      const index = tabs.findIndex((tab) => tab.href === hash[0]);
+      const hash: RegExpMatchArray | "" = url.match(/#([a-z0-9]+)/gi) ?? "";
+      const index: number = tabs.findIndex((tab) => tab.href === hash[0]);
       emblaApi?.scrollTo(index);
     });
 
@@ -54,8 +67,9 @@ export const VerticalCarousel: FunctionComponent<{
    * @param {Event & WheelEventInit} event Wheel event from the scrollable card
    * @returns {void}
    */
-  function scroll(event: Event & WheelEventInit) {
+  function scroll(event: Event & WheelEventInit): void {
     // Prevent wheel scrolling on scrollable cards
+    // stopPropagation() alternative
     if (event.target !== event.currentTarget) return;
 
     // Prevent default wheel scrolling
@@ -69,6 +83,17 @@ export const VerticalCarousel: FunctionComponent<{
     } else {
       emblaApi?.scrollPrev();
     }
+  }
+
+  /**
+   * Enable or disable dragging on the carousel based on the state
+   * @param {boolean} state Whether to enable or disable dragging
+   * @returns {void}
+   */
+  function modScroll(state: boolean): void {
+    emblaApi?.reInit({
+      draggable: state
+    });
   }
 
   return (

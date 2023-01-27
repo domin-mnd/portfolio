@@ -4405,46 +4405,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mantine-next-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "mantine-next-template@workspace:."
-  dependencies:
-    "@emotion/react": ^11.10.4
-    "@emotion/server": ^11.10.0
-    "@mantine/carousel": 5.9.0
-    "@mantine/core": 5.9.0
-    "@mantine/dates": 5.9.0
-    "@mantine/hooks": 5.9.0
-    "@mantine/next": 5.9.0
-    "@mantine/prism": 5.9.0
-    "@next/bundle-analyzer": ^12.3.1
-    "@next/eslint-plugin-next": ^12.1.4
-    "@next/font": ^13.1.3
-    "@react-three/drei": ^9.53.3
-    "@react-three/fiber": ^8.10.0
-    "@tabler/icons": ^1.107.0
-    "@testing-library/dom": ^8.12.0
-    "@testing-library/jest-dom": ^5.16.3
-    "@testing-library/react": ^13.0.0
-    "@testing-library/user-event": ^14.0.4
-    "@types/jest": ^27.4.1
-    "@types/node": ^18.11.4
-    "@types/react": 18.0.21
-    "@types/three": ^0.148.0
-    cookies-next: ^2.1.1
-    dayjs: ^1.11.6
-    embla-carousel-react: ^7.0.3
-    jest: ^27.5.1
-    next: ^13.1.3
-    prettier: ^2.7.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    three: ^0.148.0
-    ts-jest: ^27.1.4
-    typescript: 4.8.4
-  languageName: unknown
-  linkType: soft
-
 "merge-stream@npm:^2.0.0":
   version: 2.0.0
   resolution: "merge-stream@npm:2.0.0"
@@ -5392,6 +5352,46 @@ __metadata:
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
   languageName: node
   linkType: hard
+
+"root-workspace-0b6124@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "root-workspace-0b6124@workspace:."
+  dependencies:
+    "@emotion/react": ^11.10.4
+    "@emotion/server": ^11.10.0
+    "@mantine/carousel": 5.9.0
+    "@mantine/core": 5.9.0
+    "@mantine/dates": 5.9.0
+    "@mantine/hooks": 5.9.0
+    "@mantine/next": 5.9.0
+    "@mantine/prism": 5.9.0
+    "@next/bundle-analyzer": ^12.3.1
+    "@next/eslint-plugin-next": ^12.1.4
+    "@next/font": ^13.1.3
+    "@react-three/drei": ^9.53.3
+    "@react-three/fiber": ^8.10.0
+    "@tabler/icons": ^1.107.0
+    "@testing-library/dom": ^8.12.0
+    "@testing-library/jest-dom": ^5.16.3
+    "@testing-library/react": ^13.0.0
+    "@testing-library/user-event": ^14.0.4
+    "@types/jest": ^27.4.1
+    "@types/node": ^18.11.4
+    "@types/react": 18.0.21
+    "@types/three": ^0.148.0
+    cookies-next: ^2.1.1
+    dayjs: ^1.11.6
+    embla-carousel-react: ^7.0.3
+    jest: ^27.5.1
+    next: ^13.1.3
+    prettier: ^2.7.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    three: ^0.148.0
+    ts-jest: ^27.1.4
+    typescript: 4.8.4
+  languageName: unknown
+  linkType: soft
 
 "safe-buffer@npm:~5.1.0, safe-buffer@npm:~5.1.1":
   version: 5.1.2
