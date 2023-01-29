@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { Text } from "@mantine/core";
+import type { FunctionComponent, ReactNode } from 'react';
+import { Text } from '@mantine/core';
 
 /** An object defining a tab */
 export interface Tab {
@@ -8,34 +8,30 @@ export interface Tab {
   /** href used to navigate to the tab, has to be defined starting with hash */
   href: string;
   /** ReactNode displayed instead of label, custom element */
-  node?: ReactNode;
+  node?: (label: string) => ReactNode;
 }
 
 /** An array of tabs displayed in header & mobile drawer */
 export const tabs: Tab[] = [
   {
-    label: "Domin",
-    href: "#",
-    node: (
+    label: 'Domin',
+    href: '#',
+    node: (label: string) => (
       <Text size="md" weight={500} underline>
-        Domin
+        {label}
       </Text>
-    )
+    ),
   },
   {
-    label: "Works",
-    href: "#works",
+    label: 'Works',
+    href: '#works',
   },
   {
-    label: "Skills",
-    href: "#skills",
+    label: 'Skills',
+    href: '#skills',
   },
   {
-    label: "CV",
-    href: "#cv"
+    label: 'Contact',
+    href: '#contact',
   },
-  {
-    label: "Contact",
-    href: "#contact",
-  }
 ];

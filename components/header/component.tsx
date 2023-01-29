@@ -1,9 +1,9 @@
-import type { FunctionComponent, ReactElement } from "react";
-import { Burger, Container, Drawer, Group, Tabs } from "@mantine/core";
-import { useRouter, NextRouter } from "next/router";
-import { useStyles } from "./styles";
-import { tabs as oTabs } from "./config";
-import { useDisclosure } from "@mantine/hooks";
+import { FunctionComponent, ReactElement, useState } from 'react';
+import { Burger, Container, Drawer, Group, Tabs } from '@mantine/core';
+import { useRouter, NextRouter } from 'next/router';
+import { useStyles } from './styles';
+import { tabs as oTabs } from './config';
+import { useDisclosure } from '@mantine/hooks';
 
 /**
  * Header component used on the top of the page to display tabs
@@ -19,12 +19,12 @@ export const Header: FunctionComponent = (): ReactElement => {
 
   // Does not include slash
   const query: RegExpMatchArray | null = router.asPath.match(/#([a-z0-9]+)/gi);
-  const hash: string = query ? query[0] : "#";
+  const [hash, setHash] = useState<string>(query ? query[0] : '#');
 
   // Mapped tabs taken from config
   const tabs = oTabs.map((tab) => (
     <Tabs.Tab value={tab.href} key={tab.href}>
-      {tab.node ?? tab.label}
+      {tab.node ? tab.node(tab.label) : tab.label}
     </Tabs.Tab>
   ));
 
@@ -35,24 +35,24 @@ export const Header: FunctionComponent = (): ReactElement => {
    */
   function pushHash(href: string): void {
     const hash = href.match(/#([a-z0-9]+)/gi);
-    window.location.hash = hash ? hash[0] : "";
-    router.events.emit("hashChangeComplete", href);
+    window.location.hash = hash ? hash[0] : '';
+    // Switch the tab
+    // If the hash is #, it will be empty string
+    setHash(window.location.hash || '#');
+    // For a carousel, emitting this event will switch the slide
+    // As it was declared in carousel
+    router.events.emit('hashChangeComplete', href);
   }
 
   return (
     <Container className={classes.header}>
       <Group p="sm" align="center" position="center">
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          className={classes.burger}
-          size="sm"
-        />
+        <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
         <Tabs
           variant="pills"
           // Value keyword in onTabChange
           value={hash}
-          onTabChange={(value) => pushHash(value ?? "#")}
+          onTabChange={(value) => pushHash(value ?? '#')}
           classNames={{
             root: classes.mobile,
             tabsList: classes.tabsList,
@@ -81,7 +81,7 @@ export const Header: FunctionComponent = (): ReactElement => {
           // Close Drawer & change the route via routes on tab change
           onTabChange={(value) => {
             close();
-            pushHash(value ?? "#");
+            pushHash(value ?? '#');
           }}
           classNames={{
             tabsList: classes.tabsList,

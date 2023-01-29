@@ -978,17 +978,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/dates@npm:5.9.0":
-  version: 5.9.0
-  resolution: "@mantine/dates@npm:5.9.0"
-  dependencies:
-    "@mantine/utils": 5.9.0
+"@mantine/eslint-config@npm:^3.6.14":
+  version: 3.6.14
+  resolution: "@mantine/eslint-config@npm:3.6.14"
   peerDependencies:
-    "@mantine/core": 5.9.0
-    "@mantine/hooks": 5.9.0
-    dayjs: ">=1.0.0"
-    react: ">=16.8.0"
-  checksum: 04619233b27c0cda8cbe2b2ba6da8ac27dbe419bda38bb411c2e3ad3fcf7f39d35ac84cb37861362e8d7d00de5819621176f389156da84a29ae84d0508dbd9f9
+    "@typescript-eslint/eslint-plugin": ^4.33.0
+    "@typescript-eslint/parser": ^4.33.0
+    eslint: ^7.27.0
+    eslint-config-airbnb-typescript: ^12.3.1
+    eslint-plugin-import: ^2.23.4
+    eslint-plugin-jest: ^24.3.6
+    eslint-plugin-jsx-a11y: ^6.4.1
+    eslint-plugin-react: ^7.24.0
+    eslint-plugin-react-hooks: ^4.2.0
+    jest: ^26.6.3
+  checksum: b06f124c086474f647535028e1ce5b0dec3927c583e1c5d9a54cdbd9ac900f83e4f05ac5b8b0425fc1acb01d26fbcf71da90ee8213456a25e64c738dbf9f559e
   languageName: node
   linkType: hard
 
@@ -2627,13 +2631,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.6":
-  version: 1.11.6
-  resolution: "dayjs@npm:1.11.6"
-  checksum: 18bdfd927009b68eab08dca578e421d4a581cefcbe9337f54c5d9e0d941ffb6b221c4b2c1cab15cdd9d419940e768ac4c984531461a90bbe1c158b75fe160580
-  languageName: node
-  linkType: hard
-
 "debounce@npm:^1.2.1":
   version: 1.2.1
   resolution: "debounce@npm:1.2.1"
@@ -2734,6 +2731,16 @@ __metadata:
   version: 3.1.0
   resolution: "detect-newline@npm:3.1.0"
   checksum: ae6cd429c41ad01b164c59ea36f264a2c479598e61cba7c99da24175a7ab80ddf066420f2bec9a1c57a6bead411b4655ff15ad7d281c000a89791f48cbe939e7
+  languageName: node
+  linkType: hard
+
+"devicons-react@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "devicons-react@npm:1.2.5"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: d6df8eb42c984274d03b2584751b086c1c658c92ab7c614f93f9e8897b4fc575c72db55d3bf0455b60406db812319ac1d41a13c1ef444a359f6337bccfd6e705
   languageName: node
   linkType: hard
 
@@ -5361,7 +5368,7 @@ __metadata:
     "@emotion/server": ^11.10.0
     "@mantine/carousel": 5.9.0
     "@mantine/core": 5.9.0
-    "@mantine/dates": 5.9.0
+    "@mantine/eslint-config": ^3.6.14
     "@mantine/hooks": 5.9.0
     "@mantine/next": 5.9.0
     "@mantine/prism": 5.9.0
@@ -5380,7 +5387,7 @@ __metadata:
     "@types/react": 18.0.21
     "@types/three": ^0.148.0
     cookies-next: ^2.1.1
-    dayjs: ^1.11.6
+    devicons-react: ^1.2.5
     embla-carousel-react: ^7.0.3
     jest: ^27.5.1
     next: ^13.1.3

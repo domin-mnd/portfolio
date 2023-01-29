@@ -1,11 +1,13 @@
-import type { FunctionComponent, PropsWithChildren } from "react";
-import { Card, ScrollArea, Title } from "@mantine/core";
-import { useStyles } from "./styles";
+import type { FunctionComponent, PropsWithChildren } from 'react';
+import { Card, ScrollArea, Title, CardProps } from '@mantine/core';
+import { useStyles } from './styles';
 
 /** Properties for section card */
-interface Props {
+export interface Props {
   /** Title of the section displayed either on the side or on top */
   title?: string;
+  /** Height of the scrollable area */
+  height?: string;
 }
 
 /**
@@ -14,21 +16,23 @@ interface Props {
  * @param {ReactNode} props.children Content of the section
  * @returns {FunctionComponent<PropsWithChildren<Props>>} 60vh scrollable card
  */
-export const SectionCard: FunctionComponent<PropsWithChildren<Props>> = ({
+export const SectionCard: FunctionComponent<PropsWithChildren<Props & CardProps>> = ({
   children,
   title,
+  height = '60vh',
+  ...props
 }) => {
   // Classes instead of styles because it's a component
   const { classes } = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} {...props}>
       {title && (
         <Title order={3} className={classes.title}>
           {title}
         </Title>
       )}
-      <ScrollArea className={classes.scrollArea} type="never">
+      <ScrollArea className={classes.scrollArea} sx={{ height }} type="never">
         {children}
       </ScrollArea>
     </Card>

@@ -1,21 +1,35 @@
-import type { FunctionComponent, ReactElement } from "react";
-import { Badge, Card, Group, SimpleGrid, Text } from "@mantine/core";
-import { Project, projects as projectStack } from "./config";
-import { useStyles } from "./styles";
+import type { FunctionComponent, ReactElement } from 'react';
+import { Badge, Card, Group, SimpleGrid, Text } from '@mantine/core';
+import { Project, projects as projectStack } from './config';
+import { useStyles } from './styles';
+
+/** Properties for Works component */
+export interface Props {
+  /** An array of projects to be mapped, optional - by default uses config */
+  projects?: Project[];
+  /** A filter for works to show, takes stack name as an argument, optional */
+  filter?: string;
+}
 
 /**
  * A grid of works cards taken from config
  * @param {Project[]} projects An array of projects to be mapped, optional
  * @returns {ReactElement} A grid of works cards
  */
-export const Works: FunctionComponent<{
-  projects?: Project[];
-}> = ({ projects = projectStack }): ReactElement => {
+export const Works: FunctionComponent<Props> = ({
+  projects = projectStack,
+  filter,
+}): ReactElement => {
   const { classes } = useStyles();
+
+  // Filter works by their stack if filter is provided
+  const filteredProjects = filter
+    ? projects.filter((project) => project.stack.some((stack) => stack.name === filter))
+    : projects;
 
   return (
     <SimpleGrid cols={1}>
-      {projects.map((project) => (
+      {filteredProjects.map((project) => (
         <Card
           key={project.title}
           className={classes.card}

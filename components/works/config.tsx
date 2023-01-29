@@ -1,20 +1,23 @@
-import type { MantineColor } from "@mantine/core";
-import type { StaticImageData } from "next/image";
+import type { MantineColor } from '@mantine/core';
+import type { StaticImageData } from 'next/image';
 
 // Assets for banner images
-import portfolio from "@public/works/portfolio.png";
-import splendid from "@public/works/splendid.png";
-import profileCard from "@public/works/profile-card.png";
-import wordgenJs from "@public/works/wordgen.js.png";
-import knrtukaiDiscordBot from "@public/works/knrtu-kai-discord-bot.png";
-import kaiJs from "@public/works/kai.js.png";
+import portfolio from '@public/works/portfolio.png';
+import splendid from '@public/works/splendid.png';
+import profileCard from '@public/works/profile-card.png';
+import wordgenJs from '@public/works/wordgen.js.png';
+import knrtukaiDiscordBot from '@public/works/knrtu-kai-discord-bot.png';
+import kaiJs from '@public/works/kai.js.png';
+
+/** A safe type for a hex color */
+export type HEX = `#${string}`;
 
 /** A project stack - languages, frameworks & technologies used */
 export interface Stack {
   /** Name of the stack, will be transformed to uppercase */
   name: string;
   /** Color of the stack, can be a mantine color or hex */
-  color: MantineColor | string;
+  color: MantineColor | HEX;
 }
 
 /** A project object that is being mapped and generated card from */
@@ -34,119 +37,133 @@ export interface Project {
 /** An array of projects displayed in works section as cards */
 export const projects: Project[] = [
   {
-    title: "Portfolio",
-    description: "My personal portfolio website constisting of my CV, projects and contact information. This is what you visit right now.",
+    title: 'Portfolio',
+    description:
+      'My personal portfolio website constisting of my CV, projects and contact information. This is what you visit right now.',
     banner: portfolio,
     stack: [
       {
-        name: "Next.js",
-        color: "black",
+        name: 'Next.js',
+        color: 'black',
       },
       {
-        name: "TypeScript",
-        color: "blue",
+        name: 'React',
+        color: 'cyan',
       },
       {
-        name: "Mantine",
-        color: "indigo",
+        name: 'TypeScript',
+        color: 'blue',
       },
       {
-        name: "Three.js",
-        color: "green"
-      }
+        name: 'Mantine',
+        color: 'indigo',
+      },
+      {
+        name: 'Three.js',
+        color: 'green',
+      },
     ],
-    url: "https://github.com/Domin-MND/portfolio"
+    url: 'https://github.com/Domin-MND/portfolio',
   },
   {
-    title: "Splendid",
-    description: "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+    title: 'Splendid',
+    description:
+      'Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.',
     banner: splendid,
     stack: [
       {
-        name: "NestJS",
-        color: "red",
+        name: 'NestJS',
+        color: 'red',
       },
       {
-        name: "Next.js",
-        color: "black",
+        name: 'Next.js',
+        color: 'black',
       },
       {
-        name: "TypeScript",
-        color: "blue",
+        name: 'React',
+        color: 'cyan',
       },
       {
-        name: "Prisma",
-        color: "gray",
+        name: 'TypeScript',
+        color: 'blue',
       },
       {
-        name: "Mantine",
-        color: "indigo",
-      }
+        name: 'Prisma',
+        color: 'gray',
+      },
+      {
+        name: 'Mantine',
+        color: 'indigo',
+      },
     ],
-    url: "https://github.com/splendid-cms/main"
+    url: 'https://github.com/splendid-cms/main',
   },
   {
-    title: "Profile Card",
-    description: "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+    title: 'Profile Card',
+    description:
+      "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
     banner: profileCard,
     stack: [
       {
-        name: "HTML",
-        color: "orange",
+        name: 'HTML',
+        color: 'orange',
       },
       {
-        name: "SCSS",
-        color: "pink",
+        name: 'SASS',
+        color: 'pink',
       },
       {
-        name: "TypeScript",
-        color: "blue",
-      }
+        name: 'TypeScript',
+        color: 'blue',
+      },
     ],
-    url: "https://github.com/Domin-MND/profile-card"
+    url: 'https://github.com/Domin-MND/profile-card',
   },
   {
-    title: "Wordgen.js",
-    description: "A JavaScript library that generates not existing words, but words that are similar to existing words.",
+    title: 'Wordgen.js',
+    description:
+      'A JavaScript library that generates not existing words, but words that are similar to existing words.',
     banner: wordgenJs,
     stack: [
       {
-        name: "JavaScript",
-        color: "yellow",
-      }
+        name: 'JavaScript',
+        color: 'yellow',
+      },
     ],
-    url: "https://github.com/RaydanOMGr/wordgen.js/"
+    url: 'https://github.com/RaydanOMGr/wordgen.js/',
   },
   {
-    title: "KNRTU-KAI Discord Bot",
-    description: "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+    title: 'KNRTU-KAI Discord Bot',
+    description:
+      'A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.',
     banner: knrtukaiDiscordBot,
     stack: [
       {
-        name: "Sapphire",
-        color: "blue.9",
+        name: 'Sapphire',
+        color: 'blue.9',
       },
       {
-        name: "TypeScript",
-        color: "blue",
+        name: 'TypeScript',
+        color: 'blue',
       },
       {
-        name: "Prisma",
-        color: "gray",
-      }
+        name: 'Prisma',
+        color: 'gray',
+      },
     ],
-    url: "https://github.com/supersetkai/discord-bot"
+    url: 'https://github.com/supersetkai/discord-bot',
   },
   {
-    title: "Kai.js",
-    description: "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+    title: 'Kai.js',
+    description:
+      'A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.',
     banner: kaiJs,
     stack: [
       {
-        name: "JavaScript",
-        color: "yellow",
-      }
+        name: 'JavaScript',
+        color: 'yellow',
+      },
     ],
-    url: "https://github.com/supersetkai/kai.js"
-  }
-]
+    url: 'https://github.com/supersetkai/kai.js',
+  },
+];

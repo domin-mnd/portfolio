@@ -1,8 +1,8 @@
-import { Carousel, Embla } from "@mantine/carousel";
-import { useMediaQuery } from "@mantine/hooks";
-import { FunctionComponent, ReactElement, useState } from "react";
-import { tabs } from "@component/header";
-import { NextRouter, useRouter } from "next/router";
+import { Carousel, Embla } from '@mantine/carousel';
+import { useMediaQuery } from '@mantine/hooks';
+import { FunctionComponent, ReactElement, useState } from 'react';
+import { tabs } from '@component/header';
+import { NextRouter, useRouter } from 'next/router';
 
 /**
  * A vertical carousel surrounding the entire page to scroll between sections,
@@ -22,41 +22,40 @@ export const VerticalCarousel: FunctionComponent<{
   const [emblaApi, setEmblaApi] = useState<Embla | null>(null);
 
   // Only allow dragging on mobile
-  const mobile: boolean = useMediaQuery("(max-width: 768px)");
-
-  const router: NextRouter = useRouter();
+  const mobile: boolean = useMediaQuery('(max-width: 1100px)');
 
   // Run this code only on the client side
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     // Add a wheel event listener to all scrollable cards
     // This is needed because the carousel will not scroll when the user is scrolling a card
-    document
-      .querySelectorAll(".mantine-Carousel-slide, canvas")
-      ?.forEach((element: Element) => {
-        element.addEventListener("wheel", scroll);
-      });
-    
+    document.querySelectorAll('.mantine-Carousel-slide, canvas')?.forEach((element: Element) => {
+      element.addEventListener('wheel', scroll);
+    });
+
+    const router: NextRouter = useRouter();
+
     // Disable dragging carousel when the user is scrolling the card
-    document
-      .querySelectorAll(".mantine-ScrollArea-root")
-      ?.forEach((element: Element) => {
-        element.addEventListener("touchstart", () => modScroll(false))
-        element.addEventListener("touchend", () => modScroll(mobile))
-      });
+    document.querySelectorAll('.mantine-ScrollArea-viewport')?.forEach((element: Element) => {
+      element.addEventListener('touchstart', () => modScroll(false));
+      element.addEventListener('touchend', () => modScroll(mobile));
+    });
 
     // Scroll to the correct slide when the hash changes
     // happens when the user clicks on a tab in the header
-    router.events.on("hashChangeComplete", (url: string) => {
+    router.events.on('hashChangeComplete', (url: string) => {
       // Does not include slash
-      const hash: RegExpMatchArray | "" = url.match(/#([a-z0-9]+)/gi) ?? "";
+      const hash: RegExpMatchArray | '' = url.match(/#([a-z0-9]+)/gi) ?? '';
       const index: number = tabs.findIndex((tab) => tab.href === hash[0]);
       emblaApi?.scrollTo(index);
     });
 
+    // Emit on page load
+    router.events.emit('hashChangeComplete', router.asPath);
+
     // Change the hash when the slide changes
     // Does not use router.push because it would cause a loop
     // Thus it won't emit a hashChangeComplete event
-    emblaApi?.on("select", () => {
+    emblaApi?.on('select', () => {
       const index = emblaApi?.selectedScrollSnap();
       window.location.hash = tabs[index ?? 0].href;
     });
@@ -92,7 +91,7 @@ export const VerticalCarousel: FunctionComponent<{
    */
   function modScroll(state: boolean): void {
     emblaApi?.reInit({
-      draggable: state
+      draggable: state,
     });
   }
 
@@ -109,9 +108,9 @@ export const VerticalCarousel: FunctionComponent<{
         <Carousel.Slide
           key={index}
           sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           {child}

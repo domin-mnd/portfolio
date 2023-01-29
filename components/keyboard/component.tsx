@@ -1,8 +1,8 @@
-import type { Mesh, MeshStandardMaterial } from "three";
-import type { GLTF } from "three-stdlib";
-import { OrbitControls, useGLTF } from "@react-three/drei";
-import { ReactElement, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import type { Mesh, MeshStandardMaterial } from 'three';
+import type { GLTF } from 'three-stdlib';
+import { OrbitControls, useGLTF } from '@react-three/drei';
+import { ReactElement, useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
 
 /** gltfjsx generated type */
 type GLTFResult = GLTF & {
@@ -38,10 +38,8 @@ type GLTFResult = GLTF & {
  * @param props Element props provided straight to the group
  * @returns {ReactElement} Group of meshes
  */
-export const Model = (props: JSX.IntrinsicElements["group"]): ReactElement => {
-  const { nodes, materials } = useGLTF(
-    "/keyboard.glb"
-  ) as unknown as GLTFResult;
+export const Model = (props: JSX.IntrinsicElements['group']): ReactElement => {
+  const { nodes, materials } = useGLTF('/keyboard.glb') as unknown as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
@@ -50,14 +48,11 @@ export const Model = (props: JSX.IntrinsicElements["group"]): ReactElement => {
       <mesh geometry={nodes.Object_6.geometry} material={materials.Grape} />
       <mesh geometry={nodes.Object_7.geometry} material={materials.Blueberry} />
       <mesh geometry={nodes.Object_8.geometry} material={materials.Lemon} />
-      <mesh
-        geometry={nodes.Object_9.geometry}
-        material={materials.Strawberry}
-      />
+      <mesh geometry={nodes.Object_9.geometry} material={materials.Strawberry} />
       <mesh geometry={nodes.Object_10.geometry} material={materials.Material} />
     </group>
   );
-}
+};
 
 /**
  * A keyboard model with orbit controls and auto rotation
@@ -74,9 +69,9 @@ export const Keyboard = (): ReactElement => {
   // Make a keyboard rotate left & right depending on the angle of the camera
   useFrame(() => {
     const azimuthalAngle = orbitRef.current.getAzimuthalAngle();
-    if (azimuthalAngle > .5) {
+    if (azimuthalAngle > 0.5) {
       orbitRef.current.autoRotateSpeed = 1;
-    } else if (azimuthalAngle < -.5) {
+    } else if (azimuthalAngle < -0.5) {
       orbitRef.current.autoRotateSpeed = -1;
     }
   });
@@ -103,7 +98,7 @@ export const Keyboard = (): ReactElement => {
       />
     </>
   );
-}
+};
 
 // Preload the model
-useGLTF.preload("/keyboard.glb");
+useGLTF.preload('/keyboard.glb');

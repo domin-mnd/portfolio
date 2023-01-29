@@ -1,7 +1,7 @@
-import type { FunctionComponent, ReactElement } from "react";
-import { Flex, Text } from "@mantine/core";
-import { useStyles } from "./styles";
-import { footerText } from "./config";
+import type { FunctionComponent, ReactElement } from 'react';
+import { Flex, Text } from '@mantine/core';
+import { useStyles } from './styles';
+import { footerText } from './config';
 
 /**
  * Footer component used under the page to display copyright

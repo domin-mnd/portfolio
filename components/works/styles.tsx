@@ -1,4 +1,4 @@
-import { createStyles, MantineTheme } from "@mantine/core";
+import { createStyles, MantineTheme } from '@mantine/core';
 
 export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
   // In mantine@6 getRef is removed & instead you have to import getStylesRef
