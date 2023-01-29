@@ -7,6 +7,7 @@ import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
 import { Skills } from '@component/skills';
 import { Contact } from '@component/contact';
+import { About } from '@component/about';
 
 // An index page (/)
 export default (): ReactNode => (
@@ -37,6 +38,9 @@ export default (): ReactNode => (
           DOMIN
         </Text>
       </>,
+      <SectionCard title="About">
+        <About />
+      </SectionCard>,
       <SectionCard title="Works">
         <Works />
       </SectionCard>,

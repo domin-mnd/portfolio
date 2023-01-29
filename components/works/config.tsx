@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     title: 'Portfolio',
     description:
-      'My personal portfolio website constisting of my CV, projects and contact information. This is what you visit right now.',
+      'My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.',
     banner: portfolio,
     stack: [
       {
@@ -96,7 +96,7 @@ export const projects: Project[] = [
         color: 'indigo',
       },
     ],
-    url: 'https://github.com/splendid-cms/main',
+    url: 'https://github.com/splendid-cms/main/tree/rewrite',
   },
   {
     title: 'Profile Card',

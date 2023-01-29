@@ -1,18 +1,24 @@
-import { IconBrandGithub, IconBrandReddit, IconBrandTwitter, TablerIcon } from '@tabler/icons';
+import {
+  IconBrandGithub,
+  IconBrandReddit,
+  IconBrandTwitter,
+  IconMail,
+  TablerIcon,
+} from '@tabler/icons';
 
-/** A social media link used in the contact card */
+/** A social link used in the contact card */
 export interface Social {
-  /** The name of the social media */
+  /** The name of the external source */
   name: string;
-  /** The link to the social media */
+  /** The link to the external source */
   href: string;
   /** Username */
   username?: string;
-  /** The icon of the social media */
+  /** The icon of the external source */
   icon: TablerIcon;
 }
 
-// Social medias
+/** Social medias / Email / Phone (no phone number because yes) */
 export const socials: Social[] = [
   {
     name: 'GitHub',
@@ -31,5 +37,11 @@ export const socials: Social[] = [
     href: 'https://twitter.com/Dominiff',
     username: 'Dominiff',
     icon: IconBrandTwitter,
+  },
+  {
+    name: 'Email',
+    href: 'mailto:domin@is-a.tech',
+    username: 'Domin',
+    icon: IconMail,
   },
 ];

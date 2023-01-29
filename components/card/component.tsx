@@ -20,7 +20,7 @@ export const SectionCard: FunctionComponent<PropsWithChildren<Props & CardProps>
   children,
   title,
   height = '60vh',
-  ...props
+  ...props // Mantine card props
 }) => {
   // Classes instead of styles because it's a component
   const { classes } = useStyles();
@@ -32,9 +32,14 @@ export const SectionCard: FunctionComponent<PropsWithChildren<Props & CardProps>
           {title}
         </Title>
       )}
-      <ScrollArea className={classes.scrollArea} sx={{ height }} type="never">
+      <ScrollArea.Autosize
+        className={classes.scrollArea}
+        maxHeight={height}
+        type="never"
+        sx={{ overflow: 'hidden' }}
+      >
         {children}
-      </ScrollArea>
+      </ScrollArea.Autosize>
     </Card>
   );
 };

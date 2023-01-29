@@ -6,8 +6,6 @@
 
 This work is my new portfolio site built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/) & [Mantine](https://mantine.dev/). A website presents a single page application with carousel consisting of sections presented in the header.
 
-> Note: This project is still in development and has serious bugs. Overall you shouldn't use it under any circumstances. Even if you want to, some sections are not ready yet.
-
 ## Installation
 
 To run this project locally, you need to have [Node.js](https://nodejs.org/en/) installed on your machine:
@@ -29,9 +27,12 @@ vercel # deploy the project
 ## Configuration
 
 You can configure the project by editing the `config.tsx` files in the following components:
-- `components/header/config.tsx` (for the header section)
+- `components/about/config.tsx` (for the About card)
+- `components/contact/config.tsx` (for the Contact card)
 - `components/footer/config.tsx` (for the footer section)
-- `components/works/config.tsx` (for the works section)
+- `components/header/config.tsx` (for the header section)
+- `components/skills/config.tsx` (for the Skills card)
+- `components/works/config.tsx` (for the Works card)
 
 ## Contributing
 
@@ -40,3 +41,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 This project is under [MIT](https://choosealicense.com/licenses/mit/) license. You can freely use it for your own purposes.
+
+## To do
+
+- [ ] Internationalization (This includes documentation & website translation)
+- [ ] Better slide scroll
+- [ ] Better configuration
+- [ ] Documentation

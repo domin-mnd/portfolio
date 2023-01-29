@@ -4,6 +4,7 @@ import { skills as oSkills, Stack } from './config';
 import { useStyles } from './styles';
 import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
+import { useMediaQuery } from '@mantine/hooks';
 
 /** Skills properties */
 export interface Props {
@@ -22,6 +23,8 @@ export const Skills: FunctionComponent<Props> = ({ skills = oSkills }): ReactEle
   const [opened, setOpened] = useState(false);
   // Selected stack to show for the modal
   const [selected, setSelected] = useState<Stack | null>(null);
+  // Whether to blur the background of the modal or not
+  const mobile = useMediaQuery('(max-width: 980px)');
 
   // Examples of works
   const Examples = Works({
@@ -60,6 +63,7 @@ export const Skills: FunctionComponent<Props> = ({ skills = oSkills }): ReactEle
         opened={opened}
         centered
         onClose={() => setOpened(false)}
+        overlayBlur={mobile ? 0 : 5}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>
             {selected?.name}

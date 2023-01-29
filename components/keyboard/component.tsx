@@ -39,7 +39,7 @@ type GLTFResult = GLTF & {
  * @returns {ReactElement} Group of meshes
  */
 export const Model = (props: JSX.IntrinsicElements['group']): ReactElement => {
-  const { nodes, materials } = useGLTF('/keyboard.glb') as unknown as GLTFResult;
+  const { nodes, materials } = useGLTF('/landing/keyboard.glb') as unknown as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
@@ -101,4 +101,4 @@ export const Keyboard = (): ReactElement => {
 };
 
 // Preload the model
-useGLTF.preload('/keyboard.glb');
+useGLTF.preload('/landing/keyboard.glb');

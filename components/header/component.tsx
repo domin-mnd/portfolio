@@ -18,8 +18,7 @@ export const Header: FunctionComponent = (): ReactElement => {
   const [opened, { toggle, close }] = useDisclosure(false);
 
   // Does not include slash
-  const query: RegExpMatchArray | null = router.asPath.match(/#([a-z0-9]+)/gi);
-  const [hash, setHash] = useState<string>(query ? query[0] : '#');
+  const [hash, setHash] = useState<string>('#');
 
   // Mapped tabs taken from config
   const tabs = oTabs.map((tab) => (
@@ -27,6 +26,12 @@ export const Header: FunctionComponent = (): ReactElement => {
       {tab.node ? tab.node(tab.label) : tab.label}
     </Tabs.Tab>
   ));
+
+  if (typeof window !== 'undefined') {
+    router.events.on('hashChangeStart', (href) => {
+      setHash(href);
+    });
+  }
 
   /**
    * replaces the hash in the url with the href provided

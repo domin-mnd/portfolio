@@ -1,6 +1,6 @@
 import { Carousel, Embla } from '@mantine/carousel';
-import { useMediaQuery } from '@mantine/hooks';
-import { FunctionComponent, ReactElement, useState } from 'react';
+import { useMediaQuery, useToggle } from '@mantine/hooks';
+import { FunctionComponent, ReactElement, useEffect, useReducer, useState } from 'react';
 import { tabs } from '@component/header';
 import { NextRouter, useRouter } from 'next/router';
 
@@ -42,22 +42,50 @@ export const VerticalCarousel: FunctionComponent<{
 
     // Scroll to the correct slide when the hash changes
     // happens when the user clicks on a tab in the header
-    router.events.on('hashChangeComplete', (url: string) => {
+    router.events.on('hashChangeComplete', (url: string): void => {
       // Does not include slash
-      const hash: RegExpMatchArray | '' = url.match(/#([a-z0-9]+)/gi) ?? '';
-      const index: number = tabs.findIndex((tab) => tab.href === hash[0]);
-      emblaApi?.scrollTo(index);
+      const hash: RegExpMatchArray | '#' = url.match(/#([a-z0-9]+)/gi) ?? '#';
+
+      // Find the index of the tab with the same href as the hash
+      // Else if no index is found, find the index of the first tab with the same href as the hash
+      const index: number | number[] =
+        tabs.find((tab) => tab.href === hash[0])?.index ??
+        tabs.findIndex((tab) => tab.href === hash[0]);
+
+      // Turn the index into an array if it's not one
+      const value: number[] = Array.isArray(index) ? index : [index];
+      if (value.length === 1) return emblaApi?.scrollTo(value[0]);
+
+      const currentSlide: number = emblaApi?.selectedScrollSnap() ?? 0;
+      // Find the index of the current slide in the array
+      const slideIndex: number = value.indexOf(currentSlide);
+      // If the current slide is not in the array, get the last one
+      const foundSlide: number = slideIndex === -1 ? value.length - 1 : slideIndex;
+      // Scroll the array so that the current slide is the first one
+      // Then get the next slide
+      const toggledValue: number = value.slice(foundSlide).concat(value.slice(0, foundSlide))[1];
+
+      emblaApi?.scrollTo(toggledValue);
     });
 
-    // Emit on page load
-    router.events.emit('hashChangeComplete', router.asPath);
+    // Emit on page load if the hash is not home
+    if (['/#', '/'].indexOf(router.asPath) === -1) {
+      const hash: RegExpMatchArray | '#' = router.asPath.match(/#([a-z0-9]+)/gi) ?? '#';
+      router.events.emit('hashChangeStart', hash[0]);
+      router.events.emit('hashChangeComplete', router.asPath);
+    }
 
     // Change the hash when the slide changes
     // Does not use router.push because it would cause a loop
     // Thus it won't emit a hashChangeComplete event
     emblaApi?.on('select', () => {
       const index = emblaApi?.selectedScrollSnap();
-      window.location.hash = tabs[index ?? 0].href;
+      const found =
+        tabs.find((tab) =>
+          typeof tab.index === 'number' ? tab.index === index : tab.index?.some((i) => i === index)
+        ) ?? tabs[0];
+      router.events.emit('hashChangeStart', found.href);
+      window.location.hash = found.href;
     });
   }
 

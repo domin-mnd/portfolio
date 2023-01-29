@@ -39,8 +39,13 @@ export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
 
     title: {
       color: theme.white,
-      lineHeight: 1,
+      // lineHeight: 1,
       fontWeight: 500,
+      textAlign: 'center',
+
+      [theme.fn.smallerThan('xs')]: {
+        fontSize: theme.fontSizes.xl * 1.3,
+      },
     },
 
     description: {

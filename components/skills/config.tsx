@@ -9,6 +9,7 @@ import {
   ReduxOriginal,
   NextjsOriginal,
   VuejsOriginal,
+  NestjsPlain,
   PythonOriginal,
   RustPlain,
 } from 'devicons-react';
@@ -124,6 +125,15 @@ export const skills: Stack[] = [
       'A JavaScript framework for building user interfaces. Got no projects using Vue.js but had some abandoned.',
     href: 'https://vuejs.org/',
     icon: VuejsOriginal,
+  },
+  {
+    name: 'NestJS',
+    knowledge: 73,
+    color: '#E0234E',
+    description:
+      'A progressive Node.js framework for building efficient, reliable and scalable server-side applications.',
+    href: 'https://nestjs.com/',
+    icon: NestjsPlain,
   },
   {
     name: 'Python',
