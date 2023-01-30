@@ -1,14 +1,6 @@
 import type { FunctionComponent, PropsWithChildren } from 'react';
-import { Card, ScrollArea, Title, CardProps } from '@mantine/core';
+import { Card, ScrollArea, Title, CardProps as MantineCardProps } from '@mantine/core';
 import { useStyles } from './styles';
-
-/** Properties for section card */
-export interface Props {
-  /** Title of the section displayed either on the side or on top */
-  title?: string;
-  /** Height of the scrollable area */
-  height?: string;
-}
 
 /**
  * Section component used under the landing page to display content
@@ -16,7 +8,7 @@ export interface Props {
  * @param {ReactNode} props.children Content of the section
  * @returns {FunctionComponent<PropsWithChildren<Props>>} 60vh scrollable card
  */
-export const SectionCard: FunctionComponent<PropsWithChildren<Props & CardProps>> = ({
+export const SectionCard: FunctionComponent<PropsWithChildren<CardProps & MantineCardProps>> = ({
   children,
   title,
   height = '60vh',

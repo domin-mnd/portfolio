@@ -9,31 +9,6 @@ import wordgenJs from '@public/works/wordgen.js.png';
 import knrtukaiDiscordBot from '@public/works/knrtu-kai-discord-bot.png';
 import kaiJs from '@public/works/kai.js.png';
 
-/** A safe type for a hex color */
-export type HEX = `#${string}`;
-
-/** A project stack - languages, frameworks & technologies used */
-export interface Stack {
-  /** Name of the stack, will be transformed to uppercase */
-  name: string;
-  /** Color of the stack, can be a mantine color or hex */
-  color: MantineColor | HEX;
-}
-
-/** A project object that is being mapped and generated card from */
-export interface Project {
-  /** Title of the project displayed as the white upper text */
-  title: string;
-  /** Description of the project displayed as the dimmed color text */
-  description: string;
-  /** Banner image of the project, can be a nextjs module import */
-  banner: StaticImageData;
-  /** Stack of the project */
-  stack: Stack[];
-  /** URL of the project, redirects in the new tab on card click */
-  url?: string;
-}
-
 /** An array of projects displayed in works section as cards */
 export const projects: Project[] = [
   {

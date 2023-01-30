@@ -1,4 +1,3 @@
-import type { FunctionComponent } from 'react';
 import {
   JavaOriginal,
   JavascriptOriginal,
@@ -13,42 +12,6 @@ import {
   PythonOriginal,
   RustPlain,
 } from 'devicons-react';
-
-/** A type for SVG props of a devicon icon used in stack */
-export interface IconProps extends React.SVGProps<SVGElement> {
-  /** A size of the icon */
-  size?: number | string;
-}
-
-/** A type for enumerating an integer */
-export type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
-  ? Acc[number]
-  : Enumerate<N, [...Acc, Acc['length']]>;
-
-/** A type for finding a range of integers */
-export type IntRange<F extends number, T extends number> = Exclude<
-  Enumerate<T>, // A range starting point
-  Enumerate<F> // A range ending point, excluding the starting point
->;
-
-/** A safe type for a hex color */
-export type HEX = `#${string}`;
-
-/** An object for a stack, is a child in skills array */
-export interface Stack {
-  /** The name of the stack: language, framework, tech etc. */
-  name: string;
-  /** A knowledge level used in the progress bar with the range of 1 to 100 */
-  knowledge: IntRange<1, 101>;
-  /** Color of the stack, can only be hex */
-  color: HEX;
-  /** A description of the stack/your knowledge/experience */
-  description?: string;
-  /** A link to the technology */
-  href: string;
-  /** An icon */
-  icon: FunctionComponent<IconProps>;
-}
 
 /** An array of stacks used in Skills component in skills section */
 export const skills: Stack[] = [

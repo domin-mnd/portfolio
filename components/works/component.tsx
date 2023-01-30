@@ -1,22 +1,14 @@
 import type { FunctionComponent, ReactElement } from 'react';
 import { Badge, Card, Group, SimpleGrid, Text } from '@mantine/core';
-import { Project, projects as projectStack } from './config';
+import { projects as projectStack } from './config';
 import { useStyles } from './styles';
-
-/** Properties for Works component */
-export interface Props {
-  /** An array of projects to be mapped, optional - by default uses config */
-  projects?: Project[];
-  /** A filter for works to show, takes stack name as an argument, optional */
-  filter?: string;
-}
 
 /**
  * A grid of works cards taken from config
  * @param {Project[]} projects An array of projects to be mapped, optional
  * @returns {ReactElement} A grid of works cards
  */
-export const Works: FunctionComponent<Props> = ({
+export const Works: FunctionComponent<WorksProps> = ({
   projects = projectStack,
   filter,
 }): ReactElement => {

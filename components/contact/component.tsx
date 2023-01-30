@@ -1,8 +1,10 @@
-import { ActionIcon, Group, Title } from '@mantine/core';
+import { ActionIcon, Group, Title, Tooltip } from '@mantine/core';
 import type { ReactElement } from 'react';
 import { useStyles } from './styles';
-import { socials, Social } from './config';
+import { socials } from './config';
 import Kazan from '@public/contacts/kazan.jpg';
+
+import { about } from '@component/about';
 
 /**
  * Contact card with a banner image and social media links along with overlay & some information
@@ -31,21 +33,23 @@ export const Contact = (): ReactElement => {
       >
         <Group>
           {socials.map((social: Social) => (
-            <ActionIcon
-              key={social.name}
-              size={28}
-              className={classes.social}
-              variant="transparent"
-              component="a"
-              href={social.href}
-              target="_blank"
-            >
-              <social.icon size={22} stroke={1.5} />
-            </ActionIcon>
+            <Tooltip label={social.username ?? social.name} bg="white" c="black" withArrow>
+              <ActionIcon
+                key={social.name}
+                size={28}
+                className={classes.social}
+                variant="transparent"
+                component="a"
+                href={social.href}
+                target="_blank"
+              >
+                <social.icon size={22} stroke={1.5} />
+              </ActionIcon>
+            </Tooltip>
           ))}
         </Group>
         <Title className={classes.title} my="xl">
-          Kamil Sakhabutdinov
+          {about.name.join(' ')}
         </Title>
       </div>
     </div>

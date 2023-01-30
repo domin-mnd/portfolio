@@ -5,6 +5,8 @@ import { MantineProvider, AppShell, Box } from '@mantine/core';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 
+import { about } from '@component/about';
+
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
   subsets: ['latin'],
@@ -18,7 +20,7 @@ export default (props: AppProps) => {
   return (
     <>
       <Head>
-        <title>Me</title>
+        <title>{about.name[0]}</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>

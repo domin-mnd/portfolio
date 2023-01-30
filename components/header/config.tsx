@@ -1,22 +1,10 @@
-import type { FunctionComponent, ReactNode } from 'react';
+import { about } from '@component/about';
 import { Text } from '@mantine/core';
-
-/** An object defining a tab */
-export interface Tab {
-  /** Label displayed as the name of the tab */
-  label: string;
-  /** href used to navigate to the tab, has to be defined starting with hash */
-  href: string;
-  /** ReactNode displayed instead of label, custom element */
-  node?: (label: string) => ReactNode;
-  /** A custom index of the slide to scroll to */
-  index?: number | number[];
-}
 
 /** An array of tabs displayed in header & mobile drawer */
 export const tabs: Tab[] = [
   {
-    label: 'Domin',
+    label: about.username || 'Me',
     href: '#',
     index: [0, 1],
     node: (label: string) => (

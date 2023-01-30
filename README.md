@@ -29,8 +29,8 @@ vercel # deploy the project
 You can configure the project by editing the `config.tsx` files in the following components:
 - `components/about/config.tsx` (for the About card)
 - `components/contact/config.tsx` (for the Contact card)
-- `components/footer/config.tsx` (for the footer section)
-- `components/header/config.tsx` (for the header section)
+- `components/footer/config.tsx` (for the footer component)
+- `components/header/config.tsx` (for the header component)
 - `components/skills/config.tsx` (for the Skills card)
 - `components/works/config.tsx` (for the Works card)
 
@@ -45,6 +45,7 @@ This project is under [MIT](https://choosealicense.com/licenses/mit/) license. Y
 ## To do
 
 - [ ] Internationalization (This includes documentation & website translation)
+- [ ] Tests
 - [ ] Better slide scroll
-- [ ] Better configuration
-- [ ] Documentation
+- [x] Better configuration
+- [x] Documentation

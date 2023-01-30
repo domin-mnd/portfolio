@@ -1,22 +1,4 @@
-import {
-  IconBrandGithub,
-  IconBrandReddit,
-  IconBrandTwitter,
-  IconMail,
-  TablerIcon,
-} from '@tabler/icons';
-
-/** A social link used in the contact card */
-export interface Social {
-  /** The name of the external source */
-  name: string;
-  /** The link to the external source */
-  href: string;
-  /** Username */
-  username?: string;
-  /** The icon of the external source */
-  icon: TablerIcon;
-}
+import { IconBrandGithub, IconBrandReddit, IconBrandTwitter, IconMail } from '@tabler/icons';
 
 /** Social medias / Email / Phone (no phone number because yes) */
 export const socials: Social[] = [

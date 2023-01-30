@@ -1,6 +1,6 @@
 import { Carousel, Embla } from '@mantine/carousel';
-import { useMediaQuery, useToggle } from '@mantine/hooks';
-import { FunctionComponent, ReactElement, useEffect, useReducer, useState } from 'react';
+import { useMediaQuery } from '@mantine/hooks';
+import { FunctionComponent, ReactElement, useState } from 'react';
 import { tabs } from '@component/header';
 import { NextRouter, useRouter } from 'next/router';
 

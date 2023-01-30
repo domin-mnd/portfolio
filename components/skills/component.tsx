@@ -1,23 +1,17 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
 import { Card, Container, Modal, Progress, SimpleGrid, Text } from '@mantine/core';
-import { skills as oSkills, Stack } from './config';
+import { skills as oSkills } from './config';
 import { useStyles } from './styles';
 import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
 import { useMediaQuery } from '@mantine/hooks';
-
-/** Skills properties */
-export interface Props {
-  /** An array of stacks used in skills section */
-  skills?: Stack[];
-}
 
 /**
  * A grid of skills with a color radial gradient and a modal with examples of works
  * @param {Stack[]} props.skills An array of stacks used in Skills component in skills section
  * @returns {ReactElement} A grid of skills
  */
-export const Skills: FunctionComponent<Props> = ({ skills = oSkills }): ReactElement => {
+export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): ReactElement => {
   const { classes } = useStyles();
   // Modal state
   const [opened, setOpened] = useState(false);
