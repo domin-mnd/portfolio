@@ -1,7 +1,7 @@
 import type { Mesh, MeshStandardMaterial } from 'three';
 import type { GLTF } from 'three-stdlib';
 import { OrbitControls, useGLTF } from '@react-three/drei';
-import { ReactElement, useRef } from 'react';
+import { FunctionComponent, ReactElement, useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 
 /** gltfjsx generated type */
@@ -38,7 +38,9 @@ type GLTFResult = GLTF & {
  * @param props Element props provided straight to the group
  * @returns {ReactElement} Group of meshes
  */
-export const Model = (props: JSX.IntrinsicElements['group']): ReactElement => {
+export const Model: FunctionComponent<JSX.IntrinsicElements['group']> = (
+  props: JSX.IntrinsicElements['group']
+): ReactElement => {
   const { nodes, materials } = useGLTF('/landing/keyboard.glb') as unknown as GLTFResult;
 
   return (
@@ -59,7 +61,7 @@ export const Model = (props: JSX.IntrinsicElements['group']): ReactElement => {
  * @see {@link https://docs.pmnd.rs/react-three-fiber/api/canvas Canvas API}
  * @returns {ReactElement} Orbit controls and keyboard model that have to be wrapped in canvas
  */
-export const Keyboard = (): ReactElement => {
+export const Keyboard: FunctionComponent = (): ReactElement => {
   // Model mesh ref
   const meshRef: any = useRef();
 

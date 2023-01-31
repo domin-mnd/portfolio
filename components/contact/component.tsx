@@ -1,5 +1,5 @@
+import type { FunctionComponent, ReactElement } from 'react';
 import { ActionIcon, Group, Title, Tooltip } from '@mantine/core';
-import type { ReactElement } from 'react';
 import { useStyles } from './styles';
 import { socials } from './config';
 import Kazan from '@public/contacts/kazan.jpg';
@@ -10,7 +10,7 @@ import { about } from '@component/about';
  * Contact card with a banner image and social media links along with overlay & some information
  * @returns {ReactElement} Contact card with a banner image and social media links
  */
-export const Contact = (): ReactElement => {
+export const Contact: FunctionComponent = (): ReactElement => {
   const { classes } = useStyles();
 
   return (

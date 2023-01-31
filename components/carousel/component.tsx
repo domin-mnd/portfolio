@@ -1,6 +1,5 @@
 import { Carousel, Embla } from '@mantine/carousel';
-import { useMediaQuery } from '@mantine/hooks';
-import { FunctionComponent, ReactElement, useState } from 'react';
+import { FunctionComponent, PropsWithChildren, ReactElement, useState, Children } from 'react';
 import { tabs } from '@component/header';
 import { NextRouter, useRouter } from 'next/router';
 
@@ -11,9 +10,9 @@ import { NextRouter, useRouter } from 'next/router';
  * @param {ReactElement[]} props.slides Array of slides to display
  * @returns {ReactElement} 100vh embla carousel
  */
-export const VerticalCarousel: FunctionComponent<{
-  slides: ReactElement[];
-}> = ({ slides }): ReactElement => {
+export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
+  children,
+}): ReactElement => {
   // Embla API to control the carousel
   // setting it to null because it's not defined on the server side
   // using setEmblaApi causes a re-render loop,
@@ -22,7 +21,10 @@ export const VerticalCarousel: FunctionComponent<{
   const [emblaApi, setEmblaApi] = useState<Embla | null>(null);
 
   // Only allow dragging on mobile
-  const mobile: boolean = useMediaQuery('(max-width: 1100px)');
+  // Won't update on resize, to not cause a re-render
+  // In case there is a re-render, carousel's scroll will twice the action
+  const mobile: boolean =
+    typeof window !== 'undefined' ? window.matchMedia('(max-width: 768px)').matches : false;
 
   // Run this code only on the client side
   if (typeof window !== 'undefined') {
@@ -132,7 +134,7 @@ export const VerticalCarousel: FunctionComponent<{
       withControls={false}
       getEmblaApi={setEmblaApi}
     >
-      {slides.map((child: ReactElement, index: number) => (
+      {Children.map(children, (child, index) => (
         <Carousel.Slide
           key={index}
           sx={{

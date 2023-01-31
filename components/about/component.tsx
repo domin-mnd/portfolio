@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+import type { FunctionComponent, ReactElement } from 'react';
 import { Avatar, Flex, Text, Title } from '@mantine/core';
 import { about } from './config';
 import { useStyles } from './styles';
@@ -8,7 +8,7 @@ import { useMediaQuery } from '@mantine/hooks';
  * An about section with information about the person
  * @returns {ReactElement} A flex card with information about the person
  */
-export const About = (): ReactElement => {
+export const About: FunctionComponent = (): ReactElement => {
   const { classes } = useStyles();
   // Decide the order of the title
   const mobile = useMediaQuery('(max-width: 360px');

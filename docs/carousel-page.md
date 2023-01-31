@@ -11,7 +11,7 @@ This guide explains how carousel & header components work together to create a p
 - [Events](#Events)
   - [hashChangeComplete](#hashChangeComplete)
   - [wheel](#wheel)
-  - [touchstart & touchend](#touchstart-&-touchend)
+  - [touchstart & touchend](#touchstart--touchend)
   - [hashChangeStart](#hashChangeStart)
 - [Emitting events](#Emitting-events)
 - [Conclusion](#Conclusion)
