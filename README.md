@@ -49,3 +49,6 @@ This project is under [MIT](https://choosealicense.com/licenses/mit/) license. Y
 - [ ] Better slide scroll
 - [x] Better configuration
 - [x] Documentation
+- [ ] Revamp the mobile drawer
+- [ ] Meta tags
+- [ ] Better SEO

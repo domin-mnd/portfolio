@@ -44,7 +44,7 @@ export const skills: Stack[] = [
     name: 'Tailwind CSS',
     knowledge: 74,
     color: '#38B2AC',
-    description: 'A utility-first CSS framework.',
+    description: 'A utility-first CSS framework. Not really a fan of it but it is useful.',
     href: 'https://tailwindcss.com/',
     icon: TailwindcssPlain,
   },
@@ -85,7 +85,7 @@ export const skills: Stack[] = [
     knowledge: 61,
     color: '#4FC08D',
     description:
-      'A JavaScript framework for building user interfaces. Got no projects using Vue.js but had some abandoned.',
+      'A JavaScript framework for building user interfaces. In my opinion it is the amazing framework for beginners.',
     href: 'https://vuejs.org/',
     icon: VuejsOriginal,
   },

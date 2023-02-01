@@ -33,9 +33,8 @@ export const Contact: FunctionComponent = (): ReactElement => {
       >
         <Group>
           {socials.map((social: Social) => (
-            <Tooltip label={social.username ?? social.name} bg="white" c="black" withArrow>
+            <Tooltip key={social.name} label={social.username ?? social.name} bg="white" c="black" withArrow>
               <ActionIcon
-                key={social.name}
                 size={28}
                 className={classes.social}
                 variant="transparent"

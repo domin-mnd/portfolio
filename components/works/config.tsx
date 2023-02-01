@@ -4,6 +4,7 @@ import type { StaticImageData } from 'next/image';
 // Assets for banner images
 import portfolio from '@public/works/portfolio.png';
 import splendid from '@public/works/splendid.png';
+import todoTracker from '@public/works/todo-tracker.png';
 import profileCard from '@public/works/profile-card.png';
 import wordgenJs from '@public/works/wordgen.js.png';
 import knrtukaiDiscordBot from '@public/works/knrtu-kai-discord-bot.png';
@@ -72,6 +73,23 @@ export const projects: Project[] = [
       },
     ],
     url: 'https://github.com/splendid-cms/main/tree/rewrite',
+  },
+  {
+    title: 'Todo tracker',
+    description:
+      "A simple todo app built with Vue.js and Tailwind CSS. Is as simple as it sounds.",
+    banner: todoTracker,
+    stack: [
+      {
+        name: 'Vue.js',
+        color: 'teal.9',
+      },
+      {
+        name: 'Tailwind CSS',
+        color: 'cyan',
+      }
+    ],
+    url: 'https://github.com/Domin-MND/todo-tracker'
   },
   {
     title: 'Profile Card',
