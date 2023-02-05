@@ -12,7 +12,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     [theme.fn.smallerThan('xs')]: {
       height: 40,
       backdropFilter: 'unset',
-      backgroundColor: theme.colors.gray[0] + 'de', // Adding alpha channel transparency
+      backgroundColor: theme.fn.rgba(theme.colors.gray[0], 0.87),
     },
   },
 }));

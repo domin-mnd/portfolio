@@ -45,10 +45,9 @@ This project is under [MIT](https://choosealicense.com/licenses/mit/) license. Y
 ## To do
 
 - [ ] Internationalization (This includes documentation & website translation)
-- [ ] Tests
-- [ ] Better slide scroll
+- [ ] Better slide scroll (waiting for embla-carousel to be updated)
 - [x] Better configuration
 - [x] Documentation
-- [ ] Revamp the mobile drawer
-- [ ] Meta tags
-- [ ] Better SEO
+- [x] Revamp the mobile drawer
+- [x] Meta tags
+- [x] 404 page

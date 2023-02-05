@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     title: 'Todo tracker',
     description:
-      "A simple todo app built with Vue.js and Tailwind CSS. Is as simple as it sounds.",
+      "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
     banner: todoTracker,
     stack: [
       {

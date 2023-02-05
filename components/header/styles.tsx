@@ -10,7 +10,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
     [theme.fn.smallerThan('xs')]: {
       backdropFilter: 'unset',
-      backgroundColor: theme.colors.gray[0] + 'de', // Adding alpha channel transparency
+      backgroundColor: theme.fn.rgba(theme.colors.gray[0], 0.87),
     },
   },
 
@@ -20,7 +20,17 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     },
   },
 
-  drawer: {},
+  drawerHeader: {
+    justifyContent: "center"
+  },
+
+  drawerContent: {
+    backgroundColor: theme.colors.gray[0]
+  },
+
+  drawerTitle: {
+    display: 'none',
+  },
 
   mobile: {
     [theme.fn.smallerThan('xs')]: {
@@ -41,11 +51,11 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     height: 38,
 
     '&:hover': {
-      backgroundColor: theme.colors.gray[3] + '5e', // Adding alpha channel transparency
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37)
     },
 
     [theme.fn.smallerThan('xs')]: {
-      border: '1px solid transparent',
+      justifyContent: 'center',
       '&[data-active]': {
         ':before': {
           width: 0,
@@ -55,10 +65,10 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
     '&[data-active]': {
       color: 'unset',
-      backgroundColor: theme.colors.gray[3] + '5e', // Adding alpha channel transparency
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
 
       ':hover': {
-        backgroundColor: theme.colors.gray[3] + '5e', // Adding alpha channel transparency
+        backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37)
       },
     },
   },

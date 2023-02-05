@@ -7,11 +7,8 @@
     "typecheck": "tsc --noEmit",
     "export": "next build && next export",
     "lint": "next lint",
-    "jest": "jest",
-    "jest:watch": "jest --watch",
     "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
-    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
-    "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest"
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -37,17 +34,10 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.4",
-    "@testing-library/dom": "^8.12.0",
-    "@testing-library/jest-dom": "^5.16.3",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^14.0.4",
-    "@types/jest": "^27.4.1",
     "@types/node": "^18.11.4",
     "@types/react": "18.0.21",
     "@types/three": "^0.148.0",
-    "jest": "^27.5.1",
     "prettier": "^2.7.1",
-    "ts-jest": "^27.1.4",
     "typescript": "4.8.4"
   },
   "packageManager": "yarn@3.3.1"

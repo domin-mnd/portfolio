@@ -69,7 +69,11 @@ export const Header: FunctionComponent = (): ReactElement => {
       </Group>
       <Drawer
         opened={opened}
-        className={classes.drawer}
+        classNames={{
+          header: classes.drawerHeader,
+          drawer: classes.drawerContent,
+          title: classes.drawerTitle,
+        }}
         onClose={toggle}
         transition="slide-down"
         position="top"
