@@ -23,7 +23,7 @@ export default (): ReactNode => (
       <SectionCard title="Skills">
         <Skills />
       </SectionCard>
-      <SectionCard title="Contacts">
+      <SectionCard title="Contact">
         <Contact />
       </SectionCard>
     </VerticalCarousel>
