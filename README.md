@@ -34,6 +34,8 @@ You can configure the project by editing the `config.tsx` files in the following
 - `components/skills/config.tsx` (for the Skills card)
 - `components/works/config.tsx` (for the Works card)
 
+> Note: After adding i18n support, the configuration will be partiallyy moved to the `public/locales` directory. More documentation will be added soon.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

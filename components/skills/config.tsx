@@ -44,7 +44,7 @@ export const skills: Stack[] = [
     name: 'Tailwind CSS',
     knowledge: 74,
     color: '#38B2AC',
-    description: 'A utility-first CSS framework. Not really a fan of it but it is useful.',
+    description: 'A utility-first CSS framework for rapidly building custom designs.',
     href: 'https://tailwindcss.com/',
     icon: TailwindcssPlain,
   },

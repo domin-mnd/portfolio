@@ -87,6 +87,10 @@ export const projects: Project[] = [
       {
         name: 'Tailwind CSS',
         color: 'cyan',
+      },
+      {
+        name: 'Firebase',
+        color: 'orange',
       }
     ],
     url: 'https://github.com/Domin-MND/todo-tracker'
@@ -115,7 +119,7 @@ export const projects: Project[] = [
   {
     title: 'Wordgen.js',
     description:
-      'A JavaScript library that generates not existing words, but words that are similar to existing words.',
+      'A JavaScript library that generates not existing words, but words that are similar to existing.',
     banner: wordgenJs,
     stack: [
       {

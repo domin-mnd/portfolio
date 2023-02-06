@@ -27,9 +27,12 @@
     "cookies-next": "^2.1.1",
     "devicons-react": "^1.2.5",
     "embla-carousel-react": "^7.0.3",
+    "i18next": "^22.4.9",
     "next": "^13.1.3",
+    "next-i18next": "^13.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.5",
     "sharp": "^0.31.3",
     "three": "^0.148.0"
   },

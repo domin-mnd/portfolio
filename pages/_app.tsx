@@ -5,15 +5,16 @@ import { MantineProvider, AppShell, Box } from '@mantine/core';
 import { Header } from '@component/header';
 import { Footer } from '@component/footer';
 import { about } from '@component/about';
+import { appWithTranslation } from 'next-i18next';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
   display: 'optional',
 });
 
 // An app wrapper with MantineProvider
-export default ({ Component, ...pageProps }: AppProps) => (
+const App = ({ Component, ...pageProps }: AppProps) => (
   <>
     <Head>
       <title>{about.name[0]}</title>
@@ -56,3 +57,5 @@ export default ({ Component, ...pageProps }: AppProps) => (
     </MantineProvider>
   </>
 );
+
+export default appWithTranslation(App);
