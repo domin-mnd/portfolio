@@ -1,0 +1,55 @@
+{
+  "section-name": "Skills",
+  "examples-label": "Examples:",
+  "knowledge-label": "My knowledge of {{skillName}}:",
+  "skills": {
+    "Java": {
+      "name": "Java",
+      "description": "I started my programming journey with Java for mobile development and I still love it to this day."
+    },
+    "JavaScript": {
+      "name": "JavaScript",
+      "description": "After some time I switched to web development and all started with JavaScript."
+    },
+    "SASS": {
+      "name": "SASS",
+      "description": "A preprocessor scripting language that is interpreted or compiled into CSS."
+    },
+    "Tailwind CSS": {
+      "name": "Tailwind CSS",
+      "description": "A utility-first CSS framework for rapidly building custom designs."
+    },
+    "TypeScript": {
+      "name": "TypeScript",
+      "description": "A must have for most of my projects. Used in this portfolio."
+    },
+    "React": {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces."
+    },
+    "Redux": {
+      "name": "Redux",
+      "description": "A predictable state container for JavaScript apps."
+    },
+    "Next.js": {
+      "name": "Next.js",
+      "description": "A React framework for production. Used in this portfolio."
+    },
+    "Vue.js": {
+      "name": "Vue.js",
+      "description": "A JavaScript framework for building user interfaces. In my opinion it is the amazing framework for beginners."
+    },
+    "NestJS": {
+      "name": "NestJS",
+      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+    },
+    "Python": {
+      "name": "Python",
+      "description": "Not using python anywhere but at college/to help my friends with their projects."
+    },
+    "Rust": {
+      "name": "Rust",
+      "description": "I'm learning Rust and I'm loving it so far."
+    }
+  }
+}
