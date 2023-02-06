@@ -1,9 +1,9 @@
 {
-  "language": "English",
+  "language": "Русский",
   "sections": {
-    "landing": "Domin",
-    "works": "Works",
-    "skills": "Skills",
-    "contact": "Contact"
+    "landing": "Домин",
+    "works": "Труды",
+    "skills": "Навыки",
+    "contact": "Связь"
   }
 }
