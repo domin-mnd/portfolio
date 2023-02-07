@@ -1,13 +1,13 @@
 {
-  "section-name": "About",
+  "section-name": "Über mich",
   "full-name": {
     "first": "Kamil",
     "last": "Sakhabutdinov",
     "middle": "Rasimovich"
   },
-  "nickname-label": "Also known as {{nicknameValue}}",
+  "nickname-label": "Auch bekannt als {{nicknameValue}}",
   "nickname-value": "Domin",
-  "location-label": "Location:",
-  "location-value": "Kazan, Russia",
-  "description-value": "Ambitious, self-taught 17 years old software engineer with a great passion for technology, web design and development. Has been programming since the age of 12. Proficient in developing databases, creating user interfaces and implementing new features based on user feedback. Ready to learn and collaborate in rapidly changing environments and compositions. Adept in all stages of advanced web development."
+  "location-label": "Standort:",
+  "location-value": "Kasan, Russland",
+  "description-value": "Ehrgeiziger, selbst erlernter 17-jähriger Software Engineer mit einer großen Leidenschaft für Technik, web Design und Entwicklung. Programmierte seit dem Alter von 12 Jahren. Kenntnisse in Datenbankentwicklung, Erstellung von Benutzeroberflächen und Implementierung von Funktionen aus Benutzerfeedback. Bereit zu lernen und kollabieren in schnell wechselnden Bedingungen. Geschickt in allen Stufen von erweitertem Web-Development."
 }
