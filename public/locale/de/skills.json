@@ -1,31 +1,31 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Fähigkeiten",
+  "examples-label": "Beispiele:",
+  "knowledge-label": "Meine Wissen in {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
-      "description": "I started my programming journey with Java for mobile development and I still love it to this day."
+      "description": "Ich habe mein Abenteuer mit programmieren mit Java für Mobile-App Entwicklung angefangen und ich liebe diese Sprache bis heute immer noch."
     },
     "JavaScript": {
       "name": "JavaScript",
-      "description": "After some time I switched to web development and all started with JavaScript."
+      "description": "Nach einiger Zeit wechselte ich zu Web-Development und alles hat mit JavaScript angefangen."
     },
     "SASS": {
       "name": "SASS",
-      "description": "A preprocessor scripting language that is interpreted or compiled into CSS."
+      "description": "Eine Präprozessor Skript-Sprache das zu CSS interpretiert oder kompiliert wird."
     },
     "Tailwind CSS": {
       "name": "Tailwind CSS",
-      "description": "A utility-first CSS framework for rapidly building custom designs."
+      "description": "Ein \"Utility-first\" CSS Framework um schnell benutzerdefinierte Designs zu erstellen."
     },
     "TypeScript": {
       "name": "TypeScript",
-      "description": "A must have for most of my projects. Used in this portfolio."
+      "description": "Ein Must-have für meine meisten Projekte. Wird in diesem Portfolio benutzt."
     },
     "React": {
       "name": "React",
-      "description": "A JavaScript library for building user interfaces."
+      "description": "Eine JavaScript Bibliothek zum erstellen von Benutzeroberflächen."
     },
     "Redux": {
       "name": "Redux",
@@ -33,7 +33,7 @@
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "A React framework for production. Used in this portfolio."
+      "description": "Ein React Framework für Produktion. Wird in diesem Portfolio benutzt."
     },
     "Vue.js": {
       "name": "Vue.js",
