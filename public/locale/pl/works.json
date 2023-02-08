@@ -1,5 +1,5 @@
 {
-  "section-name": "Works",
+  "section-name": "Projekty",
   "works": {
     "Portfolio": {
       "title": "Portfolio",
@@ -14,7 +14,7 @@
     },
     "Splendid": {
       "title": "Splendid",
-      "description": "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+      "description": "Hybrydowy CMS rozszerzający moc struktury przez jego rozszerzalną bazę kodów. Wprowadza całkowicie nową perspektywę na CMS.",
       "stack": {
         "NestJS": "NestJS",
         "Next.js": "Next.js",
