@@ -1,11 +1,11 @@
 {
-  "section-name": "About",
+  "section-name": "Chi sono",
   "full-name": {
     "first": "Kamil",
     "last": "Sakhabutdinov",
     "middle": "Rasimovich"
   },
-  "nickname-label": "Also known as {{nicknameValue}}",
+  "nickname-label": "Conosciuto anche come {{nicknameValue}}",
   "nickname-value": "Domin",
   "location-label": "Location:",
   "location-value": "Kazan, Russia",
