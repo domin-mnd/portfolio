@@ -1,0 +1,69 @@
+{
+  "section-name": "Труды",
+  "works": {
+    "Portfolio": {
+      "title": "Портфолио",
+      "description": "Моё личное веб-портфолио, состоящее из моих проектов, набора навыков и контактной информации. Это то, что вы посещаете прямо сейчас.",
+      "stack": {
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Mantine": "Mantine",
+        "Three.js": "Three.js"
+      }
+    },
+    "Splendid": {
+      "title": "Splendid",
+      "description": "Гибридная CMS, расширяющая возможности фреймворка за счет своей расширяемой кодовой базы. Предоставляет совершенно новый взгляд на CMS.",
+      "stack": {
+        "NestJS": "NestJS",
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma",
+        "Mantine": "Mantine"
+      }
+    },
+    "Todo tracker": {
+      "title": "Трекер списка задач",
+      "description": "Минималистичный трекер списка дел, созданный с Vue.js и Tailwind CSS. Использует firebase для аутентификации и базы данных.",
+      "stack": {
+        "Vue.js": "Vue.js",
+        "Tailwind CSS": "Tailwind CSS",
+        "Firebase": "Firebase"
+      }
+    },
+    "Profile Card": {
+      "title": "Карточка Профиля",
+      "description": "Простая карточка профиля, сделанная аналогично карточке профиля в discord. Считается моим первым проектом в области веб-разработки.",
+      "stack": {
+        "HTML": "HTML",
+        "SASS": "SASS",
+        "TypeScript": "TypeScript"
+      }
+    },
+    "Wordgen.js": {
+      "title": "Wordgen.js",
+      "description": "Библиотека JavaScript, которая генерирует не существующие слова, а слова, похожие на существующие.",
+      "stack": {
+        "JavaScript": "JavaScript"
+      }
+    },
+    "KNRTU-KAI Discord Bot": {
+      "title": "Дискорд Бот КНИТУ-КАИ",
+      "description": "Дискорд бот для КНИТУ-КАИ. Предоставляет множество полезных функций для студентов и преподавателей.",
+      "stack": {
+        "Sapphire": "Sapphire",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma"
+      }
+    },
+    "Kai.js": {
+      "title": "Kai.js",
+      "description": "Небольшой современный АПИ враппер веб-сайта КНИТУ-КАИ, написанный для Node.js. Используется в дискорд боте КНИТУ-КАИ.",
+      "stack": {
+        "JavaScript": "JavaScript"
+      }
+    }
+  }
+}

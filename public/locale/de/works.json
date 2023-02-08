@@ -1,0 +1,69 @@
+{
+  "section-name": "Werke",
+  "works": {
+    "Portfolio": {
+      "title": "Portfolio",
+      "description": "Meine persönliche Portfolio-Website die aus meinen Projekten, Skill-Stack und Kontaktinfos besteht. Das ist was du jetzt anschaust.",
+      "stack": {
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Mantine": "Mantine",
+        "Three.js": "Three.js"
+      }
+    },
+    "Splendid": {
+      "title": "Splendid",
+      "description": "Ein Hybrid-CMS, das die Leistungsfähigkeit des Frameworks durch seine erweiterbare Codebasis erweitert. Bietet eine völlig neue Sicht auf CMS.",
+      "stack": {
+        "NestJS": "NestJS",
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma",
+        "Mantine": "Mantine"
+      }
+    },
+    "Todo tracker": {
+      "title": "Todo-Tracker",
+      "description": "Eine minimalistische Todo-App mit Vue.js und Tailwind CSS erstellt. Benutzt Firebase für Authentifikation und für die Datenbank.",
+      "stack": {
+        "Vue.js": "Vue.js",
+        "Tailwind CSS": "Tailwind CSS",
+        "Firebase": "Firebase"
+      }
+    },
+    "Profile Card": {
+      "title": "Profilkarte",
+      "description": "Eine simple Profilkarte die Discord Profilkarten ähnelt. Es wird als mein erstes Projekt im Web-Development gezählt.",
+      "stack": {
+        "HTML": "HTML",
+        "SASS": "SASS",
+        "TypeScript": "TypeScript"
+      }
+    },
+    "Wordgen.js": {
+      "title": "Wordgen.js",
+      "description": "Eine Javascript-Bibliothek die nicht-existierende, aber existierend-klingende Worte generiert.",
+      "stack": {
+        "JavaScript": "JavaScript"
+      }
+    },
+    "KNRTU-KAI Discord Bot": {
+      "title": "KNRTU-KAI Discord-Bot",
+      "description": "Ein Discord-Bot für die KNRTU-KAI Universität. Der Bot hat viele nützliche Funktionen für Studenten und Lehrer.",
+      "stack": {
+        "Sapphire": "Sapphire",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma"
+      }
+    },
+    "Kai.js": {
+      "title": "Kai.js",
+      "description": "Ein kleiner moderner, in Node.js geschriebener API-Wrapper für die KNRTU-KAI Website. Es wird im KNRTU-KAI Discord-Bot benutzt.",
+      "stack": {
+        "JavaScript": "JavaScript"
+      }
+    }
+  }
+}

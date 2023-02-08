@@ -1,0 +1,55 @@
+{
+  "section-name": "Навыки",
+  "examples-label": "Примеры:",
+  "knowledge-label": "Мой уровень знаний {{skillName}}:",
+  "skills": {
+    "Java": {
+      "name": "Java",
+      "description": "Я начал свой путь программиста с этого языка для мобильной разработки, и я все еще люблю его по сей день."
+    },
+    "JavaScript": {
+      "name": "JavaScript",
+      "description": "Через некоторое время я перешёл в веб-разработку, и все началось с JavaScript."
+    },
+    "SASS": {
+      "name": "SASS",
+      "description": "Препроцессорный скриптовый язык, который интерпретируется или компилируется в CSS."
+    },
+    "Tailwind CSS": {
+      "name": "Tailwind CSS",
+      "description": "\"Utility-first\" CSS-фреймворк для быстрого создания UI."
+    },
+    "TypeScript": {
+      "name": "TypeScript",
+      "description": "Маст хэв для большинства моих проектов. Используется в этом портфолио."
+    },
+    "React": {
+      "name": "React",
+      "description": "Библиотека JavaScript для создания пользовательских интерфейсов."
+    },
+    "Redux": {
+      "name": "Redux",
+      "description": "Инструмент для управления состоянием данных в приложениях JavaScript."
+    },
+    "Next.js": {
+      "name": "Next.js",
+      "description": "Фреймворк React для продакшена. Используется в этом портфолио."
+    },
+    "Vue.js": {
+      "name": "Vue.js",
+      "description": "Фреймворк JavaScript для создания Ui. На мой взгляд, это прекрасный фреймворк для начинающих веб-разработчиков."
+    },
+    "NestJS": {
+      "name": "NestJS",
+      "description": "Передовой Node.js фреймворк для создания эффективных, надежных и масштабируемых серверных приложений."
+    },
+    "Python": {
+      "name": "Python",
+      "description": "Не использую Python нигде, кроме как в колледже/для помощи моим друзьям с их проектами."
+    },
+    "Rust": {
+      "name": "Rust",
+      "description": "Я изучаю Rust, и пока он мне нравится."
+    }
+  }
+}

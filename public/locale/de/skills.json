@@ -1,0 +1,55 @@
+{
+  "section-name": "Fähigkeiten",
+  "examples-label": "Beispiele:",
+  "knowledge-label": "Meine Wissen in {{skillName}}:",
+  "skills": {
+    "Java": {
+      "name": "Java",
+      "description": "Ich habe mein Abenteuer mit programmieren mit Java für Mobile-App Entwicklung angefangen und ich liebe diese Sprache bis heute immer noch."
+    },
+    "JavaScript": {
+      "name": "JavaScript",
+      "description": "Nach einiger Zeit wechselte ich zu Web-Development und alles hat mit JavaScript angefangen."
+    },
+    "SASS": {
+      "name": "SASS",
+      "description": "Eine Präprozessor Skript-Sprache das zu CSS interpretiert oder kompiliert wird."
+    },
+    "Tailwind CSS": {
+      "name": "Tailwind CSS",
+      "description": "Ein \"Utility-first\" CSS Framework um schnell benutzerdefinierte Designs zu erstellen."
+    },
+    "TypeScript": {
+      "name": "TypeScript",
+      "description": "Ein Must-have für meine meisten Projekte. Wird in diesem Portfolio benutzt."
+    },
+    "React": {
+      "name": "React",
+      "description": "Eine JavaScript Bibliothek zum erstellen von Benutzeroberflächen."
+    },
+    "Redux": {
+      "name": "Redux",
+      "description": "Ein vorhersagbarer Zustandscontainer für JavaScript-Apps."
+    },
+    "Next.js": {
+      "name": "Next.js",
+      "description": "Ein React Framework für Produktion. Wird in diesem Portfolio benutzt."
+    },
+    "Vue.js": {
+      "name": "Vue.js",
+      "description": "Ein Javascript Framework um Benutzeroberflächen zu erstellen. Meiner Meinung nach ist es ein großartiges Framework für Anfänger."
+    },
+    "NestJS": {
+      "name": "NestJS",
+      "description": "Ein fortschrittliches Node.js-Framework zum Erstellen effizienter, zuverlässiger und skalierbarer serverseitiger Anwendungen."
+    },
+    "Python": {
+      "name": "Python",
+      "description": "Benutze python nirgendwo, außer im college/um meinen Freunden mir ihren Projekten zu helfen."
+    },
+    "Rust": {
+      "name": "Rust",
+      "description": "Ich lerne Rust und bisher mag ich es."
+    }
+  }
+}
