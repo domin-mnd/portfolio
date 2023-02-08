@@ -1,9 +1,9 @@
 {
-  "section-name": "Works",
+  "section-name": "Werke",
   "works": {
     "Portfolio": {
       "title": "Portfolio",
-      "description": "My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "description": "Meine persönliche Portfolio-Website die aus meinen Projekten, Skill-Stack und Kontaktinfos besteht. Das ist was du jetzt anschaust.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
@@ -14,7 +14,7 @@
     },
     "Splendid": {
       "title": "Splendid",
-      "description": "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+      "description": "Ein Hybrid-CMS, das die Leistungsfähigkeit des Frameworks durch seine erweiterbare Codebasis erweitert. Bietet eine völlig neue Sicht auf CMS.",
       "stack": {
         "NestJS": "NestJS",
         "Next.js": "Next.js",
@@ -25,8 +25,8 @@
       }
     },
     "Todo tracker": {
-      "title": "Todo tracker",
-      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "title": "Todo-Tracker",
+      "description": "Eine minimalistische Todo-App mit Vue.js und Tailwind CSS erstellt. Benutzt Firebase für Authentifikation und für die Datenbank.",
       "stack": {
         "Vue.js": "Vue.js",
         "Tailwind CSS": "Tailwind CSS",
@@ -34,8 +34,8 @@
       }
     },
     "Profile Card": {
-      "title": "Profile Card",
-      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "title": "Profilkarte",
+      "description": "Eine simple Profilkarte die Discord Profilkarten ähnelt. Es wird als mein erstes Projekt im Web-Development gezählt.",
       "stack": {
         "HTML": "HTML",
         "SASS": "SASS",
@@ -44,14 +44,14 @@
     },
     "Wordgen.js": {
       "title": "Wordgen.js",
-      "description": "A JavaScript library that generates not existing words, but words that are similar to existing.",
+      "description": "Eine Javascript-Bibliothek die nicht-existierende, aber existierend-klingende Worte generiert.",
       "stack": {
         "JavaScript": "JavaScript"
       }
     },
     "KNRTU-KAI Discord Bot": {
-      "title": "KNRTU-KAI Discord Bot",
-      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "title": "KNRTU-KAI Discord-Bot",
+      "description": "Ein Discord-Bot für die KNRTU-KAI Universität. Der Bot hat viele nützliche Funktionen für Studenten und Lehrer.",
       "stack": {
         "Sapphire": "Sapphire",
         "TypeScript": "TypeScript",
@@ -60,7 +60,7 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "description": "Ein kleiner moderner, in Node.js geschriebener API-Wrapper für die KNRTU-KAI Website. Es wird im KNRTU-KAI Discord-Bot benutzt.",
       "stack": {
         "JavaScript": "JavaScript"
       }
