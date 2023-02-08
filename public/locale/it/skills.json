@@ -1,7 +1,7 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Conoscenze",
+  "examples-label": "Esempi:",
+  "knowledge-label": "La mia conoscenza di {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
@@ -9,7 +9,7 @@
     },
     "JavaScript": {
       "name": "JavaScript",
-      "description": "After some time I switched to web development and all started with JavaScript."
+      "description": "Dopo un po' di tempo mi sono spostato verso lo sviluppo web e ho iniziato con JavaScript."
     },
     "SASS": {
       "name": "SASS",
@@ -21,7 +21,7 @@
     },
     "TypeScript": {
       "name": "TypeScript",
-      "description": "A must have for most of my projects. Used in this portfolio."
+      "description": "Un must per la maggior parte dei miei progetti. Utilizzato per questo portofolio."
     },
     "React": {
       "name": "React",
@@ -33,7 +33,7 @@
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "A React framework for production. Used in this portfolio."
+      "description": "Un framework per React per ambienti di produzione. Lo utilizzo anche per questo portofolio."
     },
     "Vue.js": {
       "name": "Vue.js",
@@ -41,15 +41,15 @@
     },
     "NestJS": {
       "name": "NestJS",
-      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+      "description": "Un framework progressivo per Node.js, perfetto per creare applicazioni nel lato server efficienti, affidabili e scalabili."
     },
     "Python": {
       "name": "Python",
-      "description": "Not using python anywhere but at college/to help my friends with their projects."
+      "description": "Non utilizzo Python da nessuna parte tranne che a scuola per aiutare i miei amici con i loro progetti."
     },
     "Rust": {
       "name": "Rust",
-      "description": "I'm learning Rust and I'm loving it so far."
+      "description": "Sto imparando Rust e per ora lo sto amando."
     }
   }
 }
