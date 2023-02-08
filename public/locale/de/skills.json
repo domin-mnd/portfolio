@@ -29,7 +29,7 @@
     },
     "Redux": {
       "name": "Redux",
-      "description": "A predictable state container for JavaScript apps."
+      "description": "Ein vorhersagbarer Zustandscontainer für JavaScript-Apps."
     },
     "Next.js": {
       "name": "Next.js",
@@ -37,19 +37,19 @@
     },
     "Vue.js": {
       "name": "Vue.js",
-      "description": "A JavaScript framework for building user interfaces. In my opinion it is the amazing framework for beginners."
+      "description": "Ein Javascript Framework um Benutzeroberflächen zu erstellen. Meiner Meinung nach ist es ein großartiges Framework für Anfänger."
     },
     "NestJS": {
       "name": "NestJS",
-      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+      "description": "Ein fortschrittliches Node.js-Framework zum Erstellen effizienter, zuverlässiger und skalierbarer serverseitiger Anwendungen."
     },
     "Python": {
       "name": "Python",
-      "description": "Not using python anywhere but at college/to help my friends with their projects."
+      "description": "Benutze python nirgendwo, außer im college/um meinen Freunden mir ihren Projekten zu helfen."
     },
     "Rust": {
       "name": "Rust",
-      "description": "I'm learning Rust and I'm loving it so far."
+      "description": "Ich lerne Rust und bisher mag ich es."
     }
   }
 }
