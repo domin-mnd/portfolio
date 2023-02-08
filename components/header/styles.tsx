@@ -72,4 +72,45 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
       },
     },
   },
+
+  translationButton: {
+    backgroundColor: "transparent",
+    height: 38,
+    
+    ':hover': {
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+    },
+
+    ':active': {
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+    },
+
+    [theme.fn.smallerThan('xs')]: {
+      display: 'none',
+    }
+  },
+
+  translationMobileButton: {
+    backgroundColor: "transparent",
+    height: 38,
+    width: "100%",
+
+    ':hover': {
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+    },
+
+    ':active': {
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+    }
+  },
+
+  translationDropdown: {
+    backgroundColor: theme.colors.gray[0],
+  },
+
+  translationItem: {
+    ':hover': {
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+    },
+  }
 }));

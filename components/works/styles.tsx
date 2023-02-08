@@ -51,13 +51,9 @@ export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
       marginBottom: 5,
     },
 
-    bodyText: {
-      color: theme.colors.dark[2],
-      marginLeft: 7,
-    },
-
-    author: {
-      color: theme.colors.dark[2],
+    description: {
+      color: theme.colors.gray[4],
+      textShadow: '0 1px 10px rgba(0, 0, 0, .5)',
     },
   };
 });

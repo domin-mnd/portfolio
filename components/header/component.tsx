@@ -1,9 +1,11 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { Burger, Container, Drawer, Group, Tabs } from '@mantine/core';
+import { Burger, Button, Container, Drawer, Group, Menu, Tabs } from '@mantine/core';
 import { useRouter, NextRouter } from 'next/router';
 import { useStyles } from './styles';
-import { tabs as oTabs } from './config';
+import { tabs as oTabs, translations as oTranslations } from './config';
 import { useDisclosure } from '@mantine/hooks';
+import Link from 'next/link';
+import { Trans, useTranslation } from 'next-i18next';
 
 /**
  * Header component used on the top of the page to display tabs
@@ -14,6 +16,9 @@ export const Header: FunctionComponent = (): ReactElement => {
   const { classes } = useStyles();
   const router: NextRouter = useRouter();
 
+  // Header translation
+  const { t } = useTranslation('header');
+
   // Burger disclosure state
   const [opened, { toggle, close }] = useDisclosure(false);
 
@@ -23,7 +28,16 @@ export const Header: FunctionComponent = (): ReactElement => {
   // Mapped tabs taken from config
   const tabs = oTabs.map((tab) => (
     <Tabs.Tab value={tab.href} key={tab.href}>
-      {tab.node ? tab.node(tab.label) : tab.label}
+      {typeof tab.label === 'function' ? (
+        tab.label(t('sections.' + ['landing', 'works', 'skills', 'contact'][oTabs.indexOf(tab)]))
+      ) : (
+        <Trans
+          i18nKey={'sections.' + ['landing', 'works', 'skills', 'contact'][oTabs.indexOf(tab)]}
+          t={t}
+        >
+          {tab.label}
+        </Trans>
+      )}
     </Tabs.Tab>
   ));
 
@@ -32,6 +46,26 @@ export const Header: FunctionComponent = (): ReactElement => {
       setHash(href);
     });
   }
+
+  const [translation, setTranslation] = useState<Translation>(
+    oTranslations.find((t) => t.locale === router.locale) ?? oTranslations[0]
+  );
+
+  const translations = oTranslations.map((translation) => (
+    <Menu.Item
+      key={translation.locale}
+      icon={<translation.flag w={20} />}
+      onClick={() => {
+        setTranslation(translation);
+        // Refresh the page when locale set
+        // Don't use Link provided by next/link
+        // It will cause carousel to re-render
+        window.location.pathname = translation.locale !== 'en' ? '/' + translation.locale : '/';
+      }}
+    >
+      {translation.name}
+    </Menu.Item>
+  ));
 
   /**
    * replaces the hash in the url with the href provided
@@ -51,8 +85,24 @@ export const Header: FunctionComponent = (): ReactElement => {
 
   return (
     <Container className={classes.header}>
-      <Group p="sm" align="center" position="center">
+      <Group p="sm" align="center" position="center" spacing={6}>
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
+        <Menu
+          shadow="md"
+          width={200}
+          classNames={{
+            dropdown: classes.translationDropdown,
+            item: classes.translationItem,
+          }}
+        >
+          <Menu.Target>
+            <Button className={classes.translationButton}>
+              <translation.flag w={25} />
+            </Button>
+          </Menu.Target>
+
+          <Menu.Dropdown>{translations}</Menu.Dropdown>
+        </Menu>
         <Tabs
           variant="pills"
           // Value keyword in onTabChange
@@ -81,6 +131,22 @@ export const Header: FunctionComponent = (): ReactElement => {
         padding="md"
         size="max-content"
       >
+        <Menu
+          shadow="md"
+          width={200}
+          classNames={{
+            dropdown: classes.translationDropdown,
+            item: classes.translationItem,
+          }}
+        >
+          <Menu.Target>
+            <Button className={classes.translationMobileButton}>
+              <translation.flag w={25} />
+            </Button>
+          </Menu.Target>
+
+          <Menu.Dropdown>{translations}</Menu.Dropdown>
+        </Menu>
         <Tabs
           variant="pills"
           orientation="vertical"

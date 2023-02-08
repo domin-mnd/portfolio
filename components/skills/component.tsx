@@ -5,6 +5,7 @@ import { useStyles } from './styles';
 import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
 import { useMediaQuery } from '@mantine/hooks';
+import { Trans, useTranslation } from 'next-i18next';
 
 /**
  * A grid of skills with a color radial gradient and a modal with examples of works
@@ -19,6 +20,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
   const [selected, setSelected] = useState<Stack | null>(null);
   // Whether to blur the background of the modal or not
   const mobile = useMediaQuery('(max-width: 980px)');
+  const { t } = useTranslation('skills');
 
   // Examples of works
   const Examples = Works({
@@ -50,7 +52,11 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
             }}
           />
           <skill.icon size={32} />
-          <Text size="xs">{skill.name}</Text>
+          <Text size="xs">
+            <Trans i18nKey={"skills." + skill.name + ".name"} t={t}>
+              {skill.name}
+            </Trans>
+          </Text>
         </Card>
       ))}
       <Modal
@@ -60,20 +66,34 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
         overlayBlur={mobile ? 0 : 5}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>
-            {selected?.name}
+            <Trans i18nKey={"skills." + selected?.name + ".name"} t={t}>
+              {selected?.name}
+            </Trans>
           </Text>
         }
         transition="fade"
       >
-        <Text color="dimmed">{selected?.description}</Text>
+        <Text color="dimmed">
+          <Trans i18nKey={"skills." + selected?.name + ".description"} t={t}>
+            {selected?.description}
+          </Trans>
+        </Text>
 
-        <Text my="md">My knowledge of {selected?.name.toLowerCase()}:</Text>
+        <Text my="md">
+          {t('knowledge-label', {
+            skillName: t('skills.' + selected?.name + '.name').toLowerCase(),
+          })}
+        </Text>
         <Progress value={selected?.knowledge} radius="xs" />
 
         {/* Don't show examples if there are no */}
         {Examples?.props.children.length ? (
           <>
-            <Text mt="md">Examples:</Text>
+            <Text mt="md">
+              <Trans i18nKey="examples-label" t={t}>
+                Examples:
+              </Trans>
+            </Text>
             <SectionCard
               m="0 !important" // !important because of mobile
               px={0} // 0 padding to remove extra padding as modal already has padding

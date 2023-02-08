@@ -1,7 +1,7 @@
 /** About section properties */
 interface About {
-  /** A first & last name of the person */
-  name: [string, string];
+  /** A full name of the person */
+  name: [string, string, string];
   /** A username of the person on the internet, used in About section, Landing section & Header component */
   username?: string;
   /** A rounded avatar used in about section */

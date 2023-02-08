@@ -2,6 +2,7 @@ import type { FunctionComponent, ReactElement } from 'react';
 import { Badge, Card, Group, SimpleGrid, Text } from '@mantine/core';
 import { projects as projectStack } from './config';
 import { useStyles } from './styles';
+import { Trans, useTranslation } from 'next-i18next';
 
 /**
  * A grid of works cards taken from config
@@ -13,6 +14,7 @@ export const Works: FunctionComponent<WorksProps> = ({
   filter,
 }): ReactElement => {
   const { classes } = useStyles();
+  const { t } = useTranslation('works');
 
   // Filter works by their stack if filter is provided
   const filteredProjects = filter
@@ -48,11 +50,15 @@ export const Works: FunctionComponent<WorksProps> = ({
           >
             <div>
               <Text size="lg" className={classes.title} weight={500}>
-                {project.title}
+                <Trans i18nKey={"works." + project.title + ".title"} t={t}>
+                  {project.title}
+                </Trans>
               </Text>
 
-              <Text size="sm" className={classes.author}>
-                {project.description}
+              <Text size="sm" className={classes.description}>
+                <Trans i18nKey={"works." + project.title + ".description"} t={t}>
+                  {project.description}
+                </Trans>
               </Text>
               <Group spacing={5} my="xs">
                 {project.stack.map((stack) => (
@@ -65,7 +71,9 @@ export const Works: FunctionComponent<WorksProps> = ({
                     radius="xs"
                     size="sm"
                   >
-                    {stack.name}
+                    <Trans i18nKey={"works." + project.title + ".stack." + stack.name} t={t}>
+                      {stack.name}
+                    </Trans>
                   </Badge>
                 ))}
               </Group>

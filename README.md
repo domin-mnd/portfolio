@@ -4,7 +4,7 @@
 
 ## About portfolio
 
-This work is my new portfolio site built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/) & [Mantine](https://mantine.dev/). A website presents a single page application with carousel consisting of sections presented in the header.
+This work is my new portfolio site built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [Three.js](https://threejs.org/) & [Mantine](https://mantine.dev/). A website presents a single page application with carousel consisting of sections presented in the header.
 
 ## Installation
 
@@ -34,7 +34,11 @@ You can configure the project by editing the `config.tsx` files in the following
 - `components/skills/config.tsx` (for the Skills card)
 - `components/works/config.tsx` (for the Works card)
 
-> Note: After adding i18n support, the configuration will be partially moved to the `public/locales` directory. More documentation will be added soon.
+## i18n
+
+This project supports i18n. If no translation is provided to the language - it will take the config information from the above tsx files. The english default translation folder must be named `en` and should never be deleted but may be modified.
+
+> You can help translating it by joining the [Crowdin project](https://crowdin.com/project/domins-portfolio). [![Crowdin](https://badges.crowdin.net/domins-portfolio/localized.svg)](https://crowdin.com)
 
 ## Contributing
 
@@ -46,7 +50,7 @@ This project is under [MIT](https://choosealicense.com/licenses/mit/) license. Y
 
 ## To do
 
-- [ ] Internationalization (This includes documentation & website translation)
+- [x] Internationalization (This includes documentation & website translation)
 - [ ] Better slide scroll (waiting for embla-carousel to be updated)
 - [x] Better configuration
 - [x] Documentation

@@ -1,17 +1,16 @@
-import { about } from '@component/about';
 import { Text } from '@mantine/core';
+import { USFlag, DEFlag, IDFlag, ITFlag, RUFlag, UAFlag, FRFlag, PLFlag } from 'mantine-flagpack';
 
 /** An array of tabs displayed in header & mobile drawer */
 export const tabs: Tab[] = [
   {
-    label: about.username || 'Me',
-    href: '#',
-    index: [0, 1],
-    node: (label: string) => (
+    label: (username: string) => (
       <Text size="md" weight={500} underline>
-        {label}
+        {username}
       </Text>
     ),
+    href: '#',
+    index: [0, 1],
   },
   {
     label: 'Works',
@@ -29,3 +28,47 @@ export const tabs: Tab[] = [
     index: 4,
   },
 ];
+
+/** Translations array, used in a select */
+export const translations: Translation[] = [
+  {
+    name: 'English',
+    flag: USFlag,
+    locale: 'en'
+  },
+  // {
+  //   name: 'Français',
+  //   flag: FRFlag,
+  //   locale: 'fr'
+  // },
+  {
+    name: 'Deutsch',
+    flag: DEFlag,
+    locale: 'de'
+  },
+  // {
+  //   name: 'Italiano',
+  //   flag: ITFlag,
+  //   locale: 'it'
+  // },
+  // {
+  //   name: 'Polski',
+  //   flag: PLFlag,
+  //   locale: 'pl'
+  // },
+  // {
+  //   name: 'Bahasa',
+  //   flag: IDFlag,
+  //   locale: 'id'
+  // },
+  {
+    name: 'Русский',
+    flag: RUFlag,
+    locale: 'ru'
+  },
+  // {
+  //   name: 'Українська',
+  //   flag: UAFlag,
+  //   locale: 'uk'
+  // }
+]

@@ -5,6 +5,7 @@ import { socials } from './config';
 import Kazan from '@public/contacts/kazan.jpg';
 
 import { about } from '@component/about';
+import { Trans, useTranslation } from 'next-i18next';
 
 /**
  * Contact card with a banner image and social media links along with overlay & some information
@@ -12,6 +13,7 @@ import { about } from '@component/about';
  */
 export const Contact: FunctionComponent = (): ReactElement => {
   const { classes } = useStyles();
+  const { t } = useTranslation('about');
 
   return (
     <div className={classes.wrapper}>
@@ -48,7 +50,13 @@ export const Contact: FunctionComponent = (): ReactElement => {
           ))}
         </Group>
         <Title className={classes.title} my="xl">
-          {about.name.join(' ')}
+          <Trans i18nKey="full-name.first" t={t}>
+            {about.name[0]}
+          </Trans>
+          {' '}
+          <Trans i18nKey="full-name.last" t={t}>
+            {about.name[1]}
+          </Trans>
         </Title>
       </div>
     </div>
