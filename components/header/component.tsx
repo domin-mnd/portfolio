@@ -60,7 +60,7 @@ export const Header: FunctionComponent = (): ReactElement => {
         // Refresh the page when locale set
         // Don't use Link provided by next/link
         // It will cause carousel to re-render
-        window.location.pathname = translation.locale !== 'en' ? '/' + translation.locale : '/';
+        window.location.pathname = translation.locale;
       }}
     >
       {translation.name}

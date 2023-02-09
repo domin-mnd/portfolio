@@ -1,6 +1,5 @@
 import type { FunctionComponent, ReactElement } from 'react';
-import { LoadingOverlay } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { Overlay } from '@mantine/core';
 import { useProgress } from '@react-three/drei';
 
 /**
@@ -9,14 +8,10 @@ import { useProgress } from '@react-three/drei';
  */
 export const Loading: FunctionComponent = (): ReactElement => {
   const { loaded } = useProgress();
-  const mobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <LoadingOverlay
-      overlayBlur={mobile ? 0 : 5}
-      overlayOpacity={mobile ? 0.5 : 0}
-      overlayColor="white"
-      visible={!loaded}
-    />
+    <>
+      {!loaded && <Overlay blur={10} color="gray.0" />}
+    </>
   );
 };
