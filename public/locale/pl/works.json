@@ -3,7 +3,7 @@
   "works": {
     "Portfolio": {
       "title": "Portfolio",
-      "description": "My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "description": "Moje własne portfolio zawierające wszystkie moje projekty, umiejętności i informacje kontaktowe. To jest ta strona, którą w tym momencie widzisz.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
@@ -34,8 +34,8 @@
       }
     },
     "Profile Card": {
-      "title": "Profile Card",
-      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "title": "Karta profilu",
+      "description": "Prosta karta profilu zrobiona podobnie do karty profilu na discordzie. Jest uważany za mój pierwszy projekt tworzenia stron.",
       "stack": {
         "HTML": "HTML",
         "SASS": "SASS",
@@ -44,14 +44,14 @@
     },
     "Wordgen.js": {
       "title": "Wordgen.js",
-      "description": "A JavaScript library that generates not existing words, but words that are similar to existing.",
+      "description": "Biblioteka JavaScript generująca nieistniejące słowa, ale podobne do tych istniejących.",
       "stack": {
         "JavaScript": "JavaScript"
       }
     },
     "KNRTU-KAI Discord Bot": {
       "title": "KNRTU-KAI Discord Bot",
-      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "description": "Bot discord dla uniwersytetu KNRTU-KAI. Zawiera dużo użytecznych funkcji dla studentów i nauczycieli.",
       "stack": {
         "Sapphire": "Sapphire",
         "TypeScript": "TypeScript",
