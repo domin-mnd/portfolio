@@ -24,7 +24,7 @@
       "description": "Harus dimiliki untuk sebagian besar proyek saya. Digunakan dalam portofolio ini."
     },
     "React": {
-      "name": "Reaksi",
+      "name": "React",
       "description": "JavaScript library untuk membuat antarmuka pengguna."
     },
     "Redux": {
@@ -33,7 +33,7 @@
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "Framework Reaksi untuk produksi, digunakan di dalam portofolio ini."
+      "description": "Framework React untuk produksi, digunakan di dalam portofolio ini."
     },
     "Vue.js": {
       "name": "Vue.js",
