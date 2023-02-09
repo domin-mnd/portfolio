@@ -57,11 +57,6 @@ export const translations: Translation[] = [
     locale: 'pl',
   },
   {
-    name: 'Bahasa',
-    flag: IDFlag,
-    locale: 'id',
-  },
-  {
     name: 'Русский',
     flag: RUFlag,
     locale: 'ru',
@@ -70,5 +65,10 @@ export const translations: Translation[] = [
   //   name: 'Українська',
   //   flag: UAFlag,
   //   locale: 'uk'
-  // }
+  // },
+  {
+    name: 'Bahasa',
+    flag: IDFlag,
+    locale: 'id',
+  }
 ];
