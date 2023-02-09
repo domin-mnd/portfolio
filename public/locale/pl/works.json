@@ -26,7 +26,7 @@
     },
     "Todo tracker": {
       "title": "Todo tracker",
-      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "description": "Minimalistyczna aplikacja z listą rzeczy do zrobienia, stworzona z użyciem Vue.js i Tailwind CSS. Używa firebase do uwierzetelniania i bazy danych.",
       "stack": {
         "Vue.js": "Vue.js",
         "Tailwind CSS": "Tailwind CSS",
@@ -60,7 +60,7 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "description": "Mały modernistyczny API wrapper strony KNRTU-KAI napisany dla Node.js. Jest użyty w bocie KNRTU-KAI.",
       "stack": {
         "JavaScript": "JavaScript"
       }
