@@ -1,27 +1,27 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Umiejętności",
+  "examples-label": "Przykłady:",
+  "knowledge-label": "Moja wiedza na temat {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
-      "description": "I started my programming journey with Java for mobile development and I still love it to this day."
+      "description": "Moją podróż z programowaniem zacząłem z Javą, żeby robić aplikacje mobilne i do teraz to kocham."
     },
     "JavaScript": {
       "name": "JavaScript",
-      "description": "After some time I switched to web development and all started with JavaScript."
+      "description": "Po jakimś czasie zacząłem tworzyć strony internetowe używając JavaScript."
     },
     "SASS": {
       "name": "SASS",
-      "description": "A preprocessor scripting language that is interpreted or compiled into CSS."
+      "description": "Język skryptowy preprocesora, który jest interpretowany lub kompilowany w CSS."
     },
     "Tailwind CSS": {
       "name": "Tailwind CSS",
-      "description": "A utility-first CSS framework for rapidly building custom designs."
+      "description": "\"Utility-first\" struktura CSS do szybkiego tworzenia niestandardowych projektów."
     },
     "TypeScript": {
       "name": "TypeScript",
-      "description": "A must have for most of my projects. Used in this portfolio."
+      "description": "Najważniejszy element większości moich projektów. Użyty w tym portfolio."
     },
     "React": {
       "name": "React",
@@ -44,7 +44,7 @@
       "description": "Progresywna struktura node.js do tworzenia efektywnych i niezawodnych aplikacji po stronie serwera."
     },
     "Python": {
-      "name": "Python",
+      "name": "Pyton",
       "description": "Not using python anywhere but at college/to help my friends with their projects."
     },
     "Rust": {
