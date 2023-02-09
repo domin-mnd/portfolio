@@ -33,7 +33,7 @@
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "A React framework for production. Used in this portfolio."
+      "description": "Struktura react do produkcji. Użyta w tym prortfolio."
     },
     "Vue.js": {
       "name": "Vue.js",
@@ -45,11 +45,11 @@
     },
     "Python": {
       "name": "Pyton",
-      "description": "Not using python anywhere but at college/to help my friends with their projects."
+      "description": "Nie używam Pythona nigdzie, ale na uczelni, żeby pomóc moim przyjaciołom z projektami."
     },
     "Rust": {
       "name": "Rust",
-      "description": "I'm learning Rust and I'm loving it so far."
+      "description": "Uczę się języka rust i narazie go uwielbiam."
     }
   }
 }
