@@ -6,7 +6,7 @@
       "description": "Situs web portofolio pribadi saya yang terdiri dari proyek, kumpulan keterampilan, dan informasi kontak saya. Inilah yang Anda kunjungi sekarang.",
       "stack": {
         "Next.js": "Next.js",
-        "React": "Reaksi",
+        "React": "React",
         "TypeScript": "TypeScript",
         "Mantine": "Mantine",
         "Three.js": "Three.js"
@@ -18,7 +18,7 @@
       "stack": {
         "NestJS": "NestJS",
         "Next.js": "Next.js",
-        "React": "Reaksi",
+        "React": "React",
         "TypeScript": "TypeScript",
         "Prisma": "Prisma",
         "Mantine": "Mantine"
