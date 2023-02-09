@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     title: 'Todo tracker',
     description:
-      "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      'A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.',
     banner: todoTracker,
     stack: [
       {
@@ -91,9 +91,9 @@ export const projects: Project[] = [
       {
         name: 'Firebase',
         color: 'orange',
-      }
+      },
     ],
-    url: 'https://github.com/Domin-MND/todo-tracker'
+    url: 'https://github.com/Domin-MND/todo-tracker',
   },
   {
     title: 'Profile Card',

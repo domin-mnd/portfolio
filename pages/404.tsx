@@ -9,8 +9,8 @@ import { ReactElement, useEffect } from 'react';
 export default (): ReactElement => {
   const { push } = useRouter();
   useEffect(() => {
-    push("/");
+    push('/');
   }, []);
 
   return <LoadingOverlay visible />;
-}
+};

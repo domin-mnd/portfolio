@@ -50,13 +50,13 @@ export const Works: FunctionComponent<WorksProps> = ({
           >
             <div>
               <Text size="lg" className={classes.title} weight={500}>
-                <Trans i18nKey={"works." + project.title + ".title"} t={t}>
+                <Trans i18nKey={'works.' + project.title + '.title'} t={t}>
                   {project.title}
                 </Trans>
               </Text>
 
               <Text size="sm" className={classes.description}>
-                <Trans i18nKey={"works." + project.title + ".description"} t={t}>
+                <Trans i18nKey={'works.' + project.title + '.description'} t={t}>
                   {project.description}
                 </Trans>
               </Text>
@@ -71,7 +71,7 @@ export const Works: FunctionComponent<WorksProps> = ({
                     radius="xs"
                     size="sm"
                   >
-                    <Trans i18nKey={"works." + project.title + ".stack." + stack.name} t={t}>
+                    <Trans i18nKey={'works.' + project.title + '.stack.' + stack.name} t={t}>
                       {stack.name}
                     </Trans>
                   </Badge>

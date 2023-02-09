@@ -53,7 +53,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
           />
           <skill.icon size={32} />
           <Text size="xs">
-            <Trans i18nKey={"skills." + skill.name + ".name"} t={t}>
+            <Trans i18nKey={'skills.' + skill.name + '.name'} t={t}>
               {skill.name}
             </Trans>
           </Text>
@@ -66,7 +66,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
         overlayBlur={mobile ? 0 : 5}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>
-            <Trans i18nKey={"skills." + selected?.name + ".name"} t={t}>
+            <Trans i18nKey={'skills.' + selected?.name + '.name'} t={t}>
               {selected?.name}
             </Trans>
           </Text>
@@ -74,7 +74,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
         transition="fade"
       >
         <Text color="dimmed">
-          <Trans i18nKey={"skills." + selected?.name + ".description"} t={t}>
+          <Trans i18nKey={'skills.' + selected?.name + '.description'} t={t}>
             {selected?.description}
           </Trans>
         </Text>

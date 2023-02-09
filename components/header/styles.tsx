@@ -21,11 +21,11 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   },
 
   drawerHeader: {
-    justifyContent: "center"
+    justifyContent: 'center',
   },
 
   drawerContent: {
-    backgroundColor: theme.colors.gray[0]
+    backgroundColor: theme.colors.gray[0],
   },
 
   drawerTitle: {
@@ -51,7 +51,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     height: 38,
 
     '&:hover': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37)
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
 
     [theme.fn.smallerThan('xs')]: {
@@ -68,15 +68,15 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
 
       ':hover': {
-        backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37)
+        backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
       },
     },
   },
 
   translationButton: {
-    backgroundColor: "transparent",
+    backgroundColor: 'transparent',
     height: 38,
-    
+
     ':hover': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
@@ -87,13 +87,13 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
     [theme.fn.smallerThan('xs')]: {
       display: 'none',
-    }
+    },
   },
 
   translationMobileButton: {
-    backgroundColor: "transparent",
+    backgroundColor: 'transparent',
     height: 38,
-    width: "100%",
+    width: '100%',
     marginBottom: 6,
 
     ':hover': {
@@ -102,7 +102,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
     ':active': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
-    }
+    },
   },
 
   translationDropdown: {
@@ -113,5 +113,5 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     ':hover': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
-  }
+  },
 }));

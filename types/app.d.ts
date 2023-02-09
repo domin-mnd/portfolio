@@ -9,6 +9,8 @@ type NextPageWithLayout<P = {}, IP = P> = import('next').NextPage<P, IP> & {
  * are unused.
  * @see https://nextjs.org/docs/basic-features/layouts#per-page-layouts
  */
-interface AppPropsWithLayout extends Omit<import("next/app").AppProps, 'Component'> {
-  Component: import("next/app").AppProps['Component'] & { getLayout?: (page: ReactElement) => React.ReactNode };
+interface AppPropsWithLayout extends Omit<import('next/app').AppProps, 'Component'> {
+  Component: import('next/app').AppProps['Component'] & {
+    getLayout?: (page: ReactElement) => React.ReactNode;
+  };
 }

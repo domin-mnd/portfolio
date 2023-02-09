@@ -24,27 +24,25 @@ export default (): ReactNode => {
       <Loading />
       <VerticalCarousel>
         <Landing />
-        <SectionCard title={about('section-name') ?? ""}>
+        <SectionCard title={about('section-name') ?? ''}>
           <About />
         </SectionCard>
-        <SectionCard title={works('section-name') ?? ""}>
+        <SectionCard title={works('section-name') ?? ''}>
           <Works />
         </SectionCard>
-        <SectionCard title={skills('section-name') ?? ""}>
+        <SectionCard title={skills('section-name') ?? ''}>
           <Skills />
         </SectionCard>
-        <SectionCard title={contact('section-name') ?? ""}>
+        <SectionCard title={contact('section-name') ?? ''}>
           <Contact />
         </SectionCard>
       </VerticalCarousel>
     </>
   );
-}
+};
 
 // or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
-export const getStaticProps: GetStaticProps = async ({
-  locale,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? 'en', [
       'about',
@@ -55,4 +53,4 @@ export const getStaticProps: GetStaticProps = async ({
       'works',
     ])),
   },
-})
+});

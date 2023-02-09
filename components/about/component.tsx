@@ -23,8 +23,7 @@ export const About: FunctionComponent = (): ReactElement => {
           <Title mt="md" order={mobile ? 6 : 5}>
             <Trans i18nKey="full-name.first" t={t}>
               {about.name[0]}
-            </Trans>
-            {' '}
+            </Trans>{' '}
             <Trans i18nKey="full-name.last" t={t}>
               {about.name[1]}
             </Trans>
@@ -36,9 +35,7 @@ export const About: FunctionComponent = (): ReactElement => {
               })}
             </Text>
           )}
-          <Text size="sm">
-            {t('location-label')}
-          </Text>
+          <Text size="sm">{t('location-label')}</Text>
           <Text size="sm" color="dimmed">
             <Trans i18nKey="location-value" t={t}>
               {about.location}

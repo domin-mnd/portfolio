@@ -35,7 +35,13 @@ export const Contact: FunctionComponent = (): ReactElement => {
       >
         <Group>
           {socials.map((social: Social) => (
-            <Tooltip key={social.name} label={social.username ?? social.name} bg="white" c="black" withArrow>
+            <Tooltip
+              key={social.name}
+              label={social.username ?? social.name}
+              bg="white"
+              c="black"
+              withArrow
+            >
               <ActionIcon
                 size={28}
                 className={classes.social}
@@ -52,8 +58,7 @@ export const Contact: FunctionComponent = (): ReactElement => {
         <Title className={classes.title} my="xl">
           <Trans i18nKey="full-name.first" t={t}>
             {about.name[0]}
-          </Trans>
-          {' '}
+          </Trans>{' '}
           <Trans i18nKey="full-name.last" t={t}>
             {about.name[1]}
           </Trans>

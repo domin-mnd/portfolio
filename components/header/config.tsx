@@ -34,7 +34,7 @@ export const translations: Translation[] = [
   {
     name: 'English',
     flag: USFlag,
-    locale: 'en'
+    locale: 'en',
   },
   // {
   //   name: 'Français',
@@ -44,7 +44,7 @@ export const translations: Translation[] = [
   {
     name: 'Deutsch',
     flag: DEFlag,
-    locale: 'de'
+    locale: 'de',
   },
   // {
   //   name: 'Italiano',
@@ -54,21 +54,21 @@ export const translations: Translation[] = [
   {
     name: 'Polski',
     flag: PLFlag,
-    locale: 'pl'
+    locale: 'pl',
   },
   {
     name: 'Bahasa',
     flag: IDFlag,
-    locale: 'id'
+    locale: 'id',
   },
   {
     name: 'Русский',
     flag: RUFlag,
-    locale: 'ru'
+    locale: 'ru',
   },
   // {
   //   name: 'Українська',
   //   flag: UAFlag,
   //   locale: 'uk'
   // }
-]
+];

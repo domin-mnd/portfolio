@@ -13,7 +13,7 @@ interface Translation {
   /** Language translated name */
   name: string;
   /** Flag component, has a temporary type */
-  flag: (props: import("mantine-flagpack").FlagProps) => JSX.Element;
+  flag: (props: import('mantine-flagpack').FlagProps) => JSX.Element;
   /** A 2 character length string locale code */
   locale: string;
 }
