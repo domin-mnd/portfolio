@@ -1,9 +1,9 @@
 {
-  "language": "English",
+  "language": "Polski",
   "sections": {
     "landing": "Domin",
-    "works": "Works",
-    "skills": "Skills",
-    "contact": "Contact"
+    "works": "Projekty",
+    "skills": "Umiejętności",
+    "contact": "Kontakt"
   }
 }

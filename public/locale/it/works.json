@@ -1,5 +1,5 @@
 {
-  "section-name": "Works",
+  "section-name": "Progetti",
   "works": {
     "Portfolio": {
       "title": "Portfolio",
@@ -26,7 +26,7 @@
     },
     "Todo tracker": {
       "title": "Todo tracker",
-      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "description": "Un todo tracker minimalista creato con Vue.js e Tailwind CSS. Utilizza Firebase per l'autenticazione e il database.",
       "stack": {
         "Vue.js": "Vue.js",
         "Tailwind CSS": "Tailwind CSS",
@@ -34,8 +34,8 @@
       }
     },
     "Profile Card": {
-      "title": "Profile Card",
-      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "title": "Card profilo",
+      "description": "Una card semplice simile al profilo di un utente su Discord. Viene considerato il mio primo progetto nello sviluppo web.",
       "stack": {
         "HTML": "HTML",
         "SASS": "SASS",
@@ -44,14 +44,14 @@
     },
     "Wordgen.js": {
       "title": "Wordgen.js",
-      "description": "A JavaScript library that generates not existing words, but words that are similar to existing.",
+      "description": "Una libreria scritta in JavaScript che genera parole non esistenti, ma bensì parole simili.",
       "stack": {
         "JavaScript": "JavaScript"
       }
     },
     "KNRTU-KAI Discord Bot": {
-      "title": "KNRTU-KAI Discord Bot",
-      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "title": "Il bot KNRTU-KAI per Discord",
+      "description": "Un bot su Discord per l'università KNRTU-KAI. Offre moltissime funzioni utili per studenti e insegnanti.",
       "stack": {
         "Sapphire": "Sapphire",
         "TypeScript": "TypeScript",
@@ -60,7 +60,7 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "description": "Un'API piccola e moderna scritta in Node.js per il sito di KNRTU-KAI. Viene utilizzata per il bot KNRTU-KAI su Discord.",
       "stack": {
         "JavaScript": "JavaScript"
       }

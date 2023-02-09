@@ -1,55 +1,55 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Keahlian",
+  "examples-label": "Contohnya:",
+  "knowledge-label": "Pengetahuan ku akan {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
-      "description": "I started my programming journey with Java for mobile development and I still love it to this day."
+      "description": "Saya memulai perjalan programming saya dengan menggunakan Java untuk mobile development dan saya masih menyukainya hingga hari ini."
     },
     "JavaScript": {
       "name": "JavaScript",
-      "description": "After some time I switched to web development and all started with JavaScript."
+      "description": "Setelah beberapa waktu aku mengganti jadi web development dan semua berawal dengan JavaScript."
     },
     "SASS": {
       "name": "SASS",
-      "description": "A preprocessor scripting language that is interpreted or compiled into CSS."
+      "description": "Bahasa skrip preprosesor yang ditafsirkan atau dikompilasi ke dalam CSS."
     },
     "Tailwind CSS": {
       "name": "Tailwind CSS",
-      "description": "A utility-first CSS framework for rapidly building custom designs."
+      "description": "Kerangka kerja CSS yang mengutamakan utilitas untuk membuat desain khusus dengan cepat."
     },
     "TypeScript": {
       "name": "TypeScript",
-      "description": "A must have for most of my projects. Used in this portfolio."
+      "description": "Harus dimiliki untuk sebagian besar proyek saya. Digunakan dalam portofolio ini."
     },
     "React": {
       "name": "React",
-      "description": "A JavaScript library for building user interfaces."
+      "description": "JavaScript library untuk membuat antarmuka pengguna."
     },
     "Redux": {
       "name": "Redux",
-      "description": "A predictable state container for JavaScript apps."
+      "description": "Penampung status yang dapat diprediksi untuk aplikasi JavaScript."
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "A React framework for production. Used in this portfolio."
+      "description": "Framework React untuk produksi, digunakan di dalam portofolio ini."
     },
     "Vue.js": {
       "name": "Vue.js",
-      "description": "A JavaScript framework for building user interfaces. In my opinion it is the amazing framework for beginners."
+      "description": "JavaScript framework untuk membangun user interface. Pendapat saya ini adalah framework paling bagus untuk para pemula."
     },
     "NestJS": {
       "name": "NestJS",
-      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+      "description": "Framework Node.js progresif untuk membangun aplikasi sisi server yang efisien, andal, dan dapat diskalakan."
     },
     "Python": {
       "name": "Python",
-      "description": "Not using python anywhere but at college/to help my friends with their projects."
+      "description": "Tidak menggunakan python dimanapun kecuali di perguruan tinggi/untuk membantu kawan kawanku dengan proyek mereka."
     },
     "Rust": {
       "name": "Rust",
-      "description": "I'm learning Rust and I'm loving it so far."
+      "description": "Aku mempelajari Rust dan aku menyukainya hingga sekarang."
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "section-name": "Works",
+  "section-name": "Karya",
   "works": {
     "Portfolio": {
-      "title": "Portfolio",
-      "description": "My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "title": "Portofolio",
+      "description": "Situs web portofolio pribadi saya yang terdiri dari proyek, kumpulan keterampilan, dan informasi kontak saya. Inilah yang Anda kunjungi sekarang.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
@@ -14,7 +14,7 @@
     },
     "Splendid": {
       "title": "Splendid",
-      "description": "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+      "description": "Hybrid CMS memperluas kekuatan kerangka kerja dengan basis kode yang dapat diperluas. Memberikan tampilan yang benar-benar baru di CMS.",
       "stack": {
         "NestJS": "NestJS",
         "Next.js": "Next.js",
@@ -25,8 +25,8 @@
       }
     },
     "Todo tracker": {
-      "title": "Todo tracker",
-      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "title": "Pelacak Todo",
+      "description": "Aplikasi todo minimalis yang dibuat dengan Vue.js dan Tailwind CSS. Menggunakan firebase untuk autentikasi dan database.",
       "stack": {
         "Vue.js": "Vue.js",
         "Tailwind CSS": "Tailwind CSS",
@@ -34,8 +34,8 @@
       }
     },
     "Profile Card": {
-      "title": "Profile Card",
-      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "title": "Kartu Profil",
+      "description": "Kartu profil sederhana yang dibuat mirip dengan kartu profil discord. proyek pertama saya dalam web development.",
       "stack": {
         "HTML": "HTML",
         "SASS": "SASS",
@@ -44,14 +44,14 @@
     },
     "Wordgen.js": {
       "title": "Wordgen.js",
-      "description": "A JavaScript library that generates not existing words, but words that are similar to existing.",
+      "description": "JavaScript library yang menghasilkan kata-kata yang tidak ada, tetapi kata-kata yang sama dengan yang sudah ada.",
       "stack": {
         "JavaScript": "JavaScript"
       }
     },
     "KNRTU-KAI Discord Bot": {
       "title": "KNRTU-KAI Discord Bot",
-      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "description": "Discord bot untuk KNRTU-KAI university. menyediakan banyak fitur yang berguna bagi pelajar dan juga guru.",
       "stack": {
         "Sapphire": "Sapphire",
         "TypeScript": "TypeScript",
@@ -60,7 +60,7 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "description": "API modern kecil dari situs web KNRTU-KAI ditulis untuk Node.js. Ini digunakan dalam Discord Bot KNRTU-KAI.",
       "stack": {
         "JavaScript": "JavaScript"
       }
