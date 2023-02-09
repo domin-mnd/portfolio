@@ -51,16 +51,16 @@ export const translations: Translation[] = [
   //   flag: ITFlag,
   //   locale: 'it'
   // },
-  // {
-  //   name: 'Polski',
-  //   flag: PLFlag,
-  //   locale: 'pl'
-  // },
-  // {
-  //   name: 'Bahasa',
-  //   flag: IDFlag,
-  //   locale: 'id'
-  // },
+  {
+    name: 'Polski',
+    flag: PLFlag,
+    locale: 'pl'
+  },
+  {
+    name: 'Bahasa',
+    flag: IDFlag,
+    locale: 'id'
+  },
   {
     name: 'Русский',
     flag: RUFlag,

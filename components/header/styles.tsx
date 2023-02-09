@@ -94,6 +94,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     backgroundColor: "transparent",
     height: 38,
     width: "100%",
+    marginBottom: 6,
 
     ':hover': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),

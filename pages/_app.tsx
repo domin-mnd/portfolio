@@ -9,7 +9,7 @@ import { appWithTranslation } from 'next-i18next';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
-  subsets: ['latin', 'cyrillic'],
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
   display: 'optional',
 });
 
