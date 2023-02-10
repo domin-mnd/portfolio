@@ -22,6 +22,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   title: {
     position: 'absolute',
     textTransform: 'uppercase',
+    textAlign: 'center',
 
     [theme.fn.smallerThan('sm')]: {
       top: 0,

@@ -47,6 +47,13 @@ const App = ({ Component, ...pageProps }: AppProps) => (
           // In mantine@6 headings' font family sticks to theme.fontFamily by default
           fontFamily: inter.style.fontFamily,
         },
+        globalStyles: (theme) => ({
+          // Override default global styles without usage of css imports
+          "::selection": {
+            backgroundColor: theme.colors.dark[8],
+            color: theme.white,
+          }
+        })
       }}
     >
       <Box bg="gray.0">
