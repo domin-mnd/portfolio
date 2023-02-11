@@ -49,11 +49,11 @@ const App = ({ Component, ...pageProps }: AppProps) => (
         },
         globalStyles: (theme) => ({
           // Override default global styles without usage of css imports
-          "::selection": {
+          '::selection': {
             backgroundColor: theme.colors.dark[8],
             color: theme.white,
-          }
-        })
+          },
+        }),
       }}
     >
       <Box bg="gray.0">

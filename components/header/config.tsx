@@ -70,5 +70,5 @@ export const translations: Translation[] = [
     name: 'Bahasa',
     flag: IDFlag,
     locale: 'id',
-  }
+  },
 ];
