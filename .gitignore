@@ -42,5 +42,6 @@ yarn-error.log*
 .vercel
 *.tsbuildinfo
 
-# webstorm
+# intellij
 .idea
+.fleet
