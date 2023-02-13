@@ -1,13 +1,13 @@
 {
-  "section-name": "About",
+  "section-name": "Про мене",
   "full-name": {
-    "first": "Kamil",
-    "last": "Sakhabutdinov",
-    "middle": "Rasimovich"
+    "first": "Каміль",
+    "last": "Сахабутдінов",
+    "middle": "Расімович"
   },
-  "nickname-label": "Also known as {{nicknameValue}}",
-  "nickname-value": "Domin",
-  "location-label": "Location:",
-  "location-value": "Kazan, Russia",
+  "nickname-label": "Відомий як {{nicknameValue}}",
+  "nickname-value": "Домін",
+  "location-label": "Розташування:",
+  "location-value": "Казань, Росія",
   "description-value": "Ambitious, self-taught 17 years old software engineer with a great passion for technology, web design and development. Has been programming since the age of 12. Proficient in developing databases, creating user interfaces and implementing new features based on user feedback. Ready to learn and collaborate in rapidly changing environments and compositions. Adept in all stages of advanced web development."
 }
