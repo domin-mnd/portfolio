@@ -38,7 +38,31 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
 
     // Disable dragging carousel when the user is scrolling the card
     document.querySelectorAll('.mantine-ScrollArea-viewport')?.forEach((element: Element) => {
+      // let bottom = false, top = true;
+      // element.addEventListener('touchstart', () => {
+      //   modScroll(bottom || top);
+      // });
       element.addEventListener('touchstart', () => modScroll(false));
+      // let lastScrollTop = 1, delta = 5;
+      // element.addEventListener('touchmove', () => {
+      //   const nowScrollTop = element.scrollTop;
+      //   if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
+      //     if (nowScrollTop > lastScrollTop) {
+      //       if (nowScrollTop + element.clientHeight === element.scrollHeight) {
+      //         bottom = true;
+      //       } else {
+      //         bottom = false;
+      //       }
+      //     } else {
+      //       if (nowScrollTop === 0) {
+      //         top = true;
+      //       } else {
+      //         top = false;
+      //       }
+      //     }
+      //     lastScrollTop = nowScrollTop;
+      //   }
+      // });
       element.addEventListener('touchend', () => modScroll(mobile));
     });
 
