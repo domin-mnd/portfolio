@@ -70,7 +70,8 @@
       "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
       "stack": {
         "TypeScript": "TypeScript",
-        "Jest": "Jest"
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }
