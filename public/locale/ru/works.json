@@ -70,7 +70,8 @@
       "description": "Действенный цветовой инструмент для настройки и выбора цветов для проектов без каких-либо колебаний.",
       "stack": {
         "TypeScript": "TypeScript",
-        "Jest": "Jest"
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }
