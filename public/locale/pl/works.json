@@ -67,7 +67,7 @@
     },
     "Cvet": {
       "title": "Cvet",
-      "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
+      "description": "Wydajne narzędzie kolorystyczne do dostosowywania i wybierania kolorów do projektów.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest",
