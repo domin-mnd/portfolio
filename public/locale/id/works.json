@@ -42,11 +42,12 @@
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "JavaScript library yang menghasilkan kata-kata yang tidak ada, tetapi kata-kata yang sama dengan yang sudah ada.",
+    "Slova": {
+      "title": "Slova",
+      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
