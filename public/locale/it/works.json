@@ -42,11 +42,12 @@
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "Una libreria scritta in JavaScript che genera parole non esistenti, ma bensì parole simili.",
+    "Slova": {
+      "title": "Slova",
+      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
