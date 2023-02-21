@@ -33,7 +33,7 @@ export const Contact: FunctionComponent = (): ReactElement => {
         // Which sticks to the bottom of the card
         className={classes.content}
       >
-        <Group>
+        <Group position="center">
           {socials.map((social: Social) => (
             <Tooltip
               key={social.name}
