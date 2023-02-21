@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandGitlab, IconBrandNpm, IconBrandReddit, IconBrandTwitter, IconMail } from '@tabler/icons';
+import { IconBrandGithub, IconBrandGitlab, IconBrandMastodon, IconBrandNpm, IconBrandReddit, IconBrandTwitter, IconMail } from '@tabler/icons';
 
 /** Social medias / Email / Phone (no phone number because yes) */
 export const socials: Social[] = [
@@ -25,6 +25,12 @@ export const socials: Social[] = [
     href: 'https://twitter.com/Dominiff',
     username: 'Dominiff',
     icon: IconBrandTwitter,
+  },
+  {
+    name: 'Mastodon',
+    href: 'https://mastodon.social/@dominmnd',
+    username: 'dominmnd',
+    icon: IconBrandMastodon
   },
   {
     name: 'NPM',
