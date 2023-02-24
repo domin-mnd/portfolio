@@ -44,7 +44,7 @@
     },
     "Slova": {
       "title": "Slova",
-      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
+      "description": "Alat placeholder untuk menghasilkan kata-kata yang belum pernah terucap. Alat ini berguna jika Anda ingin melihat produk Anda dari sudut yang berbeda.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest"
@@ -68,7 +68,7 @@
     },
     "Cvet": {
       "title": "Cvet",
-      "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
+      "description": "Alat warna yang efisien untuk menyesuaikan dan memilih warna untuk proyek tanpa ragu-ragu.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest",
