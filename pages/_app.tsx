@@ -4,8 +4,7 @@ import { Inter } from '@next/font/google';
 import { MantineProvider, AppShell, Box } from '@mantine/core';
 import { Header } from '@component/header';
 import { Footer } from '@component/footer';
-import { about } from '@component/about';
-import { appWithTranslation } from 'next-i18next';
+import { appWithTranslation, useTranslation } from 'next-i18next';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
@@ -14,11 +13,23 @@ const inter = Inter({
 });
 
 // An app wrapper with MantineProvider
-const App = ({ Component, ...pageProps }: AppProps) => (
+const App = ({ Component, ...pageProps }: AppProps) => {
+  const { t } = useTranslation('works');
+
+  return (
   <>
     <Head>
-      <title>{about.name[0]}</title>
+      <title>{t('works.Portfolio.title') || ''}</title>
       <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+      <meta property="og:title" content={t('works.Portfolio.title') || ''} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://domin.pro/" />
+      <meta property="og:image" content="https://domin.pro/works/portfolio.png" />
+      <meta property="og:description" content={t('works.Portfolio.description') || ''} />
+      {/* Making the card bigger */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="theme-color" content="#e3e3e3" />
+      <link rel="shortcut icon" href="/favicon.svg" />
     </Head>
 
     <MantineProvider
@@ -63,6 +74,6 @@ const App = ({ Component, ...pageProps }: AppProps) => (
       </Box>
     </MantineProvider>
   </>
-);
+)};
 
 export default appWithTranslation(App);

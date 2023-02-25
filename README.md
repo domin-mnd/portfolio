@@ -92,6 +92,19 @@ Huge thanks to these wonderful people for their contributions:
         Translated portfolio to polish & helped with testing the web
       </td>
     </tr>
+    <tr>
+      <td>
+        <a href="https://discord.gg/AaS4dwVHyA">
+          <img alt="djoh" src="https://avatars.githubusercontent.com/u/68508885" width="64" />
+        </a>
+      </td>
+      <td>
+        <a href="https://discord.gg/AaS4dwVHyA">
+          <strong>djoh</strong><br />
+        </a>
+        Translated portfolio to ukrainian
+      </td>
+    </tr>
   </tbody>
 </table>
 

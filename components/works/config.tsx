@@ -1,21 +1,19 @@
-import type { MantineColor } from '@mantine/core';
-import type { StaticImageData } from 'next/image';
-
 // Assets for banner images
 import portfolio from '@public/works/portfolio.png';
 import splendid from '@public/works/splendid.png';
 import todoTracker from '@public/works/todo-tracker.png';
 import profileCard from '@public/works/profile-card.png';
-import wordgenJs from '@public/works/wordgen.js.png';
+import slova from '@public/works/slova.png';
 import knrtukaiDiscordBot from '@public/works/knrtu-kai-discord-bot.png';
 import kaiJs from '@public/works/kai.js.png';
+import cvet from '@public/works/cvet.png';
 
 /** An array of projects displayed in works section as cards */
 export const projects: Project[] = [
   {
     title: 'Portfolio',
     description:
-      'My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.',
+      'My personal portfolio website consisting of my projects, skill stack and contact information. This is what you visit right now.',
     banner: portfolio,
     stack: [
       {
@@ -117,17 +115,21 @@ export const projects: Project[] = [
     url: 'https://github.com/Domin-MND/profile-card',
   },
   {
-    title: 'Wordgen.js',
+    title: 'Slova',
     description:
-      'A JavaScript library that generates not existing words, but words that are similar to existing.',
-    banner: wordgenJs,
+      'A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.',
+    banner: slova,
     stack: [
       {
-        name: 'JavaScript',
-        color: 'yellow',
+        name: 'TypeScript',
+        color: 'blue',
+      },
+      {
+        name: 'Jest',
+        color: 'green',
       },
     ],
-    url: 'https://github.com/RaydanOMGr/wordgen.js/',
+    url: 'https://github.com/RaydanOMGr/slova',
   },
   {
     title: 'KNRTU-KAI Discord Bot',
@@ -162,5 +164,22 @@ export const projects: Project[] = [
       },
     ],
     url: 'https://github.com/supersetkai/kai.js',
+  },
+  {
+    title: 'Cvet',
+    description:
+      'An effecient color tool for customizing and picking colors for projects without any hesitation.',
+    banner: cvet,
+    stack: [
+      {
+        name: 'TypeScript',
+        color: 'blue',
+      },
+      {
+        name: 'Jest',
+        color: 'green',
+      },
+    ],
+    url: 'https://github.com/Domin-MND/cvet',
   },
 ];

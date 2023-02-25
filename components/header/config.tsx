@@ -61,11 +61,11 @@ export const translations: Translation[] = [
     flag: RUFlag,
     locale: 'ru',
   },
-  // {
-  //   name: 'Українська',
-  //   flag: UAFlag,
-  //   locale: 'uk'
-  // },
+  {
+    name: 'Українська',
+    flag: UAFlag,
+    locale: 'uk'
+  },
   {
     name: 'Bahasa',
     flag: IDFlag,
