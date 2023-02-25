@@ -3,7 +3,7 @@
   "works": {
     "Portfolio": {
       "title": "Portfolio",
-      "description": "My personal portfolio website consisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "description": "Meine persönliche Portfolio-Website die aus meinen Projekten, Skill-Stack und Kontaktinfos besteht. Das ist was du jetzt anschaust.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
