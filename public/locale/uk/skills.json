@@ -5,51 +5,51 @@
   "skills": {
     "Java": {
       "name": "Java",
-      "description": "I started my programming journey with Java for mobile development and I still love it to this day."
+      "description": "Я почав свою подорож з цієї мови програмування для мобільної розробки та люблю її по сьогоднішній день."
     },
     "JavaScript": {
       "name": "JavaScript",
-      "description": "After some time I switched to web development and all started with JavaScript."
+      "description": "Після деякого часу я перейшов на веброзробку і все почалося з JavaScript."
     },
     "SASS": {
       "name": "SASS",
-      "description": "A preprocessor scripting language that is interpreted or compiled into CSS."
+      "description": "Препроцесорна мова скриптів, яка інтерпретується або компілюється в CSS."
     },
     "Tailwind CSS": {
       "name": "Tailwind CSS",
-      "description": "A utility-first CSS framework for rapidly building custom designs."
+      "description": "CSS-фреймворк для швидкого створення користувацьких дизайнів."
     },
     "TypeScript": {
       "name": "TypeScript",
-      "description": "A must have for most of my projects. Used in this portfolio."
+      "description": "\"Маст хев\" для більшості моїх проєктів. Використовується в цьому портфоліо."
     },
     "React": {
       "name": "React",
-      "description": "A JavaScript library for building user interfaces."
+      "description": "Бібліотека JavaScript для створення користувацьких інтерфейсів."
     },
     "Redux": {
       "name": "Redux",
-      "description": "A predictable state container for JavaScript apps."
+      "description": "Інструмент для управління станами даних в програмах JavaScript."
     },
     "Next.js": {
       "name": "Next.js",
-      "description": "A React framework for production. Used in this portfolio."
+      "description": "Фреймворк React для продакшна. Використовується в цьому портфоліо."
     },
     "Vue.js": {
       "name": "Vue.js",
-      "description": "A JavaScript framework for building user interfaces. In my opinion it is the amazing framework for beginners."
+      "description": "JavaScript фреймворк для створення користувацьких інтерфейсів. На мою думку, це прекрасний фреймворк для початківців."
     },
     "NestJS": {
       "name": "NestJS",
-      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications."
+      "description": "Прогресивний Node.js фреймворк для будівництва ефективних, надійних і масштабованих серверних програм."
     },
     "Python": {
       "name": "Python",
-      "description": "Not using python anywhere but at college/to help my friends with their projects."
+      "description": "Не користуюсь Python ніде, тільки в коледжі, або щоб допомагати друзям зі своїми проєктами."
     },
     "Rust": {
       "name": "Rust",
-      "description": "I'm learning Rust and I'm loving it so far."
+      "description": "Я вивчаю Rust і поки що обожнюю його."
     }
   }
 }
