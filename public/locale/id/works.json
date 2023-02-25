@@ -3,7 +3,7 @@
   "works": {
     "Portfolio": {
       "title": "Portofolio",
-      "description": "My personal portfolio website consisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "description": "Situs web portofolio pribadi saya yang terdiri dari proyek, kumpulan keterampilan, dan informasi kontak saya. Inilah yang Anda kunjungi sekarang.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
