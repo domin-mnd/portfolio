@@ -1,7 +1,7 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Навички",
+  "examples-label": "Приклади:",
+  "knowledge-label": "Мій рівень знань {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
