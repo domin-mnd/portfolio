@@ -44,7 +44,7 @@
     },
     "Slova": {
       "title": "Slova",
-      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
+      "description": "Ein Platzhalterwerkzeug zum Generieren nicht-existierende aussprechbarer Wörter. Großartiges Werkzeug, wenn Sie Ihr Produkt aus einem anderen Blickwinkel betrachten möchten.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest"
