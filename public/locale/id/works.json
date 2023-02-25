@@ -42,11 +42,12 @@
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "JavaScript library yang menghasilkan kata-kata yang tidak ada, tetapi kata-kata yang sama dengan yang sudah ada.",
+    "Slova": {
+      "title": "Slova",
+      "description": "Alat placeholder untuk menghasilkan kata-kata yang belum pernah terucap. Alat ini berguna jika Anda ingin melihat produk Anda dari sudut yang berbeda.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
@@ -63,6 +64,15 @@
       "description": "API modern kecil dari situs web KNRTU-KAI ditulis untuk Node.js. Ini digunakan dalam Discord Bot KNRTU-KAI.",
       "stack": {
         "JavaScript": "JavaScript"
+      }
+    },
+    "Cvet": {
+      "title": "Cvet",
+      "description": "Alat warna yang efisien untuk menyesuaikan dan memilih warna untuk proyek tanpa ragu-ragu.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }

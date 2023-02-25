@@ -1,9 +1,9 @@
 {
-  "section-name": "Works",
+  "section-name": "Проєкти",
   "works": {
     "Portfolio": {
-      "title": "Portfolio",
-      "description": "My personal portfolio website constisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "title": "Портфоліо",
+      "description": "Мій особистий сайт портфоліо складається з моїх проєктів, навичок та контактної інформації. Це те, що ви відвідуєте прямо зараз.",
       "stack": {
         "Next.js": "Next.js",
         "React": "React",
@@ -14,7 +14,7 @@
     },
     "Splendid": {
       "title": "Splendid",
-      "description": "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+      "description": "Гібридна CMS, розширююча можливості фреймворку внаслідок своєї розширюваної кодової бази. Надає абсолютно новий погляд на CMS.",
       "stack": {
         "NestJS": "NestJS",
         "Next.js": "Next.js",
@@ -25,8 +25,8 @@
       }
     },
     "Todo tracker": {
-      "title": "Todo tracker",
-      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "title": "Трекер списку завдань",
+      "description": "Мінімалістична програма побудована з Vue.js і Tailwind CSS. Використовує firebase для автентифікації та бази даних.",
       "stack": {
         "Vue.js": "Vue.js",
         "Tailwind CSS": "Tailwind CSS",
@@ -34,19 +34,20 @@
       }
     },
     "Profile Card": {
-      "title": "Profile Card",
-      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "title": "Картка профілю",
+      "description": "Картка профілю зроблена такою ж як і картка профілю Discord. Це вважається моїм першим проєктом у веброзробці.",
       "stack": {
         "HTML": "HTML",
         "SASS": "SASS",
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "A JavaScript library that generates not existing words, but words that are similar to existing.",
+    "Slova": {
+      "title": "Slova",
+      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
@@ -63,6 +64,15 @@
       "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
       "stack": {
         "JavaScript": "JavaScript"
+      }
+    },
+    "Cvet": {
+      "title": "Cvet",
+      "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }

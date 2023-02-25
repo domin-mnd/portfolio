@@ -42,11 +42,12 @@
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "Библиотека JavaScript, которая генерирует не существующие слова, а слова, похожие на существующие.",
+    "Slova": {
+      "title": "Slova",
+      "description": "Инструмент-заполнитель для создания несуществующих произносимых слов. Отличный вариант, если вы хотите взглянуть на свой продукт под другим углом.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
@@ -63,6 +64,15 @@
       "description": "Небольшой современный АПИ враппер веб-сайта КНИТУ-КАИ, написанный для Node.js. Используется в дискорд боте КНИТУ-КАИ.",
       "stack": {
         "JavaScript": "JavaScript"
+      }
+    },
+    "Cvet": {
+      "title": "Cvet",
+      "description": "Действенный цветовой инструмент для настройки и выбора цветов для проектов без каких-либо колебаний.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }

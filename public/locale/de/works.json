@@ -42,11 +42,12 @@
         "TypeScript": "TypeScript"
       }
     },
-    "Wordgen.js": {
-      "title": "Wordgen.js",
-      "description": "Eine Javascript-Bibliothek die nicht-existierende, aber existierend-klingende Worte generiert.",
+    "Slova": {
+      "title": "Slova",
+      "description": "Ein Platzhalterwerkzeug zum Generieren nicht-existierende aussprechbarer Wörter. Großartiges Werkzeug, wenn Sie Ihr Produkt aus einem anderen Blickwinkel betrachten möchten.",
       "stack": {
-        "JavaScript": "JavaScript"
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
@@ -63,6 +64,15 @@
       "description": "Ein kleiner moderner, in Node.js geschriebener API-Wrapper für die KNRTU-KAI Website. Es wird im KNRTU-KAI Discord-Bot benutzt.",
       "stack": {
         "JavaScript": "JavaScript"
+      }
+    },
+    "Cvet": {
+      "title": "Cvet",
+      "description": "Ein effizientes Werkzueg um Farben fur Projekte ohne zögerung zu wählen und anpassen.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest",
+        "Oclif": "Oclif"
       }
     }
   }
