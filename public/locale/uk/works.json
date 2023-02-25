@@ -44,15 +44,15 @@
     },
     "Slova": {
       "title": "Slova",
-      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
+      "description": "Інструмент-заповнювач для створення неіснуючих вимовних слів. Чудовий інструмент, якщо ви хочете поглянути на свій продукт під іншим кутом.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest"
       }
     },
     "KNRTU-KAI Discord Bot": {
-      "title": "KNRTU-KAI Discord Bot",
-      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "title": "Discord бот КНДТУ-КАІ",
+      "description": "Discord бот для університету КНДТУ-КАІ. Він надає багато корисних функцій для учнів та вчителів.",
       "stack": {
         "Sapphire": "Sapphire",
         "TypeScript": "TypeScript",
@@ -61,14 +61,14 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "description": "Невеликий сучасний API враппер веб-сайту КНДТУ-КАІ написаний для Node.js. Він використовується в Discord боті KNRTU-KAI.",
       "stack": {
         "JavaScript": "JavaScript"
       }
     },
     "Cvet": {
       "title": "Cvet",
-      "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
+      "description": "Дієвий колірний інструмент для налаштування та вибору кольорів для проєктів без будь-яких коливань.",
       "stack": {
         "TypeScript": "TypeScript",
         "Jest": "Jest",
