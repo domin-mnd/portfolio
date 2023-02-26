@@ -61,7 +61,7 @@
     },
     "Kai.js": {
       "title": "Kai.js",
-      "description": "Невеликий сучасний API враппер веб-сайту КНДТУ-КАІ написаний для Node.js. Він використовується в Discord боті KNRTU-KAI.",
+      "description": "Невеликий сучасний API враппер веб-сайту КНДТУ-КАІ написаний для Node.js. Він використовується в Discord боті КНДТУ-КАІ.",
       "stack": {
         "JavaScript": "JavaScript"
       }
