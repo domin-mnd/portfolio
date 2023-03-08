@@ -285,6 +285,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ikota/mantine@npm:^0.9.9":
+  version: 0.9.9
+  resolution: "@ikota/mantine@npm:0.9.9"
+  dependencies:
+    ikota: ^1.0.1
+  checksum: 2d052c0c96538a8a16a1aa0f501d873951382a1b446c9cf438daaf1746e52ed7bebefd0bf278b4999333e300dee6fa3a8d04bd1c821beda43c774a28fe6aa52a
+  languageName: node
+  linkType: hard
+
 "@mantine/carousel@npm:5.9.0":
   version: 5.9.0
   resolution: "@mantine/carousel@npm:5.9.0"
@@ -3757,6 +3766,7 @@ __metadata:
   dependencies:
     "@emotion/react": ^11.10.4
     "@emotion/server": ^11.10.0
+    "@ikota/mantine": ^0.9.9
     "@mantine/carousel": 5.9.0
     "@mantine/core": 5.9.0
     "@mantine/eslint-config": ^3.6.14
