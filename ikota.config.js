@@ -1,3 +1,5 @@
+const ikotaMantine = require("@ikota/mantine")
+
 /**
  * @type {import('ikota').IkotaConfig}
  */
@@ -6,7 +8,11 @@ module.exports = {
   useTypescript: true,
   addConfigFile: true,
   addIndexFile: true,
-  preprocessor: "css",
+  preprocessor: "mantine",
   useLambdaSimplifier: false,
-  trailingSpace: true
+  trailingSpace: true,
+  plugins: [ikotaMantine],
+  other: {
+    styleProps: true
+  }
 }
