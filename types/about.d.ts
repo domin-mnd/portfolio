@@ -10,4 +10,6 @@ interface About {
   description: string;
   /** A location of the person */
   location: string;
+  /** A time zone */
+  timeZone: string;
 }

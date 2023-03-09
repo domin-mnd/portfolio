@@ -1,9 +1,11 @@
 import type { FunctionComponent, ReactElement } from 'react';
-import { Avatar, Flex, Text, Title } from '@mantine/core';
+import { Avatar, Flex, Space, Text, Title } from '@mantine/core';
 import { about } from './config';
 import { useStyles } from './styles';
 import { useMediaQuery } from '@mantine/hooks';
 import { Trans, useTranslation } from 'next-i18next';
+import { IconMapPin, IconClockHour4 } from "@tabler/icons";
+import { LocaleTime } from '@component/localeTime';
 
 /**
  * An about section with information about the person
@@ -35,12 +37,22 @@ export const About: FunctionComponent = (): ReactElement => {
               })}
             </Text>
           )}
-          <Text size="sm">{t('location-label')}</Text>
-          <Text size="sm" color="dimmed">
-            <Trans i18nKey="location-value" t={t}>
-              {about.location}
-            </Trans>
-          </Text>
+          <Flex align="center">
+            <IconMapPin size={18} />
+            <Space w={5} />
+            <Text size="sm">
+              <Trans i18nKey="location-value" t={t}>
+                {about.location}
+              </Trans>
+            </Text>
+          </Flex>
+          <Flex align="center" mt={5}>
+            <IconClockHour4 size={18} />
+            <Space w={5} />
+            <Text size="sm">
+              <LocaleTime />
+            </Text>
+          </Flex>
         </div>
       </Flex>
       <Text>

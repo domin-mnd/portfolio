@@ -15,4 +15,5 @@ export const about: About = {
     'advanced web development.',
   ].join(' '),
   location: 'Kazan, Russia',
+  timeZone: 'Europe/Moscow'
 };
