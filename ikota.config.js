@@ -1,4 +1,4 @@
-const ikotaMantine = require("@ikota/mantine")
+const ikotaMantine = require("@ikota/mantine");
 
 /**
  * @type {import('ikota').IkotaConfig}
