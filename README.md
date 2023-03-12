@@ -108,7 +108,7 @@ Huge thanks to these wonderful people for their contributions:
   </tbody>
 </table>
 
-> Note: If you wish to help translate the portfolio to your language, please join the [Crowdin project](https://crowdin.com/project/domins-portfolio).
+> **Note**: If you wish to help translate the portfolio to your language, please join the [Crowdin project](https://crowdin.com/project/domins-portfolio).
 
 ## License
 
