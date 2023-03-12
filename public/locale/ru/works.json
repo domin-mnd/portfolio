@@ -77,7 +77,7 @@
     },
     "Ikota": {
       "title": "Ikota",
-      "description": "A CLI boilerplate automation tool offering various utilities to help working with React web applications.",
+      "description": "CLI инструмент для автоматизации бойлерплейта, предлагающий различные утилиты для работы с React веб-приложениями.",
       "stack": {
         "TypeScript": "TypeScript",
         "Oclif": "Oclif",
