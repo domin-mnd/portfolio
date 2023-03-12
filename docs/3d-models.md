@@ -2,9 +2,9 @@
 
 In this guide I mention some basic aspects of [three.js](https://threejs.org/) along with some of the techniques I used while implementing 3d models in my portfolio.
 
-> Note: This guide is not a tutorial on how to use three.js. It's more of a guide on how I used three.js in my portfolio.
+> **Note**: This guide is not a tutorial on how to use three.js. It's more of a guide on how I used three.js in my portfolio.
 
-> Note: The model used in this portfolio [isn't made/owned by me](https://sketchfab.com/sleepyjoshua)
+> **Note**: The model used in this portfolio [isn't made/owned by me](https://sketchfab.com/sleepyjoshua)
 
 ## Table of contents
 

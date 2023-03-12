@@ -116,7 +116,7 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
   }
 
   // Unix timestamp of scroll to not let user scroll carousel
-  // more than once in 200ms period
+  // More than once in 200ms period
   let deltaUnix: number = 0;
 
   /**
@@ -128,7 +128,6 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     // Prevent wheel scrolling on scrollable cards
     // stopPropagation() alternative
     if (event.target !== event.currentTarget) return;
-
 
     // If scroll is scrolled more than once in 200ms then
     // Do nothing

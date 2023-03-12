@@ -65,7 +65,7 @@ const carouselSlides = slides.map((child: ReactElement, index: number) => (
 ));
 ```
 
-> Note: Make sure to make the children of the Slide component smaller than the screen size. Otherwise it will overflow the screen.
+> **Note**: Make sure to make the children of the Slide component smaller than the screen size. Otherwise it will overflow the screen.
 
 ## Header
 
@@ -180,6 +180,11 @@ Not only we're transforming a carousel into a page, we're also making it user-fr
 document.querySelectorAll('.mantine-Carousel-slide, canvas')?.forEach((element: Element) => {
   element.addEventListener('wheel', scroll);
 });
+
+// Unix timestamp of scroll to not let user scroll carousel
+// More than once in 200ms period
+let deltaUnix: number = 0;
+
 /**
  * Scroll a slide up or down based on the wheel delta
  * @param {Event & WheelEventInit} event Wheel event from the scrollable card
@@ -189,6 +194,12 @@ function scroll(event: Event & WheelEventInit): void {
   // Prevent wheel scrolling on scrollable cards
   // stopPropagation() alternative
   if (event.target !== event.currentTarget) return;
+
+  // If scroll is scrolled more than once in 200ms then
+  // Do nothing
+  const unixTimestamp = new Date().getTime();
+  if (unixTimestamp - deltaUnix < 200) return;
+  deltaUnix = unixTimestamp;
 
   // Prevent default wheel scrolling
   // Shouldn't be needed but it's here just in case
@@ -206,9 +217,11 @@ function scroll(event: Event & WheelEventInit): void {
 
 In order to assign scrollable slides, we query select carousel slide along with landing canvas. Then we add a wheel event listener to each of them. The `scroll()` function is called when the user scrolls the mouse wheel. It prevents default wheel scrolling and then decides whether to scroll up or down based on the wheel delta.
 
-> Note: The `event.target !== event.currentTarget` check is needed because the wheel event is emitted on the scrollable card and the carousel. We only want to scroll the carousel when the user is scrolling the carousel.
+> **Note**: By adding unix timestamp check algorithm we check whether a user scrolled twice or more in the span of 200ms. In this case we do nothing to prevent free-spin mode issues.
 
-> Pro tip: mouse delta is the distance between the current and the previous mouse position. When delta is positive, the mouse is moving down & when delta is negative, the mouse is moving up.
+> **Note**: The `event.target !== event.currentTarget` check is needed because the wheel event is emitted on the scrollable card and the carousel. We only want to scroll the carousel when the user is scrolling the carousel.
+
+> **Pro Tip**: mouse delta is the distance between the current and the previous mouse position. When delta is positive, the mouse is moving down & when delta is negative, the mouse is moving up.
 
 ### touchstart & touchend
 
