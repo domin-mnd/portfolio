@@ -115,6 +115,10 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     });
   }
 
+  // Unix timestamp of scroll to not let user scroll carousel
+  // more than once in 200ms period
+  let deltaUnix: number = 0;
+
   /**
    * Scroll a slide up or down based on the wheel delta
    * @param {Event & WheelEventInit} event Wheel event from the scrollable card
@@ -124,6 +128,13 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     // Prevent wheel scrolling on scrollable cards
     // stopPropagation() alternative
     if (event.target !== event.currentTarget) return;
+
+
+    // If scroll is scrolled more than once in 200ms then
+    // Do nothing
+    const unixTimestamp = new Date().getTime();
+    if (unixTimestamp - deltaUnix < 200) return;
+    deltaUnix = unixTimestamp;
 
     // Prevent default wheel scrolling
     // Shouldn't be needed but it's here just in case
