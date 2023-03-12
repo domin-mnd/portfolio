@@ -74,6 +74,15 @@
         "Jest": "Jest",
         "Oclif": "Oclif"
       }
+    },
+    "Ikota": {
+      "title": "Ikota",
+      "description": "A CLI boilerplate automation tool offering various utilities to help working with React web applications.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Oclif": "Oclif",
+        "TSDX": "TSDX"
+      }
     }
   }
 }
