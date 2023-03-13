@@ -3087,7 +3087,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-i18next@npm:13.2.2":
+"next-i18next@npm:^13.2.2":
   version: 13.2.2
   resolution: "next-i18next@npm:13.2.2"
   dependencies:
@@ -3105,7 +3105,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.2.4":
+"next@npm:^13.2.4":
   version: 13.2.4
   resolution: "next@npm:13.2.4"
   dependencies:
@@ -3557,7 +3557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:12.2.0":
+"react-i18next@npm:^12.2.0":
   version: 12.2.0
   resolution: "react-i18next@npm:12.2.0"
   dependencies:
@@ -3857,12 +3857,12 @@ __metadata:
     i18next: ^22.4.9
     ikota: ^1.0.1
     mantine-flagpack: ^1.0.1
-    next: 13.2.4
-    next-i18next: 13.2.2
+    next: ^13.2.4
+    next-i18next: ^13.2.2
     prettier: ^2.7.1
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-i18next: 12.2.0
+    react-i18next: ^12.2.0
     sharp: ^0.31.3
     three: ^0.148.0
     typescript: 4.8.4
