@@ -2,6 +2,7 @@ import { Carousel, Embla } from '@mantine/carousel';
 import { FunctionComponent, PropsWithChildren, ReactElement, useState, Children } from 'react';
 import { tabs } from '@component/header';
 import { NextRouter, useRouter } from 'next/router';
+import { getHotkeyHandler } from '@mantine/hooks';
 
 /**
  * A vertical carousel surrounding the entire page to scroll between sections,
@@ -167,6 +168,7 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
       draggable={mobile}
       withControls={false}
       getEmblaApi={setEmblaApi}
+      tabIndex={-1}
     >
       {Children.map(children, (child, index) => (
         <Carousel.Slide

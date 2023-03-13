@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { Inter } from '@next/font/google';
+import { Inter } from 'next/font/google';
 import { MantineProvider, AppShell, Box } from '@mantine/core';
 import { Header } from '@component/header';
 import { Footer } from '@component/footer';

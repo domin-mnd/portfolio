@@ -63,7 +63,12 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
         opened={opened}
         centered
         onClose={() => setOpened(false)}
-        overlayBlur={mobile ? 0 : 5}
+        overlayProps={{
+          blur: mobile ? 0 : 5
+        }}
+        transitionProps={{
+          transition: "fade"
+        }}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>
             <Trans i18nKey={'skills.' + selected?.name + '.name'} t={t}>
@@ -71,7 +76,6 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
             </Trans>
           </Text>
         }
-        transition="fade"
       >
         <Text color="dimmed">
           <Trans i18nKey={'skills.' + selected?.name + '.description'} t={t}>

@@ -1,4 +1,4 @@
-import type { FunctionComponent, PropsWithChildren } from 'react';
+import { FunctionComponent, PropsWithChildren, useRef } from 'react';
 import { Card, ScrollArea, Title, CardProps as MantineCardProps } from '@mantine/core';
 import { useStyles } from './styles';
 
@@ -26,9 +26,11 @@ export const SectionCard: FunctionComponent<PropsWithChildren<CardProps & Mantin
       )}
       <ScrollArea.Autosize
         className={classes.scrollArea}
-        maxHeight={height}
+        mah={height}
         type="never"
-        sx={{ overflow: 'hidden' }}
+        viewportProps={{
+          tabIndex: -1
+        }}
       >
         {children}
       </ScrollArea.Autosize>

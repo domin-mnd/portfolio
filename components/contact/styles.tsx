@@ -1,17 +1,17 @@
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, getStylesRef, MantineTheme } from '@mantine/core';
 
-export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
-  const image = getRef('image');
+export const useStyles = createStyles((theme: MantineTheme) => {
+  const image = getStylesRef('image');
 
   return {
     wrapper: {
       height: '60vh',
       boxSizing: 'border-box',
       borderRadius: theme.radius.xs,
-      padding: theme.spacing.xl * 2.5,
+      padding: `calc(${theme.spacing.xl} * 2.5)`,
 
-      [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
-        padding: theme.spacing.xl * 1.5,
+      [theme.fn.smallerThan("sm")]: {
+        padding: `calc(${theme.spacing.xl} * 1.5)`,
       },
     },
 
@@ -44,7 +44,7 @@ export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
       textAlign: 'center',
 
       [theme.fn.smallerThan('xs')]: {
-        fontSize: theme.fontSizes.xl * 1.3,
+        fontSize: `calc(${theme.fontSizes.xl} * 1.3)`,
       },
     },
 
@@ -52,7 +52,7 @@ export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
       color: theme.colors[theme.primaryColor][0],
       maxWidth: 300,
 
-      [`@media (max-width: ${theme.breakpoints.sm}px)`]: {
+      [theme.fn.smallerThan("sm")]: {
         maxWidth: '100%',
       },
     },

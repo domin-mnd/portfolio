@@ -17,6 +17,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   scrollArea: {
     borderRadius: theme.radius.xs,
+    overflow: 'hidden'
   },
 
   title: {
@@ -28,7 +29,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
       top: 0,
       left: '50%',
       transform: 'translate(-50%, -100%)',
-      fontSize: theme.fontSizes.xl * 1.5,
+      fontSize: `calc(${theme.fontSizes.xl} * 1.5)`,
     },
 
     [theme.fn.largerThan('sm')]: {
