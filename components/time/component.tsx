@@ -6,7 +6,7 @@ import { about } from '@component/about';
  * A locale time of the user based off configuration from about component
  * @returns {ReactElement} A text with time & offset
  */
-export const LocaleTime: FunctionComponent = (): ReactElement => {
+export const Time: FunctionComponent = (): ReactElement => {
   // 2 digit hour & minute locale time
   const localeTime = new Date().toLocaleTimeString([], {
     hour: '2-digit',

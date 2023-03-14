@@ -30,6 +30,7 @@ export const Works: FunctionComponent<WorksProps> = ({
           // Convert polymorphic component to anchor
           component="a"
           href={project.url}
+          tabIndex={-1}
           // Open in new tab
           target="_blank"
         >

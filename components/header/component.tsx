@@ -121,11 +121,13 @@ export const Header: FunctionComponent = (): ReactElement => {
         opened={opened}
         classNames={{
           header: classes.drawerHeader,
-          drawer: classes.drawerContent,
+          content: classes.drawerContent,
           title: classes.drawerTitle,
         }}
         onClose={toggle}
-        transition="slide-down"
+        transitionProps={{
+          transition: "slide-down"
+        }}
         position="top"
         // Use the Account as a title next to close icon
         padding="md"

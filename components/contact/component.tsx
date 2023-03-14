@@ -48,6 +48,7 @@ export const Contact: FunctionComponent = (): ReactElement => {
                 variant="transparent"
                 component="a"
                 href={social.href}
+                tabIndex={-1}
                 target="_blank"
               >
                 <social.icon size={22} stroke={1.5} />

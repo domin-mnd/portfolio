@@ -1,8 +1,7 @@
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, getStylesRef, MantineTheme } from '@mantine/core';
 
-export const useStyles = createStyles((theme: MantineTheme, _, getRef) => {
-  // In mantine@6 getRef is removed & instead you have to import getStylesRef
-  const image = getRef('image');
+export const useStyles = createStyles((theme: MantineTheme) => {
+  const image = getStylesRef('image');
 
   return {
     card: {
