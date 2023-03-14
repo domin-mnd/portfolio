@@ -1,0 +1,27 @@
+import { FunctionComponent, PropsWithChildren, ReactElement, useEffect } from 'react';
+import { useStyles } from './styles';
+import { Box } from '@mantine/core';
+import { Gradient } from './module';
+import { useMediaQuery } from '@mantine/hooks';
+
+export const Mesh: FunctionComponent<PropsWithChildren> = ({ children }): ReactElement => {
+  const { classes } = useStyles();
+  const optimize = useMediaQuery('(max-width: 960px');
+
+  // On component mount
+  useEffect(() => {
+    const gradient = new Gradient();
+    (gradient as any).initGradient('.' + classes.mesh);
+  });
+
+  return (
+    <>
+      {!optimize ? (
+        <canvas className={[classes.mesh, classes.overlay].join(' ')} />
+      ) : (
+        <Box className={[classes.override, classes.overlay].join(' ')} />
+      )}
+      {children}
+    </>
+  );
+};

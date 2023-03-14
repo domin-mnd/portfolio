@@ -20,6 +20,6 @@
       "@public/*": ["public/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/mesh/module.js"],
   "exclude": ["node_modules"]
 }

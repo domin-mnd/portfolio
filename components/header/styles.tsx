@@ -78,11 +78,11 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     height: 38,
 
     ':hover': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + " !important",
     },
 
     ':active': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + " !important",
     },
 
     [theme.fn.smallerThan('xs')]: {
@@ -97,11 +97,11 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     marginBottom: 6,
 
     ':hover': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + " !important",
     },
 
     ':active': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + " !important",
     },
   },
 

@@ -5,6 +5,7 @@ import { MantineProvider, AppShell, Box } from '@mantine/core';
 import { Header } from '@component/header';
 import { Footer } from '@component/footer';
 import { appWithTranslation, useTranslation } from 'next-i18next';
+import { Mesh } from '@component/mesh';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
@@ -67,11 +68,11 @@ const App = ({ Component, ...pageProps }: AppProps) => {
         }),
       }}
     >
-      <Box bg="gray.0">
+      <Mesh>
         <AppShell header={<Header />} footer={<Footer />} padding={0}>
           <Component {...pageProps} />
         </AppShell>
-      </Box>
+      </Mesh>
     </MantineProvider>
   </>
 )};
