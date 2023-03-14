@@ -5,7 +5,7 @@ import { useStyles } from './styles';
 import { useMediaQuery } from '@mantine/hooks';
 import { Trans, useTranslation } from 'next-i18next';
 import { IconMapPin, IconClockHour4 } from "@tabler/icons";
-import { LocaleTime } from '@component/localeTime';
+import { Time } from '@component/time';
 
 /**
  * An about section with information about the person
@@ -50,7 +50,7 @@ export const About: FunctionComponent = (): ReactElement => {
             <IconClockHour4 size={18} />
             <Space w={5} />
             <Text size="sm">
-              <LocaleTime />
+              <Time />
             </Text>
           </Flex>
         </div>
