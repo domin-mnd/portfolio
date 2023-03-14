@@ -11,6 +11,8 @@ export const Mesh: FunctionComponent<PropsWithChildren> = ({ children }): ReactE
   // On component mount
   useEffect(() => {
     const gradient = new Gradient();
+    // Basically @ts-ignore but in a better way
+    // since the module has no defined initGradient method
     (gradient as any).initGradient('.' + classes.mesh);
   });
 

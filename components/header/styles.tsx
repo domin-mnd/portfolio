@@ -22,6 +22,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   drawerHeader: {
     justifyContent: 'center',
+    backgroundColor: theme.colors.gray[0],
   },
 
   drawerContent: {
