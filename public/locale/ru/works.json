@@ -86,7 +86,7 @@
     },
     "Krasota": {
       "title": "Krasota",
-      "description": "Responsible, strongly typed, open source light React UI library. Amazing solution for extending your UI.",
+      "description": "Адаптивная, типизированная и нетяжёлая реакт библиотека с открытым исходным кодом. Прекрасное решение для расширения вашего UI.",
       "stack": {
         "TypeScript": "TypeScript",
         "React": "React"
