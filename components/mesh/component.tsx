@@ -10,7 +10,7 @@ import { useMediaQuery } from '@mantine/hooks';
  */
 export const Mesh: FunctionComponent<PropsWithChildren> = ({ children }): ReactElement => {
   const { classes } = useStyles();
-  const optimize = useMediaQuery('(max-width: 960px');
+  // const optimize = useMediaQuery('(max-width: 960px');
 
   // On component mount
   useEffect(() => {
@@ -22,11 +22,11 @@ export const Mesh: FunctionComponent<PropsWithChildren> = ({ children }): ReactE
 
   return (
     <>
-      {!optimize ? (
+      {/* {!optimize ? ( */}
         <canvas className={[classes.mesh, classes.overlay].join(' ')} />
-      ) : (
+      {/* ) : (
         <Box className={[classes.override, classes.overlay].join(' ')} />
-      )}
+      )} */}
       {children}
     </>
   );
