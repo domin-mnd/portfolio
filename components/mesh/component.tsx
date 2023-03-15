@@ -4,6 +4,10 @@ import { Box } from '@mantine/core';
 import { Gradient } from './module';
 import { useMediaQuery } from '@mantine/hooks';
 
+/**
+ * A mesh background taken from module.js
+ * @returns {ReactElement} a canvas or a box based off media query
+ */
 export const Mesh: FunctionComponent<PropsWithChildren> = ({ children }): ReactElement => {
   const { classes } = useStyles();
   const optimize = useMediaQuery('(max-width: 960px');

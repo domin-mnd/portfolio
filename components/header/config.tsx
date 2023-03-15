@@ -64,7 +64,7 @@ export const translations: Translation[] = [
   {
     name: 'Українська',
     flag: UAFlag,
-    locale: 'uk'
+    locale: 'uk',
   },
   {
     name: 'Bahasa',

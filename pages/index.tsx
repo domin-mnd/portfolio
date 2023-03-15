@@ -19,10 +19,6 @@ export default (): ReactNode => {
   const { t: skills } = useTranslation('skills');
   const { t: contact } = useTranslation('contact');
 
-  setInterval(() => {
-    if (typeof window !== "undefined") console.log(document.activeElement);
-  }, 1000);
-
   return (
     <>
       <Loading />

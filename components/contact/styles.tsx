@@ -10,7 +10,7 @@ export const useStyles = createStyles((theme: MantineTheme) => {
       borderRadius: theme.radius.xs,
       padding: `calc(${theme.spacing.xl} * 2.5)`,
 
-      [theme.fn.smallerThan("sm")]: {
+      [theme.fn.smallerThan('sm')]: {
         padding: `calc(${theme.spacing.xl} * 1.5)`,
       },
     },
@@ -52,7 +52,7 @@ export const useStyles = createStyles((theme: MantineTheme) => {
       color: theme.colors[theme.primaryColor][0],
       maxWidth: 300,
 
-      [theme.fn.smallerThan("sm")]: {
+      [theme.fn.smallerThan('sm')]: {
         maxWidth: '100%',
       },
     },

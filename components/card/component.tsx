@@ -29,7 +29,7 @@ export const SectionCard: FunctionComponent<PropsWithChildren<CardProps & Mantin
         mah={height}
         type="never"
         viewportProps={{
-          tabIndex: -1
+          tabIndex: -1,
         }}
       >
         {children}

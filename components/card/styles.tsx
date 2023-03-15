@@ -17,7 +17,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   scrollArea: {
     borderRadius: theme.radius.xs,
-    overflow: 'hidden'
+    overflow: 'hidden',
   },
 
   title: {

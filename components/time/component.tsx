@@ -16,11 +16,11 @@ export const Time: FunctionComponent = (): ReactElement => {
   });
   // Find local timezone offset
   const offset = new Intl.DateTimeFormat([], {
-    timeZoneName: "short",
+    timeZoneName: 'short',
     timeZone: about.timeZone,
   })
     .formatToParts()
-    .find((i) => i.type === "timeZoneName")?.value;
+    .find((i) => i.type === 'timeZoneName')?.value;
   return (
     <Text>
       {localeTime}{' '}

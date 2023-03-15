@@ -64,10 +64,10 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
         centered
         onClose={() => setOpened(false)}
         overlayProps={{
-          blur: mobile ? 0 : 5
+          blur: mobile ? 0 : 5,
         }}
         transitionProps={{
-          transition: "fade"
+          transition: 'fade',
         }}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>

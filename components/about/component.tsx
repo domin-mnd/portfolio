@@ -4,7 +4,7 @@ import { about } from './config';
 import { useStyles } from './styles';
 import { useMediaQuery } from '@mantine/hooks';
 import { Trans, useTranslation } from 'next-i18next';
-import { IconMapPin, IconClockHour4 } from "@tabler/icons";
+import { IconMapPin, IconClockHour4 } from '@tabler/icons';
 import { Time } from '@component/time';
 
 /**

@@ -1,4 +1,12 @@
-import { IconBrandGithub, IconBrandGitlab, IconBrandMastodon, IconBrandNpm, IconBrandReddit, IconBrandTwitter, IconMail } from '@tabler/icons';
+import {
+  IconBrandGithub,
+  IconBrandGitlab,
+  IconBrandMastodon,
+  IconBrandNpm,
+  IconBrandReddit,
+  IconBrandTwitter,
+  IconMail,
+} from '@tabler/icons';
 
 /** Social medias / Email / Phone (no phone number because yes) */
 export const socials: Social[] = [
@@ -12,7 +20,7 @@ export const socials: Social[] = [
     name: 'GitLab',
     href: 'https://gitlab.com/Domin-MND',
     username: 'Domin-MND',
-    icon: IconBrandGitlab
+    icon: IconBrandGitlab,
   },
   {
     name: 'Reddit',
@@ -30,13 +38,13 @@ export const socials: Social[] = [
     name: 'Mastodon',
     href: 'https://mastodon.social/@dominmnd',
     username: 'dominmnd',
-    icon: IconBrandMastodon
+    icon: IconBrandMastodon,
   },
   {
     name: 'NPM',
     href: 'https://www.npmjs.com/~domin-mnd',
     username: 'domin-mnd',
-    icon: IconBrandNpm
+    icon: IconBrandNpm,
   },
   {
     name: 'Email',

@@ -126,7 +126,7 @@ export const Header: FunctionComponent = (): ReactElement => {
         }}
         onClose={toggle}
         transitionProps={{
-          transition: "slide-down"
+          transition: 'slide-down',
         }}
         position="top"
         // Use the Account as a title next to close icon

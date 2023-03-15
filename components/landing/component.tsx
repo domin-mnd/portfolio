@@ -16,7 +16,7 @@ export const Landing: FunctionComponent = (): ReactElement => (
     <Text
       sx={{
         position: 'absolute',
-        pointerEvents: "none",
+        pointerEvents: 'none',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
