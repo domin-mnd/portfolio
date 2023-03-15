@@ -83,6 +83,14 @@
         "Oclif": "Oclif",
         "TSDX": "TSDX"
       }
+    },
+    "Krasota": {
+      "title": "Krasota",
+      "description": "Responsible, strongly typed, open source light React UI library. Amazing solution for extending your UI.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "React": "React"
+      }
     }
   }
 }
