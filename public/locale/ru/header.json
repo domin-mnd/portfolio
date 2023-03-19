@@ -1,12 +1,12 @@
 {
   "language": "Русский",
   "find-more-translations": {
-    "content": "Find {{moreSubtle}} translations...",
-    "subtle": "more"
+    "content": "{{moreSubtle}} переводов...",
+    "subtle": "Больше"
   },
   "help-translate": {
-    "content": "Help translate the {{portfolio}}!",
-    "portfolio": "portfolio"
+    "content": "Help translate the <link>{{portfolio}}</link>!",
+    "portfolio": "портфолио"
   },
   "sections": {
     "landing": "Домин",
