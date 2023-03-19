@@ -1,7 +1,7 @@
 {
   "language": "English",
   "find-more-translations": {
-    "content": "Find {{moreSubtle}} translations...",
+    "content": "Find <subtle>{{more}}</subtle> translations...",
     "subtle": "more"
   },
   "help-translate": {
