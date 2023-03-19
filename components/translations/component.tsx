@@ -1,9 +1,9 @@
-import { useStyles } from "./styles";
-import { FunctionComponent, ReactElement, useState } from "react";
-import { Button, Menu, MenuProps } from "@mantine/core";
+import { useStyles } from './styles';
+import { FunctionComponent, ReactElement, useState } from 'react';
+import { Button, Menu, MenuProps } from '@mantine/core';
 import { translations as oTranslations } from './config';
-import { NextRouter, useRouter } from "next/router";
-import { Help } from "@component/help";
+import { NextRouter, useRouter } from 'next/router';
+import { Help } from '@component/help';
 
 /** Translations component additional properties */
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
   classNames?: {
     /** Translation button that opens the menu */
     button?: string;
-  }
+  };
 }
 
 /**
@@ -19,7 +19,10 @@ interface Props {
  * @see https://mantine.dev/core/menu/
  * @returns {ReactElement} A responsive menu with the button opening it
  */
-export const Translations: FunctionComponent<MenuProps & Props> = ({ classNames, ...props }): ReactElement => {
+export const Translations: FunctionComponent<MenuProps & Props> = ({
+  classNames,
+  ...props
+}): ReactElement => {
   const { classes } = useStyles();
   const router: NextRouter = useRouter();
 
@@ -66,4 +69,4 @@ export const Translations: FunctionComponent<MenuProps & Props> = ({ classNames,
       </Menu.Dropdown>
     </Menu>
   );
-}
+};

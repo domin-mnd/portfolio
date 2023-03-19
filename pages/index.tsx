@@ -21,16 +21,16 @@ export default (): ReactNode => {
       <Loading />
       <VerticalCarousel>
         <Landing />
-        <SectionCard title={t('section-name', { ns: "about" }) ?? ''}>
+        <SectionCard title={t('section-name', { ns: 'about' }) ?? ''}>
           <About />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: "works" }) ?? ''}>
+        <SectionCard title={t('section-name', { ns: 'works' }) ?? ''}>
           <Works />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: "skills" }) ?? ''}>
+        <SectionCard title={t('section-name', { ns: 'skills' }) ?? ''}>
           <Skills />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: "contact" }) ?? ''}>
+        <SectionCard title={t('section-name', { ns: 'contact' }) ?? ''}>
           <Contact />
         </SectionCard>
       </VerticalCarousel>

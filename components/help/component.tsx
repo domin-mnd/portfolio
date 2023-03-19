@@ -33,13 +33,7 @@ export const Help: FunctionComponent = (): ReactElement => {
         }}
       >
         Help translate the{' '}
-        <Text
-          span
-          component="a"
-          target="_blank"
-          href={translateLink}
-          className={classes.link}
-        >
+        <Text span component="a" target="_blank" href={translateLink} className={classes.link}>
           portfolio
         </Text>
         ...

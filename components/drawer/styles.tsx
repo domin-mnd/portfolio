@@ -1,4 +1,4 @@
-import { createStyles, MantineTheme } from "@mantine/core";
+import { createStyles, MantineTheme } from '@mantine/core';
 
 export const useStyles = createStyles((theme: MantineTheme) => ({
   header: {
@@ -8,12 +8,12 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   content: {
     backgroundColor: theme.colors.gray[0],
-    
+
     // Let translation modal ignore the hidden overflow
-    overflow: "unset",
-    "& .mantine-ScrollArea-root": {
-      overflow: "unset"
-    }
+    overflow: 'unset',
+    '& .mantine-ScrollArea-root': {
+      overflow: 'unset',
+    },
   },
 
   title: {
