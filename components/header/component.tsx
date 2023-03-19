@@ -187,7 +187,42 @@ export const Header: FunctionComponent = (): ReactElement => {
             </Button>
           </Menu.Target>
 
-          <Menu.Dropdown>{translations}</Menu.Dropdown>
+          <Menu.Dropdown>
+            {translations}
+            <Menu.Divider />
+            <Text fz="xs" px="sm">
+              <Trans
+                t={t}
+                i18nKey="help-translate.content"
+                values={{
+                  portfolio: t('help-translate.portfolio'),
+                }}
+                components={{
+                  subtle: (
+                    <Text
+                      span
+                      component="a"
+                      target="_blank"
+                      href="https://crowdin.com/project/domins-portfolio"
+                      className={classes.translationLinkButton}
+                    />
+                  ),
+                }}
+              >
+                Help translate the{' '}
+                <Text
+                  span
+                  component="a"
+                  target="_blank"
+                  href="https://crowdin.com/project/domins-portfolio"
+                  className={classes.translationLinkButton}
+                >
+                  portfolio
+                </Text>
+                ...
+              </Trans>
+            </Text>
+          </Menu.Dropdown>
         </Menu>
         <Tabs
           variant="pills"
