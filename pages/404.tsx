@@ -12,5 +12,5 @@ export default (): ReactElement => {
     push('/');
   }, []);
 
-  return <LoadingOverlay visible />;
+  return <LoadingOverlay overlayOpacity={1} visible />;
 };
