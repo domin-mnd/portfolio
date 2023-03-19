@@ -4,6 +4,10 @@
     "content": "Find {{moreSubtle}} translations...",
     "subtle": "more"
   },
+  "help-translate": {
+    "content": "Help translate the {{portfolio}}!",
+    "portfolio": "portfolio"
+  },
   "sections": {
     "landing": "Domin",
     "works": "Works",
