@@ -82,7 +82,7 @@ Huge thanks to these wonderful people for their contributions:
     <tr>
       <td>
         <a href="https://discordapp.com/users/667677528218927105">
-          <img alt="yung_heheh#0430" src="https://cdn.discordapp.com/avatars/667677528218927105/464e0a622ba09107ed578f77a0815d5e.png" width="64" />
+          <img alt="yung_heheh#0430" src="https://cdn.discordapp.com/avatars/667677528218927105/539e93675ad7226fe2099b7ae593ea9b.png" width="64" />
         </a>
       </td>
       <td>
