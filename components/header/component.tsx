@@ -1,14 +1,15 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { Burger, Button, Container, Drawer, Group, Menu, Tabs, Text } from '@mantine/core';
+import { Burger, Button, Container, Group, Menu, Tabs } from '@mantine/core';
 import { useRouter, NextRouter } from 'next/router';
 import { useStyles } from './styles';
-import { tabs as oTabs, translations as oTranslations } from './config';
+import { tabs as oTabs } from './config';
 import { useDisclosure } from '@mantine/hooks';
 import { Trans, useTranslation } from 'next-i18next';
+import { Drawer } from '@component/drawer';
+import { Translations } from '@component/translations';
 
 /**
  * Header component used on the top of the page to display tabs
- * @todo Fix aria selection on tabs
  * @returns {ReactElement} not fixed container with tabs & drawer
  */
 export const Header: FunctionComponent = (): ReactElement => {
@@ -51,26 +52,6 @@ export const Header: FunctionComponent = (): ReactElement => {
     });
   }
 
-  const [translation, setTranslation] = useState<Translation>(
-    oTranslations.find((t) => t.locale === router.locale) ?? oTranslations[0]
-  );
-
-  const translations = oTranslations.map((translation) => (
-    <Menu.Item
-      key={translation.locale}
-      icon={<translation.flag w={20} />}
-      onClick={() => {
-        setTranslation(translation);
-        // Refresh the page when locale set
-        // Don't use Link provided by next/link
-        // It will cause carousel to re-render
-        window.location.pathname = translation.locale;
-      }}
-    >
-      {translation.name}
-    </Menu.Item>
-  ));
-
   /**
    * replaces the hash in the url with the href provided
    * @param {string} href a url with a hash
@@ -91,58 +72,12 @@ export const Header: FunctionComponent = (): ReactElement => {
     <Container className={classes.header}>
       <Group p="sm" align="center" position="center" spacing={6}>
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
-        <Menu
-          shadow="md"
-          width={200}
+        <Translations
           classNames={{
-            dropdown: classes.translationDropdown,
-            item: classes.translationItem,
+            button: classes.translationButton,
           }}
           onChange={setTranslationOpened}
-        >
-          <Menu.Target>
-            <Button className={classes.translationButton}>
-              <translation.flag w={25} />
-            </Button>
-          </Menu.Target>
-
-          <Menu.Dropdown>
-            {translations}
-            <Menu.Divider />
-            <Text fz="xs" px="sm">
-              <Trans
-                t={t}
-                i18nKey="help-translate.content"
-                values={{
-                  portfolio: t('help-translate.portfolio'),
-                }}
-                components={{
-                  subtle: (
-                    <Text
-                      span
-                      component="a"
-                      target="_blank"
-                      href="https://crowdin.com/project/domins-portfolio"
-                      className={classes.translationLinkButton}
-                    />
-                  ),
-                }}
-              >
-                Help translate the{' '}
-                <Text
-                  span
-                  component="a"
-                  target="_blank"
-                  href="https://crowdin.com/project/domins-portfolio"
-                  className={classes.translationLinkButton}
-                >
-                  portfolio
-                </Text>
-                ...
-              </Trans>
-            </Text>
-          </Menu.Dropdown>
-        </Menu>
+        />
         <Tabs
           variant="pills"
           // Value keyword in onTabChange
@@ -157,73 +92,13 @@ export const Header: FunctionComponent = (): ReactElement => {
           <Tabs.List>{tabs}</Tabs.List>
         </Tabs>
       </Group>
-      <Drawer
-        opened={opened}
-        classNames={{
-          header: classes.drawerHeader,
-          content: classes.drawerContent,
-          title: classes.drawerTitle,
-        }}
-        onClose={toggle}
-        transitionProps={{
-          transition: 'slide-down',
-        }}
-        position="top"
-        // Use the Account as a title next to close icon
-        padding="md"
-        size="max-content"
-      >
-        <Menu
-          shadow="md"
-          width={200}
+      <Drawer opened={opened} onClose={toggle}>
+        <Translations
           classNames={{
-            dropdown: classes.translationDropdown,
-            item: classes.translationItem,
+            button: classes.translationMobileButton,
           }}
-        >
-          <Menu.Target>
-            <Button className={classes.translationMobileButton}>
-              <translation.flag w={25} />
-            </Button>
-          </Menu.Target>
-
-          <Menu.Dropdown>
-            {translations}
-            <Menu.Divider />
-            <Text fz="xs" px="sm">
-              <Trans
-                t={t}
-                i18nKey="help-translate.content"
-                values={{
-                  portfolio: t('help-translate.portfolio'),
-                }}
-                components={{
-                  subtle: (
-                    <Text
-                      span
-                      component="a"
-                      target="_blank"
-                      href="https://crowdin.com/project/domins-portfolio"
-                      className={classes.translationLinkButton}
-                    />
-                  ),
-                }}
-              >
-                Help translate the{' '}
-                <Text
-                  span
-                  component="a"
-                  target="_blank"
-                  href="https://crowdin.com/project/domins-portfolio"
-                  className={classes.translationLinkButton}
-                >
-                  portfolio
-                </Text>
-                ...
-              </Trans>
-            </Text>
-          </Menu.Dropdown>
-        </Menu>
+          onChange={setTranslationOpened}
+        />
         <Tabs
           variant="pills"
           orientation="vertical"

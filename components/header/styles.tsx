@@ -99,7 +99,9 @@ export const useStyles = createStyles((theme: MantineTheme, params: Params) => (
   },
 
   translationMobileButton: {
-    backgroundColor: 'transparent',
+    backgroundColor: params.translationDropdownOpened
+      ? theme.fn.rgba(theme.colors.gray[3], 0.37)
+      : 'transparent',
     height: 38,
     width: '100%',
     marginBottom: 6,
@@ -112,27 +114,4 @@ export const useStyles = createStyles((theme: MantineTheme, params: Params) => (
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + ' !important',
     },
   },
-
-  translationDropdown: {
-    backgroundColor: theme.colors.gray[0],
-    // backgroundColor: theme.fn.rgba(theme.colors.gray[1], 0.37),
-    backdropFilter: 'blur(10px)',
-    border: "none"
-  },
-
-  translationItem: {
-    ':hover': {
-      backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
-    },
-  },
-
-  translationLinkButton: {
-    color: theme.colors.blue[7],
-    textDecoration: "underline",
-    cursor: "pointer",
-
-    ':hover': {
-      textDecoration: "none"
-    }
-  }
 }));
