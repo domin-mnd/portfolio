@@ -1,5 +1,9 @@
 {
   "language": "Deutsch",
+  "find-more-translations": {
+    "content": "Find {{moreSubtle}} translations...",
+    "subtle": "more"
+  },
   "sections": {
     "landing": "Domin",
     "works": "Werke",
