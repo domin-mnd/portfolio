@@ -1,5 +1,9 @@
 {
   "language": "Українська",
+  "find-more-translations": {
+    "content": "Find {{moreSubtle}} translations...",
+    "subtle": "more"
+  },
   "sections": {
     "landing": "Домін",
     "works": "Проєкти",
