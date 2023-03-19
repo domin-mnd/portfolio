@@ -1,11 +1,11 @@
 {
   "language": "Русский",
   "find-more-translations": {
-    "content": "{{moreSubtle}} переводов...",
+    "content": "Find <subtle>{{more}}</subtle> translations...",
     "subtle": "Больше"
   },
   "help-translate": {
-    "content": "Help translate the <link>{{portfolio}}</link>!",
+    "content": "Help translate the <subtle>{{portfolio}}</subtle>...",
     "portfolio": "портфолио"
   },
   "sections": {
