@@ -1,6 +1,10 @@
 import { createStyles, MantineTheme } from '@mantine/core';
 
-export const useStyles = createStyles((theme: MantineTheme) => ({
+interface Params {
+  translationDropdownOpened: boolean;
+}
+
+export const useStyles = createStyles((theme: MantineTheme, params: Params) => ({
   header: {
     position: 'absolute',
     zIndex: 1,
@@ -75,7 +79,10 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   },
 
   translationButton: {
-    backgroundColor: 'transparent',
+    // Set the background color if the dropdown is opened
+    backgroundColor: params.translationDropdownOpened
+      ? theme.fn.rgba(theme.colors.gray[3], 0.37)
+      : 'transparent',
     height: 38,
 
     ':hover': {
@@ -108,6 +115,9 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   translationDropdown: {
     backgroundColor: theme.colors.gray[0],
+    // backgroundColor: theme.fn.rgba(theme.colors.gray[1], 0.37),
+    backdropFilter: 'blur(10px)',
+    border: "none"
   },
 
   translationItem: {
@@ -115,4 +125,14 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
   },
+
+  translationLinkButton: {
+    color: theme.colors.blue[7],
+    textDecoration: "underline",
+    cursor: "pointer",
+
+    ':hover': {
+      textDecoration: "none"
+    }
+  }
 }));

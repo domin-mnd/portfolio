@@ -1,10 +1,10 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { Card, Container, Modal, Progress, SimpleGrid, Text } from '@mantine/core';
+import { Card, Container, Progress, SimpleGrid, Text } from '@mantine/core';
 import { skills as oSkills } from './config';
 import { useStyles } from './styles';
 import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
-import { useMediaQuery } from '@mantine/hooks';
+import { Modal } from '@component/modal';
 import { Trans, useTranslation } from 'next-i18next';
 
 /**
@@ -18,8 +18,6 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
   const [opened, setOpened] = useState(false);
   // Selected stack to show for the modal
   const [selected, setSelected] = useState<Stack | null>(null);
-  // Whether to blur the background of the modal or not
-  const mobile = useMediaQuery('(max-width: 980px)');
   const { t } = useTranslation('skills');
 
   // Examples of works
@@ -61,14 +59,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
       ))}
       <Modal
         opened={opened}
-        centered
         onClose={() => setOpened(false)}
-        overlayProps={{
-          blur: mobile ? 0 : 5,
-        }}
-        transitionProps={{
-          transition: 'fade',
-        }}
         title={
           <Text component="a" href={selected?.href} target="_blank" className={classes.href}>
             <Trans i18nKey={'skills.' + selected?.name + '.name'} t={t}>

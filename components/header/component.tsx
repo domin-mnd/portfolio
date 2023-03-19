@@ -1,10 +1,9 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { Burger, Button, Container, Drawer, Group, Menu, Tabs } from '@mantine/core';
+import { Burger, Button, Container, Drawer, Group, Menu, Tabs, Text } from '@mantine/core';
 import { useRouter, NextRouter } from 'next/router';
 import { useStyles } from './styles';
 import { tabs as oTabs, translations as oTranslations } from './config';
 import { useDisclosure } from '@mantine/hooks';
-import Link from 'next/link';
 import { Trans, useTranslation } from 'next-i18next';
 
 /**
@@ -13,7 +12,12 @@ import { Trans, useTranslation } from 'next-i18next';
  * @returns {ReactElement} not fixed container with tabs & drawer
  */
 export const Header: FunctionComponent = (): ReactElement => {
-  const { classes } = useStyles();
+  // Whether translations dropdown is opened or not
+  const [translationOpened, setTranslationOpened] = useState(false);
+  const { classes } = useStyles({
+    translationDropdownOpened: translationOpened,
+  });
+
   const router: NextRouter = useRouter();
 
   // Header translation
@@ -94,6 +98,7 @@ export const Header: FunctionComponent = (): ReactElement => {
             dropdown: classes.translationDropdown,
             item: classes.translationItem,
           }}
+          onChange={setTranslationOpened}
         >
           <Menu.Target>
             <Button className={classes.translationButton}>
@@ -101,7 +106,42 @@ export const Header: FunctionComponent = (): ReactElement => {
             </Button>
           </Menu.Target>
 
-          <Menu.Dropdown>{translations}</Menu.Dropdown>
+          <Menu.Dropdown>
+            {translations}
+            <Menu.Divider />
+            <Text fz="xs" px="sm">
+              <Trans
+                t={t}
+                i18nKey="help-translate.content"
+                values={{
+                  portfolio: t('help-translate.portfolio'),
+                }}
+                components={{
+                  subtle: (
+                    <Text
+                      span
+                      component="a"
+                      target="_blank"
+                      href="https://crowdin.com/project/domins-portfolio"
+                      className={classes.translationLinkButton}
+                    />
+                  ),
+                }}
+              >
+                Help translate the{' '}
+                <Text
+                  span
+                  component="a"
+                  target="_blank"
+                  href="https://crowdin.com/project/domins-portfolio"
+                  className={classes.translationLinkButton}
+                >
+                  portfolio
+                </Text>
+                ...
+              </Trans>
+            </Text>
+          </Menu.Dropdown>
         </Menu>
         <Tabs
           variant="pills"

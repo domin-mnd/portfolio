@@ -14,26 +14,23 @@ import { Loading } from '@component/loading';
 // An index page (/)
 export default (): ReactNode => {
   // Getting section names from the translation files
-  const { t: about } = useTranslation('about');
-  const { t: works } = useTranslation('works');
-  const { t: skills } = useTranslation('skills');
-  const { t: contact } = useTranslation('contact');
+  const { t } = useTranslation(['about', 'works', 'skills', 'contact']);
 
   return (
     <>
       <Loading />
       <VerticalCarousel>
         <Landing />
-        <SectionCard title={about('section-name') ?? ''}>
+        <SectionCard title={t('section-name', { ns: "about" }) ?? ''}>
           <About />
         </SectionCard>
-        <SectionCard title={works('section-name') ?? ''}>
+        <SectionCard title={t('section-name', { ns: "works" }) ?? ''}>
           <Works />
         </SectionCard>
-        <SectionCard title={skills('section-name') ?? ''}>
+        <SectionCard title={t('section-name', { ns: "skills" }) ?? ''}>
           <Skills />
         </SectionCard>
-        <SectionCard title={contact('section-name') ?? ''}>
+        <SectionCard title={t('section-name', { ns: "contact" }) ?? ''}>
           <Contact />
         </SectionCard>
       </VerticalCarousel>

@@ -9,5 +9,6 @@ import { useProgress } from '@react-three/drei';
 export const Loading: FunctionComponent = (): ReactElement => {
   const { loaded } = useProgress();
 
+  // Translate into component
   return <>{!loaded && <Overlay blur={10} color="gray.0" />}</>;
 };
