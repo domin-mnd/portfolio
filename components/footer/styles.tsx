@@ -8,6 +8,8 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     width: '100%',
     bottom: 0,
     backdropFilter: 'blur(10px)',
+    // Ignore holding footer
+    pointerEvents: 'none',
 
     [theme.fn.smallerThan('xs')]: {
       height: 40,

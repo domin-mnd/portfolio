@@ -3,32 +3,20 @@ import { Text } from '@mantine/core';
 import { Canvas } from '@react-three/fiber';
 import { Keyboard } from '@component/keyboard';
 import { about } from '@component/about';
+import { useStyles } from './styles';
 
-export const Landing: FunctionComponent = (): ReactElement => (
-  <>
-    <Canvas
-      style={{
-        maxHeight: 760,
-      }}
-    >
-      <Keyboard />
-    </Canvas>
-    <Text
-      sx={{
-        position: 'absolute',
-        pointerEvents: 'none',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        fontSize: '5rem',
-        fontWeight: 900,
-        mixBlendMode: 'difference',
-        userSelect: 'none',
-        color: 'white',
-        textTransform: 'uppercase',
-      }}
-    >
-      {about.username}
-    </Text>
-  </>
-);
+/**
+ * A landing slide
+ * @returns {ReactElement} Canvas with keyboard model along with username text on it
+ */
+export const Landing: FunctionComponent = (): ReactElement => {
+  const { classes } = useStyles();
+  return (
+    <>
+      <Canvas className={classes.canvas}>
+        <Keyboard />
+      </Canvas>
+      <Text className={classes.username}>{about.username}</Text>
+    </>
+  );
+};
