@@ -5,7 +5,7 @@
     "subtle": "more"
   },
   "help-translate": {
-    "content": "Help translate the <link>{{portfolio}}</link>!",
+    "content": "Help translate the <subtle>{{portfolio}}</subtle>...",
     "portfolio": "portfolio"
   },
   "sections": {
