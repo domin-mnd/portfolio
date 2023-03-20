@@ -92,6 +92,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
             <SectionCard
               m="0 !important" // !important because of mobile
               px={0} // 0 padding to remove extra padding as modal already has padding
+              pb={0} // No useless spacing at the bottom of the modal
               height="40vh"
             >
               {Examples}

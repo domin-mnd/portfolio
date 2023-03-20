@@ -4,6 +4,7 @@ import {
   IconBrandMastodon,
   IconBrandNpm,
   IconBrandReddit,
+  IconBrandTelegram,
   IconBrandTwitter,
   IconMail,
 } from '@tabler/icons';
@@ -33,6 +34,12 @@ export const socials: Social[] = [
     href: 'https://twitter.com/Dominiff',
     username: 'Dominiff',
     icon: IconBrandTwitter,
+  },
+  {
+    name: 'Telegram',
+    href: 'https://t.me/Dominnya',
+    username: 'Dominnya',
+    icon: IconBrandTelegram,
   },
   {
     name: 'Mastodon',
