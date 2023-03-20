@@ -18,7 +18,7 @@ export const SectionCard: FunctionComponent<PropsWithChildren<CardProps & Mantin
   const { classes } = useStyles();
 
   return (
-    <Card className={classes.card} {...props}>
+    <Card className={classes.card} shadow="xl" {...props}>
       {title && (
         <Title order={3} className={classes.title}>
           {title}
