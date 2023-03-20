@@ -55,10 +55,6 @@ const App = ({ Component, ...pageProps }: AppProps) => {
               '#8A8A8A',
             ],
           },
-          headings: {
-            // In mantine@6 headings' font family sticks to theme.fontFamily by default
-            fontFamily: inter.style.fontFamily,
-          },
           globalStyles: (theme) => ({
             // Override default global styles without usage of css imports
             '::selection': {
