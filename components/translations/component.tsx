@@ -5,21 +5,12 @@ import { translations as oTranslations } from './config';
 import { NextRouter, useRouter } from 'next/router';
 import { Help } from '@component/help';
 
-/** Translations component additional properties */
-interface Props {
-  /** Extended Styles API of mantine */
-  classNames?: {
-    /** Translation button that opens the menu */
-    button?: string;
-  };
-}
-
 /**
  * Translation Menu used in drawer & header with translation list
  * @see https://mantine.dev/core/menu/
  * @returns {ReactElement} A responsive menu with the button opening it
  */
-export const Translations: FunctionComponent<MenuProps & Props> = ({
+export const Translations: FunctionComponent<MenuProps & TranslationsProps> = ({
   classNames,
   ...props
 }): ReactElement => {
