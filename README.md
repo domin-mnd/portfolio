@@ -41,7 +41,7 @@ This project supports i18n. If no translation is provided to the language - it w
 
 ## Documentation
 
-All the available documentation regarding the creation & maintainability of the project is in `docs` folder.
+All the available documentation regarding the creation & maintainability of the project is in `docs` folder & in configuration/component code comments.
 
 ## Contributing
 
