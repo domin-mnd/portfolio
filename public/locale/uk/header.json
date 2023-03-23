@@ -2,11 +2,11 @@
   "language": "Українська",
   "find-more-translations": {
     "content": "Find <subtle>{{more}}</subtle> translations...",
-    "subtle": "more"
+    "subtle": "більше"
   },
   "help-translate": {
-    "content": "Help translate the <subtle>{{portfolio}}</subtle>...",
-    "portfolio": "portfolio"
+    "content": "Допоможіть перекласти <subtle>{{portfolio}}</subtle>...",
+    "portfolio": "портфоліо"
   },
   "sections": {
     "landing": "Домін",
