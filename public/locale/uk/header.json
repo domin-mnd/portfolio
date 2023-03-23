@@ -1,7 +1,7 @@
 {
   "language": "Українська",
   "find-more-translations": {
-    "content": "Find <subtle>{{more}}</subtle> translations...",
+    "content": "<subtle>{{more}}</subtle> перекладів...",
     "subtle": "більше"
   },
   "help-translate": {
