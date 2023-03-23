@@ -77,7 +77,7 @@
     },
     "Ikota": {
       "title": "Ikota",
-      "description": "A CLI boilerplate automation tool offering various utilities to help working with React web applications.",
+      "description": "CLI-інструмент автоматизації шаблонів, що пропонує різноманітні утиліти для роботи з веб-додатками React.",
       "stack": {
         "TypeScript": "TypeScript",
         "Oclif": "Oclif",
@@ -86,7 +86,7 @@
     },
     "Krasota": {
       "title": "Krasota",
-      "description": "Responsive, strongly typed, open source light React UI library. Amazing solution for extending your UI.",
+      "description": "Адаптивна, сильно типізована, бібліотека з відкритим вихідним кодом для React. Дивовижне рішення для розширення вашого інтерфейсу.",
       "stack": {
         "TypeScript": "TypeScript",
         "React": "React"
