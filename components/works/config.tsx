@@ -7,6 +7,7 @@ import slova from '@public/works/slova.png';
 import knrtukaiDiscordBot from '@public/works/knrtu-kai-discord-bot.png';
 import kaiJs from '@public/works/kai.js.png';
 import cvet from '@public/works/cvet.png';
+import ikota from '@public/works/ikota.png';
 
 /** An array of projects displayed in works section as cards */
 export const projects: Project[] = [
@@ -182,4 +183,25 @@ export const projects: Project[] = [
     ],
     url: 'https://github.com/Domin-MND/cvet',
   },
+  // {
+  //   title: 'Ikota',
+  //   description:
+  //     'A CLI boilerplate automation tool offering various utilities to help working with React web applications.',
+  //   banner: ikota,
+  //   stack: [
+  //     {
+  //       name: 'TypeScript',
+  //       color: 'blue',
+  //     },
+  //     {
+  //       name: 'Oclif',
+  //       color: 'lime',
+  //     },
+  //     {
+  //       name: 'TSDX',
+  //       color: 'blue.8',
+  //     },
+  //   ],
+  //   url: 'https://github.com/Domin-MND/ikota'
+  // }
 ];
