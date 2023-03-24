@@ -1,5 +1,5 @@
 {
-  "section-name": "About",
+  "section-name": "À propos",
   "full-name": {
     "first": "Kamil",
     "last": "Sakhabutdinov",
@@ -7,7 +7,7 @@
   },
   "nickname-label": "Also known as {{nicknameValue}}",
   "nickname-value": "Domin",
-  "location-label": "Location:",
-  "location-value": "Kazan, Russia",
-  "description-value": "Ambitious, self-taught 17 years old software engineer with a great passion for technology, web design and development. Has been programming since the age of 12. Proficient in developing databases, creating user interfaces and implementing new features based on user feedback. Ready to learn and collaborate in rapidly changing environments and compositions. Adept in all stages of advanced web development."
+  "location-label": "Lieu:",
+  "location-value": "Kazan, Russie",
+  "description-value": "Ambitieux et autodidacte, ingénieur logiciel de 17 ans avec une grande passion pour la technologie, le web design et le développement. Compétent dans le développement de bases de données, la création d'interfaces utilisateur et l'implémentation de nouvelles fonctionnalités basées sur les commentaires des utilisateurs. Prêt à apprendre et à collaborer dans des environnements et des compositions en évolution rapide. Adept à toutes les étapes du développement web avancé."
 }
