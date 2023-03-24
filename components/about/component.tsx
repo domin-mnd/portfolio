@@ -22,7 +22,7 @@ export const About: FunctionComponent = (): ReactElement => {
       <Flex className={classes.information}>
         <Avatar src={about.avatar.src} size={200} alt={about.name[0]} className={classes.avatar} />
         <div>
-          <Title mt={mobile ? 0 : "md"} order={mobile ? 6 : 5}>
+          <Title mt={mobile ? 0 : 'md'} order={mobile ? 6 : 5}>
             <Trans i18nKey="full-name.first" t={t}>
               {about.name[0]}
             </Trans>{' '}

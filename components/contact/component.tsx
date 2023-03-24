@@ -33,35 +33,33 @@ export const Contact: FunctionComponent = (): ReactElement => {
         // Which sticks to the bottom of the card
         className={classes.content}
       >
-          <SimpleGrid
-            spacing="md"
-            breakpoints={[
-              { maxWidth: '36rem', cols: Math.round(socials.length / 2) },
-            ]}
-            cols={socials.length}
-          >
-            {socials.map((social: Social) => (
-              <Tooltip
-                key={social.name}
-                label={social.username ?? social.name}
-                bg="white"
-                c="black"
-                withArrow
+        <SimpleGrid
+          spacing="md"
+          breakpoints={[{ maxWidth: '36rem', cols: Math.round(socials.length / 2) }]}
+          cols={socials.length}
+        >
+          {socials.map((social: Social) => (
+            <Tooltip
+              key={social.name}
+              label={social.username ?? social.name}
+              bg="white"
+              c="black"
+              withArrow
+            >
+              <ActionIcon
+                size={28}
+                className={classes.social}
+                variant="transparent"
+                component="a"
+                href={social.href}
+                tabIndex={-1}
+                target="_blank"
               >
-                <ActionIcon
-                  size={28}
-                  className={classes.social}
-                  variant="transparent"
-                  component="a"
-                  href={social.href}
-                  tabIndex={-1}
-                  target="_blank"
-                >
-                  <social.icon size={22} stroke={1.5} />
-                </ActionIcon>
-              </Tooltip>
-            ))}
-          </SimpleGrid>
+                <social.icon size={22} stroke={1.5} />
+              </ActionIcon>
+            </Tooltip>
+          ))}
+        </SimpleGrid>
         <Title className={classes.title} my="xl">
           <Trans i18nKey="full-name.first" t={t}>
             {about.name[0]}
