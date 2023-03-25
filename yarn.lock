@@ -354,61 +354,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "@mantine/next@npm:6.0.2"
+"@mantine/next@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@mantine/next@npm:6.0.4"
   dependencies:
-    "@mantine/ssr": 6.0.2
-    "@mantine/styles": 6.0.2
+    "@mantine/ssr": 6.0.4
+    "@mantine/styles": 6.0.4
   peerDependencies:
     next: "*"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 150111ba42c201f887ee1d25a9520e5c9b01e7f73036a6d84ee70f289773f94d90f1b5d02f1b830c4085928f8d13e2e146b370e0476268e84e039799681d36f9
+  checksum: 6905caf83e85bd1bdca7d6d449cf01a913292bd76a22d87857176673afa8faa94f6161ccefb4a99a0376b887f3dd249747f806e3ccc9026ec9bcacd48ff56c55
   languageName: node
   linkType: hard
 
-"@mantine/prism@npm:^6.0.4":
+"@mantine/ssr@npm:6.0.4":
   version: 6.0.4
-  resolution: "@mantine/prism@npm:6.0.4"
+  resolution: "@mantine/ssr@npm:6.0.4"
   dependencies:
-    "@mantine/utils": 6.0.4
-    prism-react-renderer: ^1.2.1
-  peerDependencies:
-    "@mantine/core": 6.0.4
-    "@mantine/hooks": 6.0.4
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: e399ed3ef593cb4b7275d273ceffbd70291be9471da8ebd7ab8ac24ba99f651fc25fe7b8f754d3104d58899b5c468406a9c79463987c23907145d354583b05de
-  languageName: node
-  linkType: hard
-
-"@mantine/ssr@npm:6.0.2":
-  version: 6.0.2
-  resolution: "@mantine/ssr@npm:6.0.2"
-  dependencies:
-    "@mantine/styles": 6.0.2
+    "@mantine/styles": 6.0.4
     html-react-parser: 1.4.12
   peerDependencies:
     "@emotion/react": ">=11.9.0"
     "@emotion/server": ">=11.4.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 6d6c571eed55dfb821ceda82fc9e69ff22994a77a4a00fbaeb82f0f09ec95cc6f38bd1f805689794e9f532de42b65b0d8b69ca17ba84af3e99a6e2b604431e7a
-  languageName: node
-  linkType: hard
-
-"@mantine/styles@npm:6.0.2":
-  version: 6.0.2
-  resolution: "@mantine/styles@npm:6.0.2"
-  dependencies:
-    clsx: 1.1.1
-    csstype: 3.0.9
-  peerDependencies:
-    "@emotion/react": ">=11.9.0"
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 714e6fbff36bcf280f6cad22de5f14886ce7b5c104a3b1df4e94c7915bf1c81a2a8e7239b29ddd065105cfe5bf1c26b9b5342cec2c2fc72b3e6789996d99b28d
+  checksum: 09baa9e4e1bda434cbc83492aa9fe3b528562e2857002b7cd6b56d3398719d0b5fbce5bfd1e7d6de2cf26d718a07f28a9c6f2b1c6a1a6911a68d8fdb974910e0
   languageName: node
   linkType: hard
 
@@ -3473,15 +3444,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prism-react-renderer@npm:^1.2.1":
-  version: 1.3.5
-  resolution: "prism-react-renderer@npm:1.3.5"
-  peerDependencies:
-    react: ">=0.14.9"
-  checksum: c18806dcbc4c0b4fd6fd15bd06b4f7c0a6da98d93af235c3e970854994eb9b59e23315abb6cfc29e69da26d36709a47e25da85ab27fed81b6812f0a52caf6dfa
-  languageName: node
-  linkType: hard
-
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -3855,8 +3817,7 @@ __metadata:
     "@mantine/core": ^6.0.4
     "@mantine/eslint-config": ^3.6.14
     "@mantine/hooks": ^6.0.4
-    "@mantine/next": ^6.0.2
-    "@mantine/prism": ^6.0.4
+    "@mantine/next": ^6.0.4
     "@next/bundle-analyzer": 13.2.4
     "@next/eslint-plugin-next": ^13.2.4
     "@react-three/drei": ^9.53.3
