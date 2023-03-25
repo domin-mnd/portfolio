@@ -345,12 +345,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "@mantine/hooks@npm:6.0.2"
+"@mantine/hooks@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "@mantine/hooks@npm:6.0.4"
   peerDependencies:
     react: ">=16.8.0"
-  checksum: dd3ac58ce8b24c9956e8bcbf7374e64165e8251fa099e453f21a70a74009f7fa2a8d0a58498c4667e1e9bf1e7fa57c266ca1e1981f68c7ea18999232ad04fc60
+  checksum: e0ba4f1d57f27be0c8763335d8b686d7e6b43958aff7b0c04641f960766ffecf1b07b3579167de915d83e87ccb2e414f8ee5bd7b7305e35d4b67449b57364229
   languageName: node
   linkType: hard
 
@@ -3840,7 +3840,7 @@ __metadata:
     "@mantine/carousel": ^6.0.2
     "@mantine/core": ^6.0.2
     "@mantine/eslint-config": ^3.6.14
-    "@mantine/hooks": ^6.0.2
+    "@mantine/hooks": ^6.0.4
     "@mantine/next": ^6.0.2
     "@mantine/prism": ^6.0.2
     "@next/bundle-analyzer": 13.2.4
