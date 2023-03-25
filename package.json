@@ -19,7 +19,7 @@
     "@mantine/eslint-config": "^3.6.14",
     "@mantine/hooks": "^6.0.2",
     "@mantine/next": "^6.0.2",
-    "@mantine/prism": "^6.0.2",
+    "@mantine/prism": "^6.0.4",
     "@next/bundle-analyzer": "13.2.4",
     "@react-three/drei": "^9.53.3",
     "@react-three/fiber": "^8.10.0",
