@@ -32,6 +32,8 @@ You can configure the project by editing the `config.tsx` files in the following
 - `components/contact/config.tsx` (for the Contact card)
 - `components/footer/config.tsx` (for the footer component)
 - `components/header/config.tsx` (for the header component)
+- `components/help/config.tsx` (for i18n help link)
+- `components/translations/config.tsx` (for translation list, also configure `next-i18next.config.js` locales)
 - `components/skills/config.tsx` (for the Skills card)
 - `components/works/config.tsx` (for the Works card)
 
