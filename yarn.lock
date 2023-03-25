@@ -437,12 +437,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:^12.1.4":
-  version: 12.3.4
-  resolution: "@next/eslint-plugin-next@npm:12.3.4"
+"@next/eslint-plugin-next@npm:^13.2.4":
+  version: 13.2.4
+  resolution: "@next/eslint-plugin-next@npm:13.2.4"
   dependencies:
     glob: 7.1.7
-  checksum: e4ae97062f3efe8f70904cf0da296ab501a2924423273352d01b18d8ffff1eb2e9a65c47dd6f9cfa0d696eada272486a3f519b2786918d0a9ab735b93f5ce4b3
+  checksum: 95f9a84922ec1c73aa51b794f9d2dc49c165a1c793db17cab4558097d31aaf65c2e5e3390d0691c056fac105562d6dc974b13b1df79981f8b7faba005f6eb3b5
   languageName: node
   linkType: hard
 
@@ -3844,7 +3844,7 @@ __metadata:
     "@mantine/next": ^6.0.2
     "@mantine/prism": ^6.0.2
     "@next/bundle-analyzer": 13.2.4
-    "@next/eslint-plugin-next": ^12.1.4
+    "@next/eslint-plugin-next": ^13.2.4
     "@react-three/drei": ^9.53.3
     "@react-three/fiber": ^8.10.0
     "@tabler/icons": ^1.107.0
