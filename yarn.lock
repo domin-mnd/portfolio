@@ -426,15 +426,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/utils@npm:6.0.2":
-  version: 6.0.2
-  resolution: "@mantine/utils@npm:6.0.2"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: c3a8f4515e59d70c5f01d311831ce036db81821381d9d1529e88c59154e9e8df4ae26aaceb1f4461d45bbfcbdd0dc303e34a56ad8c809f96c1222e63ce714eff
-  languageName: node
-  linkType: hard
-
 "@mantine/utils@npm:6.0.4":
   version: 6.0.4
   resolution: "@mantine/utils@npm:6.0.4"
