@@ -354,32 +354,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@mantine/next@npm:6.0.4"
+"@mantine/next@npm:^6.0.6":
+  version: 6.0.6
+  resolution: "@mantine/next@npm:6.0.6"
   dependencies:
-    "@mantine/ssr": 6.0.4
-    "@mantine/styles": 6.0.4
+    "@mantine/ssr": 6.0.6
+    "@mantine/styles": 6.0.6
   peerDependencies:
     next: "*"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 6905caf83e85bd1bdca7d6d449cf01a913292bd76a22d87857176673afa8faa94f6161ccefb4a99a0376b887f3dd249747f806e3ccc9026ec9bcacd48ff56c55
+  checksum: 31166fbc9d636fff638fc173f849e056fbd2b36f3504386c08b2c380eed3337fc4a35fe4492bf8d125e1f2b0953c32e0592c20ffcd8a456e80a0a48978635630
   languageName: node
   linkType: hard
 
-"@mantine/ssr@npm:6.0.4":
-  version: 6.0.4
-  resolution: "@mantine/ssr@npm:6.0.4"
+"@mantine/ssr@npm:6.0.6":
+  version: 6.0.6
+  resolution: "@mantine/ssr@npm:6.0.6"
   dependencies:
-    "@mantine/styles": 6.0.4
+    "@mantine/styles": 6.0.6
     html-react-parser: 1.4.12
   peerDependencies:
     "@emotion/react": ">=11.9.0"
     "@emotion/server": ">=11.4.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 09baa9e4e1bda434cbc83492aa9fe3b528562e2857002b7cd6b56d3398719d0b5fbce5bfd1e7d6de2cf26d718a07f28a9c6f2b1c6a1a6911a68d8fdb974910e0
+  checksum: 3566792ef2e7afab9a31b31a057af94b1c19844420d7d7d4ddc9a679750a01e45d0b56f55afb0460c1e2a903788061d7fdc537fa4b5f764ab8dda968760bd60c
   languageName: node
   linkType: hard
 
@@ -394,6 +394,20 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 3767896cf52d5fb414e42a2e1c61f1d8aafa99c2b8f818b7f6b4e0b74efe4ba823c5fa4423f9bc6a7da0d8dc7dd6226624773b8f2e59a39760ebd2825f860478
+  languageName: node
+  linkType: hard
+
+"@mantine/styles@npm:6.0.6":
+  version: 6.0.6
+  resolution: "@mantine/styles@npm:6.0.6"
+  dependencies:
+    clsx: 1.1.1
+    csstype: 3.0.9
+  peerDependencies:
+    "@emotion/react": ">=11.9.0"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: ff61dc92d0ecc33d99763f59d437b7b5191226809fdb162450cec9786bac1e7375f8521aa3f8095bcb3c9b6b3c75006737523734fbe27c453b23d605994c05d4
   languageName: node
   linkType: hard
 
@@ -3817,7 +3831,7 @@ __metadata:
     "@mantine/core": ^6.0.4
     "@mantine/eslint-config": ^3.6.14
     "@mantine/hooks": ^6.0.4
-    "@mantine/next": ^6.0.4
+    "@mantine/next": ^6.0.6
     "@next/bundle-analyzer": 13.2.4
     "@next/eslint-plugin-next": ^13.2.4
     "@react-three/drei": ^9.53.3
