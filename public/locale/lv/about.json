@@ -7,7 +7,7 @@
   },
   "nickname-label": "Pazīstams arī kā {{nicknameValue}}",
   "nickname-value": "Domin",
-  "location-label": "Location:",
-  "location-value": "Kazan, Russia",
-  "description-value": "Ambitious, self-taught 17 years old software engineer with a great passion for technology, web design and development. Has been programming since the age of 12. Proficient in developing databases, creating user interfaces and implementing new features based on user feedback. Ready to learn and collaborate in rapidly changing environments and compositions. Adept in all stages of advanced web development."
+  "location-label": "Atrašanās vieta:",
+  "location-value": "Kazaņa, Krievija",
+  "description-value": "Ambiciozs, pašmācīts, 17 gadus vecs programmētājs ar lielu interessi tehnaloģijā, mājas lapu dizainā un programmēšanā. Programmē jau no 12 gadu vecuma. Lietpratējs datubāžu un UI veidošanā, visās advencētu mājas lapu veidošanas pakāpēs, un jaunu funkciju implementēšanā balstoties uz lietotāju atsauksmēm. Gatavs mācīties un sadarboties strauji mainīgos un sarežģītos apstākļos."
 }
