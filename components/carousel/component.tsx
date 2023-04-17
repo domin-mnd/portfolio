@@ -12,7 +12,7 @@ import { useMediaQuery } from '@mantine/hooks';
  * @returns {ReactElement} 100vh embla carousel
  */
 export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
-  children
+  children,
 }): ReactElement => {
   // Embla API to control the carousel
   // setting it to null because it's not defined on the server side
@@ -26,7 +26,6 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
   // In case there is a re-render, carousel's scroll will twice the action
   const mobile: boolean =
     typeof window !== 'undefined' ? window.matchMedia('(max-width: 768px)').matches : false;
-  
 
   // Run this code only on the client side
   if (typeof window !== 'undefined') {
@@ -165,8 +164,8 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     <Carousel
       orientation="vertical"
       height="100vh"
-      slideSize={mobile ? "100vh" : "max-content"}
-      slideGap={mobile ? undefined : "xl"}
+      slideSize={mobile ? '100vh' : 'max-content'}
+      slideGap={mobile ? undefined : 'xl'}
       draggable={mobile}
       withControls={false}
       getEmblaApi={setEmblaApi}
