@@ -5,13 +5,13 @@
     "subtle": "Vairāk"
   },
   "help-translate": {
-    "content": "Help translate the <subtle>{{portfolio}}</subtle>...",
-    "portfolio": "portfolio"
+    "content": "Palīdzi iztulkot <subtle>{{portfolio}}</subtle>...",
+    "portfolio": "portfeli"
   },
   "sections": {
     "landing": "Domin",
-    "works": "Works",
-    "skills": "Skills",
-    "contact": "Contact"
+    "works": "Darbi",
+    "skills": "Prasmes",
+    "contact": "Kontakti"
   }
 }
