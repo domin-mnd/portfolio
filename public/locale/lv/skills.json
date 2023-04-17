@@ -1,7 +1,7 @@
 {
-  "section-name": "Skills",
-  "examples-label": "Examples:",
-  "knowledge-label": "My knowledge of {{skillName}}:",
+  "section-name": "Prasmes",
+  "examples-label": "Piemēri:",
+  "knowledge-label": "Manas zināšanas par {{skillName}}:",
   "skills": {
     "Java": {
       "name": "Java",
