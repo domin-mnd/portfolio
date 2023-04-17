@@ -847,15 +847,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:^9.53.3":
-  version: 9.57.1
-  resolution: "@react-three/drei@npm:9.57.1"
+"@react-three/drei@npm:^9.65.3":
+  version: 9.65.3
+  resolution: "@react-three/drei@npm:9.65.3"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ~9.6.1
     "@use-gesture/react": ^10.2.24
-    camera-controls: ^2.1.0
-    detect-gpu: ^5.0.10
+    camera-controls: ^2.3.1
+    detect-gpu: ^5.0.14
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
@@ -879,7 +879,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: f1336a5734e22e94cb4d4b48b83e4213ba109d06483ab247c48d1e0bb214a65e9c6c3400e3e766910a2684dc8ce9a06c0e602f60e965645e68214df811e4662f
+  checksum: 298bd1088a41cd52ad6c0a0adb6f7fb2e69421324f3f63fc9bf9176490c05d1e3e6369eaa78915d7532de792add1887e48fe7c486b979852145072ee73cd3670
   languageName: node
   linkType: hard
 
@@ -1378,12 +1378,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camera-controls@npm:^2.1.0":
-  version: 2.3.1
-  resolution: "camera-controls@npm:2.3.1"
+"camera-controls@npm:^2.3.1":
+  version: 2.3.4
+  resolution: "camera-controls@npm:2.3.4"
   peerDependencies:
     three: ">=0.126.1"
-  checksum: c8474d482baed52588aebb9e9bdebdb6d5beb7524efa3a596e3fead0ea8ed969d37b46002f81d51d53141a474b6a71c7e5faec276dc05e43013c23ac379f9575
+  checksum: 5715e4a09c770b67ae65cf379dd9d08119bffa872c220ccc51a9987bdaf0f70f3d5e3382ab6f6562c9226db0ae2a96f21914faa06ba85c39765a1379f4c634e6
   languageName: node
   linkType: hard
 
@@ -1750,12 +1750,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.10":
-  version: 5.0.14
-  resolution: "detect-gpu@npm:5.0.14"
+"detect-gpu@npm:^5.0.14":
+  version: 5.0.20
+  resolution: "detect-gpu@npm:5.0.20"
   dependencies:
     webgl-constants: ^1.1.1
-  checksum: f458585f61e55f5abec837c9ff742b9f25cb29af1c84decc0fa93c5c1c20335cbc3757506a7a727bff69fba106cce8ba395aca751a05536d533903f46eede860
+  checksum: 3a0f4ae74fb4bf0b59007cc963631cc228c66e0533d17129f8f83617afd87269a28ab3b92844371edfad2cfafb210b5a8a008dbc506da50401c33702dacdf333
   languageName: node
   linkType: hard
 
@@ -3820,7 +3820,7 @@ __metadata:
     "@mantine/next": ^6.0.4
     "@next/bundle-analyzer": 13.2.4
     "@next/eslint-plugin-next": ^13.2.4
-    "@react-three/drei": ^9.53.3
+    "@react-three/drei": ^9.65.3
     "@react-three/fiber": ^8.10.0
     "@tabler/icons": ^1.107.0
     "@types/node": ^18.11.4
