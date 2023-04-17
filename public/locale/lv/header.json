@@ -1,8 +1,8 @@
 {
-  "language": "English",
+  "language": "Angļu",
   "find-more-translations": {
-    "content": "Find <subtle>{{more}}</subtle> translations...",
-    "subtle": "more"
+    "content": "<subtle>{{more}}</subtle> tulkojumi...",
+    "subtle": "Vairāk"
   },
   "help-translate": {
     "content": "Help translate the <subtle>{{portfolio}}</subtle>...",
