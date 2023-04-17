@@ -1,0 +1,96 @@
+{
+  "section-name": "Works",
+  "works": {
+    "Portfolio": {
+      "title": "Portfolio",
+      "description": "My personal portfolio website consisting of my projects, skill stack and contact information. This is what you visit right now.",
+      "stack": {
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Mantine": "Mantine",
+        "Three.js": "Three.js"
+      }
+    },
+    "Splendid": {
+      "title": "Splendid",
+      "description": "Hybrid CMS extending framework power by its extensible codebase. Provides a completely new view on CMS.",
+      "stack": {
+        "NestJS": "NestJS",
+        "Next.js": "Next.js",
+        "React": "React",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma",
+        "Mantine": "Mantine"
+      }
+    },
+    "Todo tracker": {
+      "title": "Todo tracker",
+      "description": "A minimalistic todo app built with Vue.js and Tailwind CSS. Uses firebase for authentication and database.",
+      "stack": {
+        "Vue.js": "Vue.js",
+        "Tailwind CSS": "Tailwind CSS",
+        "Firebase": "Firebase"
+      }
+    },
+    "Profile Card": {
+      "title": "Profile Card",
+      "description": "A simple profile card made similar to discord's profile card. Is considered my first project in web development.",
+      "stack": {
+        "HTML": "HTML",
+        "SASS": "SASS",
+        "TypeScript": "TypeScript"
+      }
+    },
+    "Slova": {
+      "title": "Slova",
+      "description": "A placeholder tool for generating non-existing speakable words. Great tool if you want to look at your product from a different angle.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest"
+      }
+    },
+    "KNRTU-KAI Discord Bot": {
+      "title": "KNRTU-KAI Discord Bot",
+      "description": "A Discord bot for KNRTU-KAI university. It provides a lot of useful features for students and teachers.",
+      "stack": {
+        "Sapphire": "Sapphire",
+        "TypeScript": "TypeScript",
+        "Prisma": "Prisma"
+      }
+    },
+    "Kai.js": {
+      "title": "Kai.js",
+      "description": "A small modern API wrapper of the KNRTU-KAI website written for Node.js. It is used in the KNRTU-KAI Discord Bot.",
+      "stack": {
+        "JavaScript": "JavaScript"
+      }
+    },
+    "Cvet": {
+      "title": "Cvet",
+      "description": "An effecient color tool for customizing and picking colors for projects without any hesitation.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Jest": "Jest",
+        "Oclif": "Oclif"
+      }
+    },
+    "Ikota": {
+      "title": "Ikota",
+      "description": "A CLI boilerplate automation tool offering various utilities to help working with React web applications.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "Oclif": "Oclif",
+        "TSDX": "TSDX"
+      }
+    },
+    "Krasota": {
+      "title": "Krasota",
+      "description": "Responsive, strongly typed, open source light React UI library. Amazing solution for extending your UI.",
+      "stack": {
+        "TypeScript": "TypeScript",
+        "React": "React"
+      }
+    }
+  }
+}
