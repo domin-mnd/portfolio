@@ -15,22 +15,24 @@ import { Loading } from '@component/loading';
 export default (): ReactNode => {
   // Getting section names from the translation files
   const { t } = useTranslation(['about', 'works', 'skills', 'contact']);
+  // A shorthand function for getting title
+  const title = (ns: string): string => t('section-name', { ns });
 
   return (
     <>
       <Loading />
       <VerticalCarousel>
         <Landing />
-        <SectionCard title={t('section-name', { ns: 'about' }) ?? ''} shadow="xl">
+        <SectionCard title={title('about')}>
           <About />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: 'works' }) ?? ''} shadow="xl">
+        <SectionCard title={title('works')}>
           <Works />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: 'skills' }) ?? ''} shadow="xl">
+        <SectionCard title={title('skills')}>
           <Skills />
         </SectionCard>
-        <SectionCard title={t('section-name', { ns: 'contact' }) ?? ''} shadow="xl">
+        <SectionCard title={title('contact')}>
           <Contact />
         </SectionCard>
       </VerticalCarousel>

@@ -1,11 +1,12 @@
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { Card, Container, Progress, SimpleGrid, Text } from '@mantine/core';
+import { Card, Container, Progress, SimpleGrid, Text, rem } from '@mantine/core';
 import { skills as oSkills } from './config';
 import { useStyles } from './styles';
 import { Works } from '@component/works';
 import { SectionCard } from '@component/card';
 import { Modal } from '@component/modal';
 import { Trans, useTranslation } from 'next-i18next';
+import { useMediaQuery } from '@mantine/hooks';
 
 /**
  * A grid of skills with a color radial gradient and a modal with examples of works
@@ -18,6 +19,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
   const [opened, setOpened] = useState(false);
   // Selected stack to show for the modal
   const [selected, setSelected] = useState<Stack | null>(null);
+  const mobile = useMediaQuery('(max-width: 768px)');
   const { t } = useTranslation('skills');
 
   // Examples of works
@@ -93,7 +95,7 @@ export const Skills: FunctionComponent<SkillsProps> = ({ skills = oSkills }): Re
               m="0 !important" // !important because of mobile
               px={0} // 0 padding to remove extra padding as modal already has padding
               pb={0} // No useless spacing at the bottom of the modal
-              height="40vh"
+              height={mobile ? '40vh' : rem(340)}
             >
               {Examples}
             </SectionCard>

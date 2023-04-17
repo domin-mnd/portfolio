@@ -9,7 +9,7 @@ import { Mesh } from '@component/mesh';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
-  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  subsets: ['latin', 'latin-ext', 'cyrillic', 'cyrillic-ext'],
   display: 'swap',
 });
 

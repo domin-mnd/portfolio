@@ -4,7 +4,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   card: {
     maxWidth: theme.breakpoints.xs,
     width: '100%',
-    margin: 124,
+    // margin: 124,
     marginLeft: 'auto',
     marginRight: 'auto',
     overflow: 'unset',

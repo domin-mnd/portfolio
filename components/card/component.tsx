@@ -1,6 +1,7 @@
 import { FunctionComponent, PropsWithChildren, useRef } from 'react';
-import { Card, ScrollArea, Title, CardProps as MantineCardProps } from '@mantine/core';
+import { Card, ScrollArea, Title, CardProps as MantineCardProps, rem } from '@mantine/core';
 import { useStyles } from './styles';
+import { useMediaQuery } from '@mantine/hooks';
 
 /**
  * Section component used under the landing page to display content
@@ -11,14 +12,16 @@ import { useStyles } from './styles';
 export const SectionCard: FunctionComponent<PropsWithChildren<CardProps & MantineCardProps>> = ({
   children,
   title,
-  height = '60vh',
+  height,
   ...props // Mantine card props
 }) => {
   // Classes instead of styles because it's a component
   const { classes } = useStyles();
+  const mobile = useMediaQuery('(max-width: 768px)');
+  height ??= mobile ? '60vh' : rem(440);
 
   return (
-    <Card className={classes.card} radius="sm" {...props}>
+    <Card className={classes.card} radius="sm" shadow="xl" {...props}>
       {title && (
         <Title order={3} className={classes.title}>
           {title}

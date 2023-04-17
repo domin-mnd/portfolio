@@ -1,11 +1,13 @@
-import { createStyles, getStylesRef, MantineTheme } from '@mantine/core';
+import { createStyles, getStylesRef, MantineTheme, rem } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 
 export const useStyles = createStyles((theme: MantineTheme) => {
   const image = getStylesRef('image');
+  const mobile = useMediaQuery('(max-width: 768px)');
 
   return {
     wrapper: {
-      height: '60vh',
+      height: mobile ? '60vh' : rem(440),
       boxSizing: 'border-box',
       borderRadius: theme.radius.xs,
       padding: `calc(${theme.spacing.xl} * 2.5)`,
