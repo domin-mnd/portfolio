@@ -927,18 +927,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:^1.107.0":
-  version: 1.119.0
-  resolution: "@tabler/icons@npm:1.119.0"
-  peerDependencies:
-    react: ^16.x || 17.x || 18.x
-    react-dom: ^16.x || 17.x || 18.x
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: ef1ac50c1a47b2205cb86ca43c28d69c7b8f547ad9c2c5545190fc4a455e9767f49cb511a6f9e8dc45b046ee7d2dab3d2c87af4fd5bbb1694832a15698158753
+"@tabler/icons@npm:^2.17.0":
+  version: 2.17.0
+  resolution: "@tabler/icons@npm:2.17.0"
+  checksum: 98caeb59d4a400596c1a8b414a7f8adf54a50b44a14511cef2a76cde88b3dca7d9da21401c3592150aaf316b37d4f5e1c75718e72ca2b3d490b4b8e02b72e269
   languageName: node
   linkType: hard
 
@@ -3822,7 +3814,7 @@ __metadata:
     "@next/eslint-plugin-next": ^13.2.4
     "@react-three/drei": ^9.53.3
     "@react-three/fiber": ^8.10.0
-    "@tabler/icons": ^1.107.0
+    "@tabler/icons": ^2.17.0
     "@types/node": ^18.11.4
     "@types/react": 18.0.21
     "@types/three": ^0.148.0
