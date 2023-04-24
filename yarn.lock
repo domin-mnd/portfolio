@@ -1039,14 +1039,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.21":
-  version: 18.0.21
-  resolution: "@types/react@npm:18.0.21"
+"@types/react@npm:18.0.38":
+  version: 18.0.38
+  resolution: "@types/react@npm:18.0.38"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 36c1a7c9d507e81e2e629c1ad3db51d7b84d8b010c2d5008da411874286c6a5ccc711ae1d4c470efc0bdc77153cc8804a40e927e929e5164c669ca41b84b846d
+  checksum: 34481c79f4f7ea2aefbaa45281319dc183200230d932d968463eba1643bd3635073d0a17c5c613150a69e36ca18b811ecffafea6384fa3dff3b5203866339d69
   languageName: node
   linkType: hard
 
@@ -3824,7 +3824,7 @@ __metadata:
     "@react-three/fiber": ^8.10.0
     "@tabler/icons": ^1.107.0
     "@types/node": ^18.11.4
-    "@types/react": 18.0.21
+    "@types/react": 18.0.38
     "@types/three": ^0.148.0
     cookies-next: ^2.1.1
     devicons-react: ^1.2.5
