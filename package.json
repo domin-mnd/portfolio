@@ -15,7 +15,7 @@
     "@emotion/server": "^11.10.0",
     "@ikota/mantine": "^0.9.9",
     "@mantine/carousel": "^6.0.4",
-    "@mantine/core": "^6.0.4",
+    "@mantine/core": "^6.0.9",
     "@mantine/eslint-config": "^3.6.14",
     "@mantine/hooks": "^6.0.4",
     "@mantine/next": "^6.0.4",

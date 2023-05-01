@@ -309,21 +309,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@mantine/core@npm:6.0.4"
+"@mantine/core@npm:^6.0.9":
+  version: 6.0.9
+  resolution: "@mantine/core@npm:6.0.9"
   dependencies:
     "@floating-ui/react": ^0.19.1
-    "@mantine/styles": 6.0.4
-    "@mantine/utils": 6.0.4
+    "@mantine/styles": 6.0.9
+    "@mantine/utils": 6.0.9
     "@radix-ui/react-scroll-area": 1.0.2
     react-remove-scroll: ^2.5.5
     react-textarea-autosize: 8.3.4
   peerDependencies:
-    "@mantine/hooks": 6.0.4
+    "@mantine/hooks": 6.0.9
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 3a97583e2e78b4155adba3064cef2f77a9f618863d82cd4c7eb9f95b957b56b569af98fa76f4665c041674f07efc577d486a2854d9b2730716fa28da22091b0a
+  checksum: 3524e25f2008f5f6e121f50edb5fb4b2e643acbe70c980d523b5cbb9f0fad2dfbe30e69de574c3a7069c03ee1c82e5cdec6dcecde6c471841862873746d7e747
   languageName: node
   linkType: hard
 
@@ -397,12 +397,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantine/styles@npm:6.0.9":
+  version: 6.0.9
+  resolution: "@mantine/styles@npm:6.0.9"
+  dependencies:
+    clsx: 1.1.1
+    csstype: 3.0.9
+  peerDependencies:
+    "@emotion/react": ">=11.9.0"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: ab5a40ab3e273fe4883745d68a454919d136cd40a50e1d9a2155783fd577c8b6d9640c1f9679265dd18950a18039e36eaaa9f5a611cfc05b15d329a78b2ece4c
+  languageName: node
+  linkType: hard
+
 "@mantine/utils@npm:6.0.4":
   version: 6.0.4
   resolution: "@mantine/utils@npm:6.0.4"
   peerDependencies:
     react: ">=16.8.0"
   checksum: 3a2f4d62d1ae78defcb293cb3454abbae0ca8a7b790ccce664f5d386973acfcc8542484717f3f38ba690f0f49689f0a1e3a18a77f4b14cfbdc227581566ac12b
+  languageName: node
+  linkType: hard
+
+"@mantine/utils@npm:6.0.9":
+  version: 6.0.9
+  resolution: "@mantine/utils@npm:6.0.9"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 4a5d03b5dd8a4f8de5772c8198c8fc4608b7e3dc12e46cb14a9ae890ef4438dc6d704ca3d22dc083b51c86af7fd250410b088f752675ea616a4a82ad34985d29
   languageName: node
   linkType: hard
 
@@ -3814,7 +3837,7 @@ __metadata:
     "@emotion/server": ^11.10.0
     "@ikota/mantine": ^0.9.9
     "@mantine/carousel": ^6.0.4
-    "@mantine/core": ^6.0.4
+    "@mantine/core": ^6.0.9
     "@mantine/eslint-config": ^3.6.14
     "@mantine/hooks": ^6.0.4
     "@mantine/next": ^6.0.4
