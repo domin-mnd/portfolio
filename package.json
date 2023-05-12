@@ -8,7 +8,8 @@
     "export": "next build && next export",
     "lint": "next lint",
     "prettier:check": "prettier --check \"**/*.{ts,tsx}\"",
-    "prettier:write": "prettier --write \"**/*.{ts,tsx}\""
+    "prettier:write": "prettier --write \"**/*.{ts,tsx}\"",
+    "component": "ikota component"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -35,7 +36,8 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.2.0",
     "sharp": "^0.32.0",
-    "three": "^0.148.0"
+    "three": "^0.148.0",
+    "zustand": "^4.3.8"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^13.2.4",
