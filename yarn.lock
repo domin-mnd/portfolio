@@ -354,32 +354,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "@mantine/next@npm:6.0.4"
+"@mantine/next@npm:^6.0.10":
+  version: 6.0.10
+  resolution: "@mantine/next@npm:6.0.10"
   dependencies:
-    "@mantine/ssr": 6.0.4
-    "@mantine/styles": 6.0.4
+    "@mantine/ssr": 6.0.10
+    "@mantine/styles": 6.0.10
   peerDependencies:
     next: "*"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 6905caf83e85bd1bdca7d6d449cf01a913292bd76a22d87857176673afa8faa94f6161ccefb4a99a0376b887f3dd249747f806e3ccc9026ec9bcacd48ff56c55
+  checksum: 445a14e22731fa03724f9bcd04229f0b9730bc2a23136cb6a1c01f28778be653af71728e4098d7e4f38640ea943c71498acd13fe09c1b7b81f627fc9271a1fa2
   languageName: node
   linkType: hard
 
-"@mantine/ssr@npm:6.0.4":
-  version: 6.0.4
-  resolution: "@mantine/ssr@npm:6.0.4"
+"@mantine/ssr@npm:6.0.10":
+  version: 6.0.10
+  resolution: "@mantine/ssr@npm:6.0.10"
   dependencies:
-    "@mantine/styles": 6.0.4
+    "@mantine/styles": 6.0.10
     html-react-parser: 1.4.12
   peerDependencies:
     "@emotion/react": ">=11.9.0"
     "@emotion/server": ">=11.4.0"
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 09baa9e4e1bda434cbc83492aa9fe3b528562e2857002b7cd6b56d3398719d0b5fbce5bfd1e7d6de2cf26d718a07f28a9c6f2b1c6a1a6911a68d8fdb974910e0
+  checksum: 0340d04c5245fd2faf271e66918050c5259f48d02286f1f6a86d1c02b562cacc8b6782fe076e2b71e7167f7e08c02d2c976a21440e162b138800ff2b27d62433
+  languageName: node
+  linkType: hard
+
+"@mantine/styles@npm:6.0.10":
+  version: 6.0.10
+  resolution: "@mantine/styles@npm:6.0.10"
+  dependencies:
+    clsx: 1.1.1
+    csstype: 3.0.9
+  peerDependencies:
+    "@emotion/react": ">=11.9.0"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: b88de24de6d56cdd3734efff97590cc8beb2439c01e486a78f984866fdc4d11126432ffd4423cc1c8b8337609ff9114b5acfe54ddea2b968e550edd78116d141
   languageName: node
   linkType: hard
 
@@ -3817,7 +3831,7 @@ __metadata:
     "@mantine/core": ^6.0.4
     "@mantine/eslint-config": ^3.6.14
     "@mantine/hooks": ^6.0.4
-    "@mantine/next": ^6.0.4
+    "@mantine/next": ^6.0.10
     "@next/bundle-analyzer": 13.2.4
     "@next/eslint-plugin-next": ^13.2.4
     "@react-three/drei": ^9.53.3
