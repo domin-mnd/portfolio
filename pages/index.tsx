@@ -22,7 +22,7 @@ export default (): ReactNode => {
   return (
     <>
       <Loading />
-      <Menu />
+      {/* <Menu /> */}
       <VerticalCarousel>
         <Landing />
         <SectionCard title={title('about')}>
