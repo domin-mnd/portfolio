@@ -69,5 +69,5 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   translationOpened: {
     // Set the background color if the dropdown is opened
     backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
-  }
+  },
 }));

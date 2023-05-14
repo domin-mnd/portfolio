@@ -1,3 +1,3 @@
-export * from "./component";
-export * from "./config";
-export * from "./styles";
+export * from './component';
+export * from './config';
+export * from './styles';

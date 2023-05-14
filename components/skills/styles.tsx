@@ -43,7 +43,7 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     maxHeight: rem(340),
 
     [theme.fn.smallerThan('sm')]: {
-      maxHeight: '40vh'
-    }
-  }
+      maxHeight: '40vh',
+    },
+  },
 }));

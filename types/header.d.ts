@@ -23,7 +23,7 @@ interface HeaderStore {
    * @returns {void}
    */
   pushHash: (hash: string) => void;
-};
+}
 
 /** A translation object with a flag function component & its name */
 interface Translation {

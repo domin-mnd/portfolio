@@ -15,5 +15,5 @@ export const useStore = create<HeaderStore>((set) => ({
     // For a carousel, emitting this event will switch the slide
     // As it was declared in carousel
     useCarouselStore.getState().scrollViaURL(href);
-  }
+  },
 }));
