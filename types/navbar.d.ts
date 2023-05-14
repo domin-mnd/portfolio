@@ -1,8 +1,8 @@
-/** Menu's zustand state */
-interface MenuStore {
-  /** Whether the menu is open or not */
+/** Navbar's zustand state */
+interface NavbarStore {
+  /** Whether navbar is open or not */
   opened: boolean;
-  /** Toggle the open state of the menu */
+  /** Toggle the open state of navbar */
   toggle: () => void;
   /** Set the state to false */
   close: () => void;

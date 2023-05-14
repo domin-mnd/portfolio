@@ -1,9 +1,7 @@
-import { useStyles } from './styles';
 import { FunctionComponent, ReactElement, useEffect, useState } from 'react';
 import { cardLabel, description, defaultButton, outlineButton } from './config';
 import { Menu as MantineMenu } from '@mantine/core';
 import { useStore } from './state';
-import { useMouse } from '@mantine/hooks';
 
 export const Menu: FunctionComponent = (): ReactElement => {
   const [position, setPosition] = useState<{ x: number; y: number }>({

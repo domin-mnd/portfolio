@@ -1,33 +1,9 @@
 import { createStyles, MantineTheme } from '@mantine/core';
 
 export const useStyles = createStyles((theme: MantineTheme) => ({
-  header: {
-    position: 'absolute',
-    zIndex: 1,
-    maxWidth: '100%',
+  tabsList: {
+    borderLeft: 'none',
     width: '100%',
-    backdropFilter: 'blur(10px)',
-
-    [theme.fn.smallerThan('xs')]: {
-      backdropFilter: 'unset',
-      backgroundColor: theme.fn.rgba(theme.colors.gray[0], 0.87),
-    },
-  },
-
-  burger: {
-    [theme.fn.largerThan('xs')]: {
-      display: 'none',
-    },
-  },
-
-  drawerTitle: {
-    display: 'none',
-  },
-
-  mobile: {
-    [theme.fn.smallerThan('xs')]: {
-      display: 'none',
-    },
   },
 
   tab: {
@@ -39,9 +15,14 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
 
+    justifyContent: 'center',
     '&[data-active]': {
       color: 'unset',
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
+
+      ':before': {
+        width: 0,
+      },
 
       ':hover': {
         backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
@@ -52,6 +33,8 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
   translation: {
     backgroundColor: 'transparent',
     height: 38,
+    width: '100%',
+    marginBottom: 6,
 
     ':hover': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + ' !important',
@@ -60,14 +43,10 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     ':active': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37) + ' !important',
     },
-
-    [theme.fn.smallerThan('xs')]: {
-      display: 'none',
-    },
   },
 
   translationOpened: {
     // Set the background color if the dropdown is opened
     backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
-  }
+  },
 }));

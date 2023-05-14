@@ -8,6 +8,23 @@ interface Tab {
   index?: number | number[];
 }
 
+/** Hash URL of the tab */
+type Hash = `#${string}`;
+
+/** Header's zustand state store */
+interface HeaderStore {
+  /** Hash of the active tab */
+  tab: Hash;
+  /** Set the hash of the active tab */
+  setTab: (tab: Hash) => void;
+  /**
+   * Replaces the hash in the url with the href provided
+   * @param {string} href - A url with a hash
+   * @returns {void}
+   */
+  pushHash: (hash: string) => void;
+};
+
 /** A translation object with a flag function component & its name */
 interface Translation {
   /** Language translated name */
