@@ -26,7 +26,7 @@
     "@tabler/icons": "^1.107.0",
     "cookies-next": "^2.1.1",
     "devicons-react": "^1.2.5",
-    "embla-carousel-react": "^7.0.3",
+    "embla-carousel-react": "^8.0.0-rc03",
     "i18next": "^22.4.9",
     "ikota": "^1.0.1",
     "mantine-flagpack": "^1.0.1",

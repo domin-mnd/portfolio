@@ -1864,21 +1864,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"embla-carousel-react@npm:^7.0.3":
-  version: 7.0.9
-  resolution: "embla-carousel-react@npm:7.0.9"
+"embla-carousel-react@npm:^8.0.0-rc03":
+  version: 8.0.0-rc03
+  resolution: "embla-carousel-react@npm:8.0.0-rc03"
   dependencies:
-    embla-carousel: 7.0.9
+    embla-carousel: 8.0.0-rc03
+    embla-carousel-reactive-utils: 8.0.0-rc03
   peerDependencies:
     react: ^16.8.0 || ^17.0.1 || ^18.0.0
-  checksum: 440157b5187428a214c4db25afff296d26ed2412cfcd424bafcccb2c12b468216534b31939486eef24f96e785b24732fb9084ab1a2a06e427b8f958a0e08cd8e
+  checksum: 29309848fc341e148706bf2b499ffbae07c9d5c33ab9e15271412046df89275aa812329e08897ed5502058f566f5bd58684debee7e79bd72afd4fa3e2a9e1193
   languageName: node
   linkType: hard
 
-"embla-carousel@npm:7.0.9":
-  version: 7.0.9
-  resolution: "embla-carousel@npm:7.0.9"
-  checksum: dabb371a44c2d67f21aa7a0ff3f452a5c2678b79e80cb251e0a83b707c4b684fbdbe010927142cdcae3d1c9711a269e05655bd05c39608337fd1b6f5d2c20371
+"embla-carousel-reactive-utils@npm:8.0.0-rc03":
+  version: 8.0.0-rc03
+  resolution: "embla-carousel-reactive-utils@npm:8.0.0-rc03"
+  peerDependencies:
+    embla-carousel: 8.0.0-rc03
+  checksum: cb7e4400012c0339e546dda7f27d570db3254dd6cea36fcb401e3560301ca5b0e4b6422009ea60b230ee728acc4cfa109af0a37d6d51966ee3393d2fad71780c
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.0.0-rc03":
+  version: 8.0.0-rc03
+  resolution: "embla-carousel@npm:8.0.0-rc03"
+  checksum: 8865effe95dd58e27d6e081fe42c5a17da311b33ffcd5d0a3cfac41fad578d1ee41a24109d6412f7eebf5f68436bcfb1eec293c86ad89e9b84cb5016eb182ee6
   languageName: node
   linkType: hard
 
@@ -3828,7 +3838,7 @@ __metadata:
     "@types/three": ^0.148.0
     cookies-next: ^2.1.1
     devicons-react: ^1.2.5
-    embla-carousel-react: ^7.0.3
+    embla-carousel-react: ^8.0.0-rc03
     i18next: ^22.4.9
     ikota: ^1.0.1
     mantine-flagpack: ^1.0.1

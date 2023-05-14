@@ -2,7 +2,6 @@ import type { FunctionComponent, ReactElement } from 'react';
 import { Avatar, Flex, Space, Text, Title } from '@mantine/core';
 import { about } from './config';
 import { useStyles } from './styles';
-import { useMediaQuery } from '@mantine/hooks';
 import { Trans, useTranslation } from 'next-i18next';
 import { IconMapPin, IconClockHour4 } from '@tabler/icons';
 import { Time } from '@component/time';
@@ -13,8 +12,6 @@ import { Time } from '@component/time';
  */
 export const About: FunctionComponent = (): ReactElement => {
   const { classes } = useStyles();
-  // Decide the order of the title
-  const mobile = useMediaQuery('(max-width: 360px');
   const { t } = useTranslation('about');
 
   return (
@@ -22,7 +19,7 @@ export const About: FunctionComponent = (): ReactElement => {
       <Flex className={classes.information}>
         <Avatar src={about.avatar.src} size={200} alt={about.name[0]} className={classes.avatar} />
         <div>
-          <Title mt={mobile ? 0 : 'md'} order={mobile ? 6 : 5}>
+          <Title order={5} mt={{ base: 0, xs: 'md' }}>
             <Trans i18nKey="full-name.first" t={t}>
               {about.name[0]}
             </Trans>{' '}

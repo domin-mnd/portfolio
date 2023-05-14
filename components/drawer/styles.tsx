@@ -1,4 +1,5 @@
 import { createStyles, MantineTheme } from '@mantine/core';
+import { useStyles as cardStyles } from '@component/card';
 
 export const useStyles = createStyles((theme: MantineTheme) => ({
   header: {
@@ -11,7 +12,8 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
     // Let translation modal ignore the hidden overflow
     overflow: 'unset',
-    '& .mantine-ScrollArea-root': {
+
+    [`& .${cardStyles().classes.scrollArea}`]: {
       overflow: 'unset',
     },
   },

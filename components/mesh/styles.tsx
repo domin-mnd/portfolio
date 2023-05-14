@@ -19,9 +19,17 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     '--gradient-color-2': theme.colors.gray[2],
     '--gradient-color-3': theme.colors.gray[0],
     '--gradient-color-4': theme.colors.gray[1],
+
+    [theme.fn.smallerThan('md')]: {
+      display: 'none',
+    },
   },
 
   override: {
     backgroundColor: theme.colors.gray[0],
+
+    [theme.fn.largerThan('md')]: {
+      display: 'none',
+    },
   },
 }));

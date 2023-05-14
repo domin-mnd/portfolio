@@ -2,7 +2,7 @@ import { Carousel, CarouselProps, Embla } from '@mantine/carousel';
 import { FunctionComponent, PropsWithChildren, ReactElement, useState, Children } from 'react';
 import { tabs } from '@component/header';
 import { NextRouter, useRouter } from 'next/router';
-import { useMediaQuery } from '@mantine/hooks';
+import { useStyles } from '@component/card';
 
 /**
  * A vertical carousel surrounding the entire page to scroll between sections,
@@ -36,36 +36,6 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     });
 
     const router: NextRouter = useRouter();
-
-    // Disable dragging carousel when the user is scrolling the card
-    document.querySelectorAll('.mantine-ScrollArea-viewport')?.forEach((element: Element) => {
-      // let bottom = false, top = true;
-      // element.addEventListener('touchstart', () => {
-      //   modScroll(bottom || top);
-      // });
-      element.addEventListener('touchstart', () => modScroll(false));
-      // let lastScrollTop = 1, delta = 5;
-      // element.addEventListener('touchmove', () => {
-      //   const nowScrollTop = element.scrollTop;
-      //   if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
-      //     if (nowScrollTop > lastScrollTop) {
-      //       if (nowScrollTop + element.clientHeight === element.scrollHeight) {
-      //         bottom = true;
-      //       } else {
-      //         bottom = false;
-      //       }
-      //     } else {
-      //       if (nowScrollTop === 0) {
-      //         top = true;
-      //       } else {
-      //         top = false;
-      //       }
-      //     }
-      //     lastScrollTop = nowScrollTop;
-      //   }
-      // });
-      element.addEventListener('touchend', () => modScroll(mobile));
-    });
 
     // Scroll to the correct slide when the hash changes
     // happens when the user clicks on a tab in the header
@@ -117,7 +87,7 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
   }
 
   // Unix timestamp of scroll to not let user scroll carousel
-  // More than once in 200ms period
+  // More than once in 500ms period
   let deltaUnix: number = 0;
 
   /**
@@ -133,7 +103,7 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     // If scroll is scrolled more than once in 200ms then
     // Do nothing
     const unixTimestamp = new Date().getTime();
-    if (unixTimestamp - deltaUnix < 200) return;
+    if (unixTimestamp - deltaUnix < 500) return;
     deltaUnix = unixTimestamp;
 
     // Prevent default wheel scrolling
@@ -149,16 +119,30 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     }
   }
 
-  /**
-   * Enable or disable dragging on the carousel based on the state
-   * @param {boolean} state Whether to enable or disable dragging
-   * @returns {void}
-   */
-  function modScroll(state: boolean): void {
-    emblaApi?.reInit({
-      draggable: state,
-    });
-  }
+  // Get all scrollable elements cards
+  const scrollElements = document.querySelectorAll('div[data-scrollarea]');
+
+  // watchDrag isn't supported by @mantine/carousel ^6.0.4 therefore
+  // reinit with watchDrag
+  emblaApi?.reInit({
+    /**
+     * Watches the drag event and only enables it for touch controls, not mouse controls.
+     * Only allows dragging if it's not a scrollable card.
+     *
+     * @param {_emblaApi} _emblaApi - The Embla API.
+     * @param {event} event - The mouse or touch event.
+     * @returns {boolean} Whether or not dragging is allowed.
+     */
+    watchDrag: (_emblaApi: Embla, event: MouseEvent | TouchEvent): boolean => {
+      // Only enabled watchDrag for touch controls, not mouse controls
+      if (!('touches' in event)) return false;
+
+      // Only allow dragging if it's not scrollable card
+      return Array.from(scrollElements).some((scrollElement) =>
+        (event.target as Element).contains(scrollElement)
+      );
+    },
+  });
 
   return (
     <Carousel
@@ -166,7 +150,6 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
       height="100vh"
       slideSize={mobile ? '100vh' : 'max-content'}
       slideGap={mobile ? undefined : 'xl'}
-      draggable={mobile}
       withControls={false}
       getEmblaApi={setEmblaApi}
       tabIndex={-1}

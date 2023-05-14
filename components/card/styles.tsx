@@ -1,4 +1,4 @@
-import { createStyles, MantineTheme } from '@mantine/core';
+import { createStyles, MantineTheme, rem } from '@mantine/core';
 
 export const useStyles = createStyles((theme: MantineTheme) => ({
   card: {
@@ -17,7 +17,24 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
 
   scrollArea: {
     borderRadius: theme.radius.xs,
-    overflow: 'hidden',
+    overflowX: 'hidden',
+  },
+
+  innerScrollArea: {
+    maxHeight: rem(440),
+    overflowY: 'scroll',
+
+    [theme.fn.smallerThan('sm')]: {
+      maxHeight: '60vh',
+    },
+
+    // Hide scrollbar for webkit
+    '::-webkit-scrollbar': {
+      display: 'none',
+    },
+
+    // Hide scrollbar for firefox
+    scrollbarWidth: 'none',
   },
 
   title: {

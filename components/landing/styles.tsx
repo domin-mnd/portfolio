@@ -1,13 +1,14 @@
-import { createStyles } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
+import { MantineTheme, createStyles } from '@mantine/core';
 
-export const useStyles = createStyles(() => {
-  const mobile = useMediaQuery('(max-width: 768px)');
+export const useStyles = createStyles((theme: MantineTheme) => {
 
   return {
     canvas: {
       maxHeight: 760,
-      height: mobile ? undefined : '100vh !important',
+
+      [theme.fn.largerThan('sm')]: {
+        height: '100vh !important',
+      }
     },
 
     username: {

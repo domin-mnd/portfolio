@@ -1,6 +1,6 @@
-import { createStyles } from '@mantine/core';
+import { MantineTheme, createStyles, rem } from '@mantine/core';
 
-export const useStyles = createStyles(() => ({
+export const useStyles = createStyles((theme: MantineTheme) => ({
   title: {
     fontWeight: 700,
   },
@@ -38,4 +38,12 @@ export const useStyles = createStyles(() => ({
       border: 'none',
     },
   },
+
+  sectionCard: {
+    maxHeight: rem(340),
+
+    [theme.fn.smallerThan('sm')]: {
+      maxHeight: '40vh'
+    }
+  }
 }));

@@ -1,5 +1,5 @@
 import type { GetStaticProps } from 'next';
-import type { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { VerticalCarousel } from '@component/carousel';
@@ -10,6 +10,7 @@ import { Skills } from '@component/skills';
 import { Contact } from '@component/contact';
 import { About } from '@component/about';
 import { Loading } from '@component/loading';
+import { Menu } from '@component/menu';
 
 // An index page (/)
 export default (): ReactNode => {
@@ -21,6 +22,7 @@ export default (): ReactNode => {
   return (
     <>
       <Loading />
+      <Menu />
       <VerticalCarousel>
         <Landing />
         <SectionCard title={title('about')}>
