@@ -3,7 +3,7 @@ import { FunctionComponent, ReactElement, useState } from 'react';
 import { Button, Menu, MenuProps } from '@mantine/core';
 import { translations as oTranslations } from './config';
 import { NextRouter, useRouter } from 'next/router';
-import { Help } from '@component/help';
+import { Help } from '@component/layout/help';
 
 /**
  * Translation Menu used in drawer & header with translation list

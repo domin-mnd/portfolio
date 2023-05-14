@@ -1,4 +1,4 @@
-import { tabs } from '@component/header';
+import { tabs } from '@component/layout/header';
 import { Embla } from '@mantine/carousel';
 import { create } from 'zustand';
 

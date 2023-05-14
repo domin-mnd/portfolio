@@ -1,7 +1,7 @@
 import { Carousel, Embla } from '@mantine/carousel';
 import { FunctionComponent, PropsWithChildren, ReactElement, Children } from 'react';
 import { useStore as useCarouselStore } from './state';
-import { tabs, useStore as useHeaderStore } from '@component/header';
+import { tabs, useStore as useHeaderStore } from '@component/layout/header';
 import { NextRouter, useRouter } from 'next/router';
 import { shallow } from 'zustand/shallow';
 

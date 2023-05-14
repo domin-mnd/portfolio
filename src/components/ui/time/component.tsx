@@ -1,6 +1,6 @@
 import type { FunctionComponent, ReactElement } from 'react';
 import { Text } from '@mantine/core';
-import { about } from '@component/about';
+import { about } from '@component/pages/index/about';
 
 /**
  * A locale time of the user based off configuration from about component

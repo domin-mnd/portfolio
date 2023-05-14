@@ -5,8 +5,8 @@ import { useStyles } from './styles';
 import { tabs } from './config';
 import { useStore as useHeaderStore } from './state';
 import { Trans, useTranslation } from 'next-i18next';
-import { Translations } from '@component/translations';
-import { useStore as useNavbarStore } from '@component/navbar';
+import { Translations } from '@component/layout/translations';
+import { useStore as useNavbarStore } from '@component/layout/navbar';
 
 /**
  * Header component used on the top of the page to display tabs

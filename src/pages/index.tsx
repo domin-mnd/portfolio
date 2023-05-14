@@ -2,15 +2,15 @@ import type { GetStaticProps } from 'next';
 import { ReactNode } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import { VerticalCarousel } from '@component/carousel';
-import { Landing } from '@component/landing';
-import { Works } from '@component/works';
-import { SectionCard } from '@component/card';
-import { Skills } from '@component/skills';
-import { Contact } from '@component/contact';
-import { About } from '@component/about';
-import { Loading } from '@component/loading';
-import { Menu } from '@component/menu';
+import { VerticalCarousel } from '@component/ui/carousel';
+import { Landing } from '@component/pages/index/landing';
+import { Works } from '@component/pages/index/works';
+import { SectionCard } from '@component/ui/card';
+import { Skills } from '@component/pages/index/skills';
+import { Contact } from '@component/pages/index/contact';
+import { About } from '@component/pages/index/about';
+import { Loading } from '@component/pages/index/loading';
+import { Menu } from '@component/ui/menu';
 
 // An index page (/)
 export default function Index(): ReactNode {

@@ -4,7 +4,7 @@ import { about } from './config';
 import { useStyles } from './styles';
 import { Trans, useTranslation } from 'next-i18next';
 import { IconMapPin, IconClockHour4 } from '@tabler/icons';
-import { Time } from '@component/time';
+import { Time } from '@component/ui/time';
 
 /**
  * An about section with information about the person

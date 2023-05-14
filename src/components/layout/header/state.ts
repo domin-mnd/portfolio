@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { useStore as useCarouselStore } from '@component/carousel';
+import { useStore as useCarouselStore } from '@component/ui/carousel';
 
 export const useStore = create<HeaderStore>((set) => ({
   tab: '#',

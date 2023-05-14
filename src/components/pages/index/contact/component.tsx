@@ -4,7 +4,7 @@ import { useStyles } from './styles';
 import { socials } from './config';
 import Kazan from '@public/contacts/kazan.jpg';
 
-import { about } from '@component/about';
+import { about } from '@component/pages/index/about';
 import { Trans, useTranslation } from 'next-i18next';
 
 /**

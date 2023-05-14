@@ -1,11 +1,11 @@
 import { useStyles } from './styles';
 import { FunctionComponent, ReactElement, useState } from 'react';
-import { tabs } from '@component/header';
+import { tabs } from '@component/layout/header';
 import { Tabs } from '@mantine/core';
-import { Translations } from '@component/translations';
+import { Translations } from '@component/layout/translations';
 import { useStore as useNavbarStore } from './state';
-import { useStore as useHeaderStore } from '@component/header';
-import { Drawer } from '@component/drawer';
+import { useStore as useHeaderStore } from '@component/layout/header';
+import { Drawer } from '@component/layout/drawer';
 import { Trans, useTranslation } from 'next-i18next';
 
 export const Navbar: FunctionComponent = (): ReactElement => {

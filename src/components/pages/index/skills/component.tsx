@@ -2,9 +2,9 @@ import { FunctionComponent, ReactElement, useState } from 'react';
 import { Card, Container, Progress, SimpleGrid, Text, rem } from '@mantine/core';
 import { skills as oSkills } from './config';
 import { useStyles } from './styles';
-import { Works } from '@component/works';
-import { SectionCard } from '@component/card';
-import { Modal } from '@component/modal';
+import { Works } from '@component/pages/index/works';
+import { SectionCard } from '@component/ui/card';
+import { Modal } from '@component/ui/modal';
 import { Trans, useTranslation } from 'next-i18next';
 
 /**

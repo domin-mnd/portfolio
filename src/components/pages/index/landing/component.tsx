@@ -1,8 +1,8 @@
 import type { FunctionComponent, ReactElement } from 'react';
 import { Text } from '@mantine/core';
 import { Canvas } from '@react-three/fiber';
-import { Keyboard } from '@component/keyboard';
-import { about } from '@component/about';
+import { Keyboard } from '@component/pages/index/keyboard';
+import { about } from '@component/pages/index/about';
 import { useStyles } from './styles';
 
 /**

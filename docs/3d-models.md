@@ -19,7 +19,7 @@ In this portfolio we didn't only use the raw three.js library but had it wrapped
 
 ### Gltfjsx
 
-Gltfjsx is a nice tool used to generate a react component out of a glTF/glb model. It is a command line tool that can be installed using npm. It takes a gltf/glb model as input and generates a react component out of it. As the result we've got a react component that we can use in our react app (see `src/components/keyboard/component.tsx:41`). The generated component is a react component that uses the `useGLTF` hook from `@react-three/drei` to load the model.
+Gltfjsx is a nice tool used to generate a react component out of a glTF/glb model. It is a command line tool that can be installed using npm. It takes a gltf/glb model as input and generates a react component out of it. As the result we've got a react component that we can use in our react app (see `src/components/pages/index/keyboard/component.tsx:41`). The generated component is a react component that uses the `useGLTF` hook from `@react-three/drei` to load the model.
 
 In reality we don't only need to load the model, we also have to position it correctly, add lightning & make it interactable.
 

@@ -1,12 +1,12 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
-import { MantineProvider, AppShell, Box } from '@mantine/core';
-import { Header } from '@component/header';
-import { Footer } from '@component/footer';
-import { Navbar } from '@component/navbar';
+import { MantineProvider, AppShell } from '@mantine/core';
+import { Header } from '@component/layout/header';
+import { Footer } from '@component/layout/footer';
+import { Navbar } from '@component/layout/navbar';
 import { appWithTranslation, useTranslation } from 'next-i18next';
-import { Mesh } from '@component/mesh';
+import { Mesh } from '@component/layout/mesh';
 
 // Inter font from Google Fonts, with latin subset
 const inter = Inter({
