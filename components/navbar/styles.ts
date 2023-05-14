@@ -11,11 +11,12 @@ export const useStyles = createStyles((theme: MantineTheme) => ({
     letterSpacing: 0.4,
     height: 38,
 
-    '&:hover': {
+    '&:hover, &:active': {
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
     },
 
     justifyContent: 'center',
+
     '&[data-active]': {
       color: 'unset',
       backgroundColor: theme.fn.rgba(theme.colors.gray[3], 0.37),
