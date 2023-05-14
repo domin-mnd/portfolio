@@ -15,6 +15,7 @@ import { shallow } from 'zustand/shallow';
 export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
   children,
 }): ReactElement => {
+  const router: NextRouter = useRouter();
   const setTab = useHeaderStore((state) => state.setTab);
   // Embla API to control the carousel
   // setting it to null because it's not defined on the server side
@@ -38,8 +39,6 @@ export const VerticalCarousel: FunctionComponent<PropsWithChildren> = ({
     document.querySelectorAll('.mantine-Carousel-slide, canvas')?.forEach((element: Element) => {
       element.addEventListener('wheel', scroll);
     });
-
-    const router: NextRouter = useRouter();
 
     // Emit on page load if the hash is not home
     if (['/#', '/'].indexOf(router.asPath) === -1) {

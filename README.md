@@ -29,14 +29,14 @@ vercel # deploy the project
 
 You can configure the project by editing the `config.tsx` files in the following components:
 
-- `components/about/config.tsx` (for the About card)
-- `components/contact/config.tsx` (for the Contact card)
-- `components/footer/config.tsx` (for the footer component)
-- `components/header/config.tsx` (for the header component)
-- `components/help/config.tsx` (for i18n help link)
-- `components/translations/config.tsx` (for translation list, also configure `next-i18next.config.js` locales)
-- `components/skills/config.tsx` (for the Skills card)
-- `components/works/config.tsx` (for the Works card)
+- `src/components/about/config.tsx` (for the About card)
+- `src/components/contact/config.tsx` (for the Contact card)
+- `src/components/footer/config.tsx` (for the footer component)
+- `src/components/header/config.tsx` (for the header component)
+- `src/components/help/config.tsx` (for i18n help link)
+- `src/components/translations/config.tsx` (for translation list, also configure `next-i18next.config.js` locales)
+- `src/components/skills/config.tsx` (for the Skills card)
+- `src/components/works/config.tsx` (for the Works card)
 
 ## i18n
 

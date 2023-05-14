@@ -32,7 +32,7 @@ export const Menu: FunctionComponent = (): ReactElement => {
 
     // Do not open context menu at all
     document.addEventListener('contextmenu', (event) => event.preventDefault());
-  }, []);
+  });
 
   return (
     <MantineMenu

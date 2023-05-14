@@ -14,10 +14,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@component/*": ["components/*"],
-      "@public/*": ["public/*"],
+      "@public/*": ["../public/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/mesh/module.js"],

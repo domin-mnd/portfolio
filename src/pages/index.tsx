@@ -1,5 +1,5 @@
 import type { GetStaticProps } from 'next';
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { VerticalCarousel } from '@component/carousel';
@@ -13,7 +13,7 @@ import { Loading } from '@component/loading';
 import { Menu } from '@component/menu';
 
 // An index page (/)
-export default (): ReactNode => {
+export default function Index(): ReactNode {
   // Getting section names from the translation files
   const { t } = useTranslation(['about', 'works', 'skills', 'contact']);
   // A shorthand function for getting title
@@ -40,7 +40,7 @@ export default (): ReactNode => {
       </VerticalCarousel>
     </>
   );
-};
+}
 
 // Translating the page from the server side
 // or getServerSideProps: GetServerSideProps<Props> = async ({ locale })

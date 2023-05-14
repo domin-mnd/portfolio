@@ -6,11 +6,11 @@ import { ReactElement, useEffect } from 'react';
 // Added loading overlay to prevent
 // loading times during development environment
 // as well as disabling header usage
-export default (): ReactElement => {
+export default function NotFound(): ReactElement {
   const { push } = useRouter();
   useEffect(() => {
     push('/');
-  }, []);
+  });
 
   return <LoadingOverlay overlayOpacity={1} visible />;
-};
+}
