@@ -12,9 +12,10 @@ To run this project locally, you need to have [Node.js](https://nodejs.org/en/) 
 
 ```bash
 git clone https://github.com/Domin-MND/portfolio . # clone the repository into the current directory
-npm install # for the dependencies installation
-npm run build # for the production build
-npm start # start the server
+npm i -g pnpm # package manager
+pnpm install # for the dependencies installation
+pnpm build # for the production build
+pnpm start # start the server
 ```
 
 else you can deploy it on [Vercel](https://vercel.com/) by using its CLI tool:
