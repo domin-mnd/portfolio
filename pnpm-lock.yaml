@@ -9,7 +9,7 @@ dependencies:
     version: 11.10.0
   '@ikota/mantine':
     specifier: ^0.9.9
-    version: 0.9.9(@types/node@18.11.4)(typescript@5.0.3)
+    version: 0.9.9(@types/node@20.3.3)(typescript@5.0.3)
   '@mantine/carousel':
     specifier: ^6.0.4
     version: 6.0.4(@mantine/core@6.0.4)(@mantine/hooks@6.0.4)(embla-carousel-react@8.0.0-rc03)(react@18.2.0)
@@ -51,7 +51,7 @@ dependencies:
     version: 22.4.9
   ikota:
     specifier: ^1.0.1
-    version: 1.0.1(@types/node@18.11.4)(typescript@5.0.3)
+    version: 1.0.1(@types/node@20.3.3)(typescript@5.0.3)
   mantine-flagpack:
     specifier: ^1.0.1
     version: 1.0.1(@emotion/react@11.10.4)(@mantine/core@6.0.4)(@mantine/hooks@6.0.4)
@@ -85,8 +85,8 @@ devDependencies:
     specifier: ^13.2.4
     version: 13.2.4
   '@types/node':
-    specifier: ^18.11.4
-    version: 18.11.4
+    specifier: ^20.3.3
+    version: 20.3.3
   '@types/react':
     specifier: 18.0.21
     version: 18.0.21
@@ -644,11 +644,11 @@ packages:
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
 
-  /@ikota/mantine@0.9.9(@types/node@18.11.4)(typescript@5.0.3):
+  /@ikota/mantine@0.9.9(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-sqFKPfzYNdLMvyBbemO9uH+e7+oJi8Pyya/Gl14HfkTFB6CXLS+E9bzc1ioQ0l+oFcfaUt0ctLJqrguiDZ+hlA==}
     engines: {node: '>=10'}
     dependencies:
-      ikota: 1.0.1(@types/node@18.11.4)(typescript@5.0.3)
+      ikota: 1.0.1(@types/node@20.3.3)(typescript@5.0.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -1201,7 +1201,7 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@oclif/core@2.8.5(@types/node@18.11.4)(typescript@5.0.3):
+  /@oclif/core@2.8.5(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-316DLfrHQDYmWDriI4Woxk9y1wVUrPN1sZdbQLHdOdlTA9v/twe7TdHpWOriEypfl6C85NWEJKc1870yuLtjrQ==}
     engines: {node: '>=14.0.0'}
     dependencies:
@@ -1229,7 +1229,7 @@ packages:
       strip-ansi: 6.0.1
       supports-color: 8.1.1
       supports-hyperlinks: 2.3.0
-      ts-node: 10.9.1(@types/node@18.11.4)(typescript@5.0.3)
+      ts-node: 10.9.1(@types/node@20.3.3)(typescript@5.0.3)
       tslib: 2.5.0
       widest-line: 3.1.0
       wordwrap: 1.0.0
@@ -1241,11 +1241,11 @@ packages:
       - typescript
     dev: false
 
-  /@oclif/plugin-help@5.2.9(@types/node@18.11.4)(typescript@5.0.3):
+  /@oclif/plugin-help@5.2.9(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-0J3oowPURZJ4Dn1p1WpQ46E4+CoV20KTn1cvsNiDl6Hmbw+qoljKQnArJJzNFeZQxWo4R7/S42PrzKJTVYh68Q==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      '@oclif/core': 2.8.5(@types/node@18.11.4)(typescript@5.0.3)
+      '@oclif/core': 2.8.5(@types/node@20.3.3)(typescript@5.0.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -1253,12 +1253,12 @@ packages:
       - typescript
     dev: false
 
-  /@oclif/plugin-not-found@2.3.23(@types/node@18.11.4)(typescript@5.0.3):
+  /@oclif/plugin-not-found@2.3.23(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-UZM8aolxXvqwH8WcmJxRNASDWgMoSQm/pgCdkc1AGCRevYc8+LBSO+U6nLWq+Dx8H/dn9RyIv5oiUIOGkKDlZA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@oclif/color': 1.0.4
-      '@oclif/core': 2.8.5(@types/node@18.11.4)(typescript@5.0.3)
+      '@oclif/core': 2.8.5(@types/node@20.3.3)(typescript@5.0.3)
       fast-levenshtein: 3.0.0
       lodash: 4.17.21
     transitivePeerDependencies:
@@ -1663,6 +1663,10 @@ packages:
 
   /@types/node@18.11.4:
     resolution: {integrity: sha512-BxcJpBu8D3kv/GZkx/gSMz6VnTJREBj/4lbzYOQueUOELkt8WrO6zAcSPmp9uRPEW/d+lUO8QK0W2xnS1hEU0A==}
+    dev: false
+
+  /@types/node@20.3.3:
+    resolution: {integrity: sha512-wheIYdr4NYML61AjC8MKj/2jrR/kDQri/CIpVoZwldwhnIrD/j9jIU5bJ8yBKuB2VhpFV7Ab6G2XkBjv9r9Zzw==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -4161,15 +4165,15 @@ packages:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
 
-  /ikota@1.0.1(@types/node@18.11.4)(typescript@5.0.3):
+  /ikota@1.0.1(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-0Sb9DbqoIdLKES+TNzqvZ/lUXZnmy17jrOZY2KLKBatxAAWteDtVcogHGsoSdIcGEl/ulWGl8G0OnKn5MW0OMg==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
       '@oclif/color': 1.0.4
-      '@oclif/core': 2.8.5(@types/node@18.11.4)(typescript@5.0.3)
-      '@oclif/plugin-help': 5.2.9(@types/node@18.11.4)(typescript@5.0.3)
-      '@oclif/plugin-not-found': 2.3.23(@types/node@18.11.4)(typescript@5.0.3)
+      '@oclif/core': 2.8.5(@types/node@20.3.3)(typescript@5.0.3)
+      '@oclif/plugin-help': 5.2.9(@types/node@20.3.3)(typescript@5.0.3)
+      '@oclif/plugin-not-found': 2.3.23(@types/node@20.3.3)(typescript@5.0.3)
       inquirer: 8.2.5
     transitivePeerDependencies:
       - '@swc/core'
@@ -7114,7 +7118,7 @@ packages:
     resolution: {integrity: sha512-PSUc9vunDEkbE23jpgXD3PcF96jQHKjgMjS+4o5g6DEK/ZAPTnldb+FNddhppawfUcuraMFrslo0GmIC8UpEmA==}
     dev: false
 
-  /ts-node@10.9.1(@types/node@18.11.4)(typescript@5.0.3):
+  /ts-node@10.9.1(@types/node@20.3.3)(typescript@5.0.3):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -7133,7 +7137,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 18.11.4
+      '@types/node': 20.3.3
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
