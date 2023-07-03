@@ -35,8 +35,8 @@ dependencies:
     specifier: ^8.10.0
     version: 8.10.0(react-dom@18.2.0)(react@18.2.0)(three@0.148.0)
   '@tabler/icons':
-    specifier: ^1.107.0
-    version: 1.107.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.23.0
+    version: 2.23.0
   cookies-next:
     specifier: ^2.1.1
     version: 2.1.1
@@ -1546,19 +1546,8 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@tabler/icons@1.107.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-HlNN5uXPr9NUD2IqTNv5HfL2P3P8RT8VzYip3CBSiB4t9n7ZNFj/9gJRKgy9ONn9AN+hqACRaisu7M+koLAZzA==}
-    peerDependencies:
-      react: ^16.x || 17.x || 18.x
-      react-dom: ^16.x || 17.x || 18.x
-    peerDependenciesMeta:
-      react:
-        optional: true
-      react-dom:
-        optional: true
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
+  /@tabler/icons@2.23.0:
+    resolution: {integrity: sha512-dU54aBwaxG0H+jQ4BdrqtYFN5L7PZevvlnzyL6XeOZgfDS3+sVNCtuG3JmpTEqQSwGLYC1IEwogPGA/Iit2bOA==}
     dev: false
 
   /@tootallnate/once@1.1.2:
