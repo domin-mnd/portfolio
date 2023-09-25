@@ -1,3 +1,6 @@
+> **Warning**
+> This portfolio is deprecated and will be rewritten soon.
+
 # Portfolio
 
 ![Portfolio Screenshot](/public/works/portfolio.png)
